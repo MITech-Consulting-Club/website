@@ -1,0 +1,23 @@
+@import 'theme';
+@import 'responsive';
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $text;
+  background: $background;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

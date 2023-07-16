@@ -1,0 +1,37 @@
+@import '@/app/_styles/theme';
+@import '@/app/_styles/responsive';
+
+.navbar {
+  width: 100%;
+  background-color: transparentize($primary-light, 0.8);
+}
+
+.navbarContainer {
+  max-width: $lg;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarSocials {
+}
+
+.socialIcon {
+  font-size: 25px;
+  margin: 10px;
+  transition: color 0.3s;
+}
+
+.navbarRoute {
+  transition: color 0.3s;
+  padding: 30px 15px;
+}
+
+.socialIcon:hover,
+.navbarRoute:hover,
+.navbarActiveRoute {
+  color: $primary;
+}

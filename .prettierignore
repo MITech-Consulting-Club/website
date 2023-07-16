@@ -1,0 +1,6 @@
+.idea
+.vscode
+
+.pnp.*
+.yarn/*
+.next
