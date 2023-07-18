@@ -1,6 +1,5 @@
-import Image from 'next/image';
-import styles from './page.module.scss';
-
+// import styles from './page.module.scss';
+'use client';
 export default function Home() {
-  return <h1>Hi</h1>;
+  return <h1 style={{ height: '200vh' }}>Hi</h1>;
 }

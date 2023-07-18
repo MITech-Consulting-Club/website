@@ -1,11 +1,12 @@
 import React from 'react';
 import '@/app/_styles/globals.scss';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { Work_Sans } from 'next/font/google';
-import { SkipNavContent, SkipNavLink } from '@reach/skip-nav';
+import { SkipNavContent } from '@reach/skip-nav';
 import { Header } from '@/app/_components/header';
+import styles from './layout.module.scss';
+import { Footer } from '@/app/_components/footer';
 
-// @ts-ignore
 const workSans = Work_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -23,13 +24,12 @@ const RootLayout = ({ children }: RootProps) => {
   return (
     <html lang="en">
       <body className={workSans.className}>
-        {/*<SkipNavLink />*/}
         <Header />
-        <main>
+        <main className={styles.content}>
           <SkipNavContent />
           {children}
         </main>
-        {/*Footer*/}
+        <Footer />
       </body>
     </html>
   );

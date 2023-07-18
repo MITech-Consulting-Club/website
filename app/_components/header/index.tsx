@@ -1,5 +1,4 @@
 'use client';
-
 import React from 'react';
 import styles from './header.module.scss';
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
@@ -10,11 +9,25 @@ import { usePathname } from 'next/navigation';
 
 export interface HeaderProps {}
 
-export const Header = (props: HeaderProps) => {
+export const Header = () => {
   const path = usePathname();
+  const [atTop, setAtTop] = React.useState(Math.round(window.scrollY) === 0);
+  // Check if page is at top to update the background color
+  React.useEffect(() => {
+    window.addEventListener('scroll', () => {
+      // A bit hacky way to make sure the component doesn't re-render every single scroll event
+      if (Math.round(window.scrollY) != 0 && atTop) {
+        setAtTop(false);
+        return;
+      } else if (Math.round(window.scrollY) == 0) {
+        setAtTop(true);
+        return;
+      }
+    });
+  }, []);
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={` ${styles.navbar} ${!atTop ? styles.navbarScrolled : ''}`}>
       <div className={styles.navbarContainer}>
         <div className="navbarLogo">
           <Link href="/">
@@ -25,7 +38,6 @@ export const Header = (props: HeaderProps) => {
           </Link>
         </div>
         <div className={styles.navbarRoutes}>
-          {/*@ts-ignore*/}
           {routes.map((r: Route) => (
             <Link
               key={r.path + r.title}
@@ -49,15 +61,12 @@ export const Header = (props: HeaderProps) => {
           <a
             href="https://www.instagram.com/mitechconsulting/"
             target="_blank"
+            style={{ fontSize: 25 }}
             className={styles.socialIcon}
           >
             <BsInstagram />
           </a>
-          <a
-            href="https://www.instagram.com/mitechconsulting/"
-            target="_blank"
-            className={styles.socialIcon}
-          >
+          <a href="mailto:" target="_blank" className={styles.socialIcon}>
             <MdEmail />
           </a>
         </div>

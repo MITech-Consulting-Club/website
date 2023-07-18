@@ -2,8 +2,17 @@
 @import '@/app/_styles/responsive';
 
 .navbar {
+  position: sticky;
+  top: 0;
   width: 100%;
-  background-color: transparentize($primary-light, 0.8);
+  background-color: transparentize($primary-light, 0.6);
+  transition: background-color, box-shadow;
+  transition-duration: 1s;
+}
+
+.navbarScrolled {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
 .navbarContainer {
