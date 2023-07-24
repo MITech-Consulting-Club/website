@@ -1,5 +1,7 @@
 // import styles from './page.module.scss';
 'use client';
+import { BackgroundGraph } from '@/app/_components/background';
+
 export default function Home() {
-  return <h1 style={{ height: '200vh' }}>Hi</h1>;
+  return <BackgroundGraph isAnimated={true} />;
 }

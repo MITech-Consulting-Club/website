@@ -1,13 +1,14 @@
-@import '@/app/_styles/theme';
-@import '@/app/_styles/responsive';
+@import '@/app/_styles/theme.scss';
+@import '@/app/_styles/responsive.scss';
 
 .navbar {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: transparentize($primary-light, 0.6);
+  background-color: transparentize($primary-light, 0.9);
   transition: background-color, box-shadow;
   transition-duration: 1s;
+  z-index: 9999;
 }
 
 .navbarScrolled {
@@ -17,7 +18,7 @@
 
 .navbarContainer {
   max-width: $lg;
-  padding: 20px;
+  padding: 0 20px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -34,7 +35,6 @@
 .navbarRoute {
   transition: color 0.3s;
   padding: 30px 15px;
-  font-family: 'Avenir Light';
 }
 
 .socialIcon:hover,

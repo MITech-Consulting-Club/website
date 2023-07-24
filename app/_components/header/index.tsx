@@ -4,11 +4,9 @@ import styles from './header.module.scss';
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Route, routes } from './routes';
 import { usePathname } from 'next/navigation';
-
-import LOGO from '../assets/MITechLogo.png';
+import logo from '@/app/_assets/logo.png';
 
 export interface HeaderProps {}
 
@@ -32,14 +30,9 @@ export const Header = () => {
   return (
     <nav className={` ${styles.navbar} ${!atTop ? styles.navbarScrolled : ''}`}>
       <div className={styles.navbarContainer}>
-        <div className="navbarLogo">
+        <div>
           <Link href="/">
-            <Image
-              src={LOGO}
-              alt="MITech Consulting Club Logo"
-              width={150}
-              height={50}
-            />
+            <img src={logo.src} alt="MCC Logo" width={250} />
           </Link>
         </div>
         <div className={styles.navbarRoutes}>

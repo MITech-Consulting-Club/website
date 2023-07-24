@@ -1,4 +1,7 @@
-.alumni-top-container {
+@import '@/app/_styles/theme.scss';
+@import '@/app/_styles/responsive.scss';
+
+.alumniTopContainer {
   background-image: linear-gradient(45.34deg, #da9bff 5.66%, #6f56f9 94.35%);
   height: 40vh;
   display: flex;
@@ -6,7 +9,7 @@
   justify-content: center;
 }
 
-.alumni-top-card {
+.alumniTopCard {
   background-color: #eff0f3;
   opacity: 0.7;
   margin: 0 30%;
@@ -17,23 +20,23 @@
   justify-content: center;
 }
 
-.alumni-top-heading,
-.alumni-engagements-heading,
-.alumni-advisors-heading,
-.alumni-mentors-heading,
-.alumni-supporting-mitech-heading {
+.alumniTopHeading,
+.alumniEngagementsHeading,
+.alumniAdvisorsHeading,
+.alumniMentorsHeading,
+.alumniSupportingMitechHeading {
   font-size: 56px;
   color: #000000;
 }
 
-.alumni-top-description,
-.alumni-engagements-description {
+.alumniTopDescription,
+.alumniEngagementsDescription {
   font-size: 18px;
   font-family: 'Avenir Light';
   text-align: center;
 }
 
-.alumni-engagements-container {
+.alumniEngagementsContainer {
   background-color: #ececef;
   display: flex;
   align-items: center;
@@ -41,22 +44,22 @@
   justify-content: center;
 }
 
-.alumni-engagements-heading {
+.alumniEngagementsHeading {
   margin: 3% 0 2% 0;
 }
 
-.alumni-engagements-description {
+.alumniEngagementsDescription {
   margin: 0 0 2% 0;
 }
 
-.alumni-engagements-cards-container {
+.alumniEngagementsCardsContainer {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 }
 
-.alumni-engagements-card {
+.alumniEngagementsCard {
   width: 20%;
   height: 50%;
   background: #e7e7eb;
@@ -68,48 +71,48 @@
   justify-content: center;
 }
 
-.card-avatar {
+.cardAvatar {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.card-title {
+.cardTitle {
   font-size: 20px;
   margin: 7% 0;
 }
-.card-description {
+.cardDescription {
   font-size: 16px;
   font-family: 'Avenir Light';
   text-align: center;
 }
 
-.alumni-advisors-container {
+.alumniAdvisorsContainer {
   background-color: #ececef;
   display: flex;
   padding: 3%;
 }
 
-.alumni-advisors-left-text-container {
+.alumniAdvisorsLeftTextContainer {
   flex: 60;
   background-color: #ffffff;
   padding: 5%;
 }
 
-.alumni-advisors-description-p1,
-.alumni-advisors-description-p2,
-.alumni-mentors-description,
-.alumni-supporting-mitech-description {
+.alumniAdvisorsDescriptionP1,
+.alumniAdvisorsDescriptionP2,
+.alumniMentorsDescription,
+.alumniSupportingMitechDescription {
   font-size: 18px;
   font-family: 'Avenir Light';
 }
 
-.alumni-advisors-description-p1 {
+.alumniAdvisorsDescriptionP1 {
   margin: 3% 0;
 }
 
-.alumni-advisors-carousel-container {
+.alumniAdvisorsCarouselContainer {
   flex: 40;
   background-image: linear-gradient(45.34deg, #da9bff 5.66%, #6f56f9 94.35%);
   display: flex;
@@ -117,67 +120,67 @@
   justify-content: center;
 }
 
-.alumni-advisors-professional-headshot {
+.alumniAdvisorsProfessionalHeadshot {
   max-width: 60%;
   height: auto;
   margin: 0 0 0 25%;
 }
 
-.alumni-advisor-info-container {
+.alumniAdvisorInfoContainer {
   background-color: #ffffff;
   padding: 2%;
   margin: 50% 20% 0 -45%;
 }
 
-.alumni-advisor-name {
+.alumniAdvisorName {
   font-size: 18px;
   font-family: 'Avenir';
 }
 
-.alumni-advisor-role {
+.alumniAdvisorRole {
   font-size: 14px;
   font-family: 'Avenir';
 }
 
-.alumni-advisor-type {
+.alumniAdvisorType {
   font-size: 13px;
   font-family: 'Avenir Light';
 }
 
-.alumni-mentors-container {
+.alumniMentorsContainer {
   background-color: #ffffff;
   display: flex;
 }
 
-.alumni-mentors-left-text-container {
+.alumniMentorsLeftTextContainer {
   flex: 30;
   padding: 5%;
   background-color: #15163f;
 }
 
-.alumni-mentors-heading {
+.alumniMentorsHeading {
   color: #ffffff;
 }
 
-.alumni-mentors-right-text-container {
+.alumniMentorsRightTextContainer {
   flex: 70;
   background-color: #ffffff;
   padding: 5%;
 }
 
-.alumni-supporting-mitech-container {
+.alumniSupportingMitechContainer {
   display: flex;
   align-items: flex-start;
   background-color: #f9f0ff;
   padding: 5%;
 }
 
-.alumni-supporting-mitech-left-img {
+.alumniSupportingMitechLeftImg {
   max-width: 100%;
   height: auto;
 }
 
-.alumni-supporting-mitech-right-text-container {
+.alumniSupportingMitechRightTextContainer {
   background-color: #ffffff;
   padding: 7%;
   margin: 5% 0 0 -20%;
