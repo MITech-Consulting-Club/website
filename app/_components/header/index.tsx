@@ -4,8 +4,11 @@ import styles from './header.module.scss';
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Route, routes } from './routes';
 import { usePathname } from 'next/navigation';
+
+import LOGO from '../assets/MITechLogo.png';
 
 export interface HeaderProps {}
 
@@ -31,10 +34,12 @@ export const Header = () => {
       <div className={styles.navbarContainer}>
         <div className="navbarLogo">
           <Link href="/">
-            <h2>
-              MITech Consulting
-              <br /> Club
-            </h2>
+            <Image
+              src={LOGO}
+              alt="MITech Consulting Club Logo"
+              width={150}
+              height={50}
+            />
           </Link>
         </div>
         <div className={styles.navbarRoutes}>
