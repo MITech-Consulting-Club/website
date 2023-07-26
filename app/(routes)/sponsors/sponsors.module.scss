@@ -1,0 +1,50 @@
+@import '@/app/_styles/theme.scss';
+@import '@/app/_styles/responsive.scss';
+
+.sponsorsTopContainer {
+  background-image: url(../../_assets/sponsorsBG.webp);
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsorsInterestContainer {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.sponsorsInterestLeftTextContainer {
+  flex: 50;
+  padding: 5%;
+  background-color: #15163f;
+}
+
+.sponsorsInterestHeading {
+  font-size: 56px;
+  color: #ffffff;
+}
+
+.sponsorsInterestHeadingDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  color: #ffffff;
+  margin-top: 5%;
+}
+
+.sponsorsInterestRightTextContainer {
+  flex: 50;
+  background-color: #ffffff;
+  padding: 5%;
+}
+
+.sponsorsInterestDescription1 {
+  font-size: 20px;
+  font-family: 'Avenir';
+}
+
+.sponsorsInterestDescription2 {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  margin-top: 3%;
+}
