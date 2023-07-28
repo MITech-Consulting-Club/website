@@ -5,7 +5,7 @@ const Sponsors = () => {
   return (
     <div>
       <div className={styles.sponsorsTopContainer}>
-        <h1>Sponsors & Partnerships</h1>
+        <h1 className={styles.sponsorsTopHeading}>Sponsors & Partnerships</h1>
       </div>
       <div className={styles.sponsorsInterestContainer}>
         <div className={styles.sponsorsInterestLeftTextContainer}>
