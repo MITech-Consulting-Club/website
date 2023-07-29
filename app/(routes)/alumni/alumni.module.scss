@@ -49,7 +49,7 @@
 }
 
 .alumniEngagementsDescription {
-  margin: 0 0 2% 0;
+  margin: 0 0 1% 0;
 }
 
 .alumniEngagementsCardsContainer {
@@ -60,9 +60,9 @@
 }
 
 .alumniEngagementsCard {
-  width: 20%;
+  width: 30%;
   height: 50%;
-  background: #e7e7eb;
+  background: #ececef;
   padding: 2%;
 
   display: flex;
@@ -80,7 +80,7 @@
 
 .cardTitle {
   font-size: 20px;
-  margin: 7% 0;
+  margin: 5% 0;
 }
 .cardDescription {
   font-size: 16px;
@@ -112,24 +112,26 @@
   margin: 3% 0;
 }
 
-.alumniAdvisorsCarouselContainer {
+.alumniAdvisorCarousel {
   flex: 40;
   background-image: linear-gradient(45.34deg, #da9bff 5.66%, #6f56f9 94.35%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
 .alumniAdvisorsProfessionalHeadshot {
-  max-width: 60%;
+  max-width: 50%;
   height: auto;
-  margin: 0 0 0 25%;
+  margin: 15% 0 0 25%;
+  position: relative;
+  z-index: 1;
 }
 
 .alumniAdvisorInfoContainer {
   background-color: #ffffff;
   padding: 2%;
-  margin: 50% 20% 0 -45%;
+  margin: -10% 10% 0 40%;
+  position: relative;
+  z-index: 2;
 }
 
 .alumniAdvisorName {
@@ -182,6 +184,10 @@
 
 .alumniSupportingMitechRightTextContainer {
   background-color: #ffffff;
-  padding: 7%;
+  padding: 5%;
   margin: 5% 0 0 -20%;
+}
+
+.alumniSupportingMitechDescription {
+  margin-top: 4%;
 }
