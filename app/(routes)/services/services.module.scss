@@ -1,0 +1,133 @@
+@import '@/app/_styles/theme.scss';
+@import '@/app/_styles/responsive.scss';
+
+.ourServicesContainer {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.ourServicesHeading {
+  font-size: 56px;
+}
+
+.ourServicesDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  text-align: center;
+  line-height: 1.8;
+  margin: 2% 20%;
+}
+
+.ourServicesCardsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.ourServicesCard {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourServicesTitle {
+  font-size: 16px;
+  font-family: 'Avenir';
+  text-align: center;
+}
+
+.projectStructureContainer {
+  background-color: #e7e7eb;
+  padding: 4%;
+}
+
+.projectStructureHeading {
+  font-size: 36px;
+  font-family: 'Avenir';
+  color: #682aa9;
+}
+
+.projectStructureDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  margin: 1% 10% 0 0;
+}
+
+.contactUsContainer {
+  background-image: url(../../_assets/graphLines.png);
+  //   background-color: #f7f1fe;
+  display: flex;
+}
+
+.leftTextContainer {
+  flex: 50;
+  padding: 5%;
+}
+
+.contactUsMiniHeading {
+  font-size: 16px;
+  font-family: 'Avenir';
+  color: #9e3ffd;
+}
+
+.contactUsHeading {
+  font-size: 36px;
+  font-family: 'Avenir';
+  margin: 2% 0;
+}
+
+.contactUsDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  line-height: 1.8;
+  margin-right: 10%;
+}
+
+.rightProfilesContainer {
+  flex: 50;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10%;
+}
+
+.profile {
+  position: relative;
+}
+
+.squareImageWrapper {
+  position: relative;
+  width: 183px;
+  height: 204px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.profileInfoContainer {
+  background-color: #ffffff;
+  padding: 5%;
+  margin: -20% -10% 0 20%;
+  position: relative;
+  z-index: 2;
+}
+
+.profileName {
+  font-size: 15px;
+  font-family: 'Avenir';
+  color: #000000;
+}
+
+.profileTitle,
+.profileEmail {
+  font-size: 14px;
+  font-family: 'Avenir Light';
+  color: #000000;
+}
