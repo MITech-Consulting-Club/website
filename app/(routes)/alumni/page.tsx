@@ -1,6 +1,18 @@
 'use client';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 import styles from './alumni.module.scss';
+import Image from 'next/image';
+import ADVISING from '@/app/_assets/advising.png';
+import NETWORK from '@/app/_assets/network.png';
+import EVENTS from '@/app/_assets/events.png';
+import ABSTRACT from '@/app/_assets/alumniAbstract.webp';
+
+import alumni from './alumni.json';
 
 const Alumni = () => {
   return (
@@ -24,9 +36,10 @@ const Alumni = () => {
         </p>
         <div className={styles.alumniEngagementsCardsContainer}>
           <div className={styles.alumniEngagementsCard}>
-            <img
-                className={styles.cardAvatar}
-              src="https://www.memphis.edu/healthsciences/images/twopeopleatdesk.png"
+            <Image
+              className={styles.cardAvatar}
+              src={ADVISING}
+              alt="advising image"
             />
             <div className={styles.cardTitle}>Advising</div>
             <div className={styles.cardDescription}>
@@ -36,9 +49,10 @@ const Alumni = () => {
             </div>
           </div>
           <div className={styles.alumniEngagementsCard}>
-            <img
-                className={styles.cardAvatar}
-              src="https://www.kweekcommunicatie.nl/wp-content/uploads/2021/11/74d63284938cb5b16e0efc1d1cf2-1625062.jpgd_-1.jpeg"
+            <Image
+              className={styles.cardAvatar}
+              src={NETWORK}
+              alt="networking image"
             />
             <div className={styles.cardTitle}>Network</div>
             <div className={styles.cardDescription}>
@@ -48,9 +62,10 @@ const Alumni = () => {
             </div>
           </div>
           <div className={styles.alumniEngagementsCard}>
-            <img
-                className={styles.cardAvatar}
-              src="https://png.pngtree.com/png-clipart/20190617/original/pngtree-hand-drawn-cartoon-2019-new-year-friends-gathering-new-years-png-image_3849295.jpg"
+            <Image
+              className={styles.cardAvatar}
+              src={EVENTS}
+              alt="events image"
             />
             <div className={styles.cardTitle}>Events</div>
             <div className={styles.cardDescription}>
@@ -80,21 +95,29 @@ const Alumni = () => {
             & Projects.
           </p>
         </div>
-        <div className={styles.alumniAdvisorsCarouselContainer}>
-          <img
-              className={styles.alumniAdvisorsProfessionalHeadshot}
-            src="https://static.wixstatic.com/media/bcc1c2_d97a40f653584d68ac0e13e647a0b511~mv2.jpg/v1/fill/w_287,h_323,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/SamKwei.jpg"
-          />
-          <div className={styles.alumniAdvisorInfoContainer}>
-            <h3 className={styles.alumniAdvisorName}>Sam Kwei '05</h3>
-            <h4 className={styles.alumniAdvisorRole}>
-              Staff Technical Account Manager at Google
-            </h4>
-            <p className={styles.alumniAdvisorType}>
-              Professional Development Advisor
-            </p>
-          </div>
-        </div>
+        <Swiper
+          navigation={true}
+          modules={[Navigation]}
+          className={styles.alumniAdvisorCarousel}
+        >
+          {alumni.advisors.map((advisor) => {
+            const imagePath = require(`@/app/_assets/${advisor.image}`);
+            return (
+              <SwiperSlide>
+                <Image
+                  className={styles.alumniAdvisorsProfessionalHeadshot}
+                  src={imagePath}
+                  alt="alumni advisor headshot"
+                />
+                <div className={styles.alumniAdvisorInfoContainer}>
+                  <h3 className={styles.alumniAdvisorName}>{advisor.name}</h3>
+                  <h4 className={styles.alumniAdvisorRole}>{advisor.role}</h4>
+                  <p className={styles.alumniAdvisorType}>{advisor.type}</p>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
       <div className={styles.alumniMentorsContainer}>
         <div className={styles.alumniMentorsLeftTextContainer}>
@@ -112,10 +135,11 @@ const Alumni = () => {
         </div>
       </div>
       <div className={styles.alumniSupportingMitechContainer}>
-        <img
-            className={styles.alumniSupportingMitechLeftImg}
-          src="https://static.wixstatic.com/media/11062b_916e6674cff64736acbf49ae13678e99~mv2.jpeg/v1/fill/w_976,h_362,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_916e6674cff64736acbf49ae13678e99~mv2.jpeg"
-        ></img>
+        <Image
+          className={styles.alumniSupportingMitechLeftImg}
+          src={ABSTRACT}
+          alt="abstract image"
+        />
         <div className={styles.alumniSupportingMitechRightTextContainer}>
           <h1 className={styles.alumniSupportingMitechHeading}>
             Supporting MITech

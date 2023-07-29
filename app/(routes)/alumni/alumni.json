@@ -1,0 +1,16 @@
+{
+  "advisors": [
+    {
+      "name": "Sam Kwei '05",
+      "role": "Staff Technical Account Manager at Google",
+      "type": "Professional Development Advisor",
+      "image": "sam.jpg"
+    },
+    {
+      "name": "Anthony Chen '09",
+      "role": "Senior Manager, Senior Lead Engineer at Capital One",
+      "type": "Member Education Advisor",
+      "image": "sam.jpg"
+    }
+  ]
+}
