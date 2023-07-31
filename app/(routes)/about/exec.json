@@ -1,0 +1,84 @@
+{
+  "team": [
+    {
+      "name": "Sophie Sun",
+      "role": "Co-President",
+      "image": "sophie.jpg"
+    },
+    {
+      "name": "Mannendri Olivares",
+      "role": "Co-President",
+      "image": "mannendri.jpg"
+    },
+    {
+      "name": "Alice Yu",
+      "role": "VP Internal",
+      "image": "alice.jpg"
+    },
+    {
+      "name": "Colin Clark",
+      "role": "VP External, Director of Member Education, Project Leader",
+      "image": "colin.jpg"
+    },
+    {
+      "name": "Nayeemur Rahman",
+      "role": "Director of Projects, Director of Alumni Relations, Project Leader",
+      "image": "nayeemur.jpg"
+    },
+    {
+      "name": "Kade Killeen",
+      "role": "Project Leader",
+      "image": "kade.jpg"
+    },
+    {
+      "name": "Ashley Williams",
+      "role": "Director of Corporate Relations",
+      "image": "ashley.jpg"
+    },
+    {
+      "name": "Selam Brook",
+      "role": "Director of Corporate Relations",
+      "image": "selam.jpg"
+    },
+    {
+      "name": "Karen Guo",
+      "role": "Director of Recruitment, Project Leader",
+      "image": "karen.jpg"
+    },
+    {
+      "name": "Maggie Yu",
+      "role": "Director of Recruitment",
+      "image": "maggie.jpg"
+    },
+    {
+      "name": "Brios Olivares",
+      "role": "Director of Publicity",
+      "image": "brios.jpg"
+    },
+    {
+      "name": "Steven Henry",
+      "role": "Director of Initiatives & Innovation",
+      "image": "steven.jpg"
+    },
+    {
+      "name": "Joseph Li",
+      "role": "Director of Events",
+      "image": "joseph.jpg"
+    },
+    {
+      "name": "Kush Khamesra",
+      "role": "Director of Events",
+      "image": "kush.jpg"
+    },
+    {
+      "name": "Alexandra Volkova",
+      "role": "Treasurer",
+      "image": "alexandra.jpg"
+    },
+    {
+      "name": "Momo Omotoso",
+      "role": "Secretary",
+      "image": "momo.jpg"
+    }
+  ]
+}
