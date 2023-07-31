@@ -7,10 +7,10 @@ import 'swiper/css/navigation';
 
 import styles from './alumni.module.scss';
 import Image from 'next/image';
-import ADVISING from '@/app/_assets/advising.png';
-import NETWORK from '@/app/_assets/network.png';
-import EVENTS from '@/app/_assets/events.png';
-import ABSTRACT from '@/app/_assets/alumniAbstract.webp';
+import ADVISING from '@/app/_assets/alumni/advising.png';
+import NETWORK from '@/app/_assets/alumni/network.png';
+import EVENTS from '@/app/_assets/alumni/events.png';
+import ABSTRACT from '@/app/_assets/alumni/alumniAbstract.webp';
 
 import alumni from './alumni.json';
 
@@ -101,7 +101,7 @@ const Alumni = () => {
           className={styles.alumniAdvisorCarousel}
         >
           {alumni.advisors.map((advisor) => {
-            const imagePath = require(`@/app/_assets/${advisor.image}`);
+            const imagePath = require(`@/app/_assets/alumni/advisorImages/${advisor.image}`);
             return (
               <SwiperSlide>
                 <Image
