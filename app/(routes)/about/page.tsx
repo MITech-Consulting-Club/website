@@ -7,7 +7,6 @@ import PROFESSIONADEVELOPMENT from '@/app/_assets/about/professionaldevelopment.
 import MENTORSHIP from '@/app/_assets/about/mentorship.jpeg';
 
 import exec from './exec.json';
-import SOPHIE from '@/app/_assets/about/execImages/sophie.jpg';
 
 const About = () => {
   return (
