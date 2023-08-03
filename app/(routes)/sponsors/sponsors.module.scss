@@ -3,10 +3,12 @@
 
 .sponsorsTopContainer {
   background-image: url(../../_assets/sponsorsBG.webp);
-  height: 50vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .sponsorsTopHeading {
