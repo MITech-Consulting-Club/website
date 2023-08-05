@@ -3,13 +3,6 @@ import React from 'react';
 import styles from './services.module.scss';
 import Image from 'next/image';
 
-// import CLOUD from '@/app/_assets/cloud.png';
-// import MOBILE from '@/app/_assets/mobile.png';
-// import CHART from '@/app/_assets/chart.png';
-// import SUITCASE from '@/app/_assets/suitcase.png';
-// import NAYEEMUR from '@/app/_assets/nayeemur.jpg';
-// import COLIN from '@/app/_assets/colin.jpg';
-
 const Services = () => {
   return (
     <div>
@@ -28,7 +21,6 @@ const Services = () => {
         <div className={styles.ourServicesCardsContainer}>
           <div className={styles.ourServicesCard}>
             <Image
-              // src={CLOUD}
               src="/services/cloud.png"
               alt="service"
               width={112.5}
@@ -39,7 +31,6 @@ const Services = () => {
           </div>
           <div className={styles.ourServicesCard}>
             <Image
-              // src={MOBILE}
               src="/services/mobile.png"
               alt="service"
               width={50}
@@ -50,7 +41,6 @@ const Services = () => {
           </div>
           <div className={styles.ourServicesCard}>
             <Image
-              // src={CHART}
               src="/services/chart.png"
               alt="service"
               width={100}
@@ -61,7 +51,6 @@ const Services = () => {
           </div>
           <div className={styles.ourServicesCard}>
             <Image
-              // src={SUITCASE}
               src="/services/suitcase.png"
               alt="service"
               width={100}
@@ -101,11 +90,10 @@ const Services = () => {
           <div className={styles.profile}>
             <div className={styles.squareImageWrapper}>
               <Image
-                // src={NAYEEMUR}
                 src="/services/nayeemur.jpg"
                 alt="profile"
                 layout="fill"
-                objectFit="cover"
+                objectFit="contain"
               />
             </div>
             <div className={styles.profileInfoContainer}>
@@ -118,7 +106,6 @@ const Services = () => {
           <div className={styles.profile}>
             <div className={styles.squareImageWrapper}>
               <Image
-                // src={COLIN}
                 src="/services/colin.jpg"
                 alt="profile"
                 layout="fill"
