@@ -91,6 +91,11 @@
   dependencies:
     "@reach/polymorphic" "0.18.0"
 
+"@remix-run/router@1.7.2":
+  "integrity" "sha512-7Lcn7IqGMV+vizMPoEl5F0XDshcdDYtMI6uJLQdQz5CfZAwy3vvGKYSUk789qndt5dEC4HfSjviSYlSoHGL2+A=="
+  "resolved" "https://registry.npmjs.org/@remix-run/router/-/router-1.7.2.tgz"
+  "version" "1.7.2"
+
 "@rushstack/eslint-patch@^1.1.3":
   "version" "1.3.2"
 
@@ -107,6 +112,11 @@
 
 "@types/estree@*":
   "version" "1.0.1"
+
+"@types/history@^4.7.11":
+  "integrity" "sha512-qjDJRrmvBMiTx+jyLxvLfJU7UznFuokDv4f3WRuriHKERccVpFU+8XMQUAbDzoiJCsmexxRExQeMwwCdamSKDA=="
+  "resolved" "https://registry.npmjs.org/@types/history/-/history-4.7.11.tgz"
+  "version" "4.7.11"
 
 "@types/json-schema@*", "@types/json-schema@^7.0.12":
   "version" "7.0.12"
@@ -126,6 +136,23 @@
 "@types/react-dom@18.2.7":
   "version" "18.2.7"
   dependencies:
+    "@types/react" "*"
+
+"@types/react-router-dom@^5.3.3":
+  "integrity" "sha512-kpqnYK4wcdm5UaWI3fLcELopqLrHgLqNsdpHauzlQktfkHL3npOSwtj1Uz9oKBAzs7lFtVkV8j83voAz2D8fhw=="
+  "resolved" "https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-5.3.3.tgz"
+  "version" "5.3.3"
+  dependencies:
+    "@types/history" "^4.7.11"
+    "@types/react" "*"
+    "@types/react-router" "*"
+
+"@types/react-router@*":
+  "integrity" "sha512-jGjmu/ZqS7FjSH6owMcD5qpq19+1RS9DeVRqfl1FeBMxTDQAGwlMWOcs52NDoXaNKyG3d1cYQFMs9rCrb88o9Q=="
+  "resolved" "https://registry.npmjs.org/@types/react-router/-/react-router-5.1.20.tgz"
+  "version" "5.1.20"
+  dependencies:
+    "@types/history" "^4.7.11"
     "@types/react" "*"
 
 "@types/react@*", "@types/react@18.2.15":
@@ -1210,7 +1237,9 @@
 "natural-compare@^1.4.0":
   "version" "1.4.0"
 
-"next@13.4.10":
+"next@^13.4.10":
+  "integrity" "sha512-4ep6aKxVTQ7rkUW2fBLhpBr/5oceCuf4KmlUpvG/aXuDTIf9mexNSpabUD6RWPspu6wiJJvozZREhXhueYO36A=="
+  "resolved" "https://registry.npmjs.org/next/-/next-13.4.10.tgz"
   "version" "13.4.10"
   dependencies:
     "@next/env" "13.4.10"
@@ -1387,7 +1416,9 @@
 "queue-microtask@^1.2.2":
   "version" "1.2.3"
 
-"react-dom@18.2.0":
+"react-dom@^18.2.0":
+  "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
+  "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
   dependencies:
     "loose-envify" "^1.1.0"
@@ -1399,7 +1430,24 @@
 "react-is@^16.13.1":
   "version" "16.13.1"
 
-"react@18.2.0":
+"react-router-dom@^6.14.2":
+  "integrity" "sha512-5pWX0jdKR48XFZBuJqHosX3AAHjRAzygouMTyimnBPOLdY3WjzUSKhus2FVMihUFWzeLebDgr4r8UeQFAct7Bg=="
+  "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.14.2.tgz"
+  "version" "6.14.2"
+  dependencies:
+    "@remix-run/router" "1.7.2"
+    "react-router" "6.14.2"
+
+"react-router@6.14.2":
+  "integrity" "sha512-09Zss2dE2z+T1D03IheqAFtK4UzQyX8nFPWx6jkwdYzGLXd5ie06A6ezS2fO6zJfEb/SpG6UocN2O1hfD+2urQ=="
+  "resolved" "https://registry.npmjs.org/react-router/-/react-router-6.14.2.tgz"
+  "version" "6.14.2"
+  dependencies:
+    "@remix-run/router" "1.7.2"
+
+"react@^18.2.0":
+  "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
+  "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
   dependencies:
     "loose-envify" "^1.1.0"

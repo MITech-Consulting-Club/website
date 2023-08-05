@@ -1,6 +1,7 @@
 'use client';
 import styles from './about.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import PROJECTS from '@/app/_assets/about/projects.jpeg';
 import PROFESSIONADEVELOPMENT from '@/app/_assets/about/professionaldevelopment.png';
@@ -108,7 +109,9 @@ const About = () => {
           special community. Found out more about our recruitment cycle and how
           to become part of the team.
         </p>
-        <button className={styles.joinUsButton}>Visit Here</button>
+        <Link href="/joinUs" className={styles.joinUsButton}>
+          Visit Here
+        </Link>
       </div>
     </div>
   );
