@@ -47,16 +47,20 @@
 "@humanwhocodes/object-schema@^1.2.1":
   "version" "1.2.1"
 
-"@next/env@13.4.10":
-  "version" "13.4.10"
+"@next/env@13.4.12":
+  "integrity" "sha512-RmHanbV21saP/6OEPBJ7yJMuys68cIf8OBBWd7+uj40LdpmswVAwe1uzeuFyUsd6SfeITWT3XnQfn6wULeKwDQ=="
+  "resolved" "https://registry.npmjs.org/@next/env/-/env-13.4.12.tgz"
+  "version" "13.4.12"
 
 "@next/eslint-plugin-next@13.4.10":
   "version" "13.4.10"
   dependencies:
     "glob" "7.1.7"
 
-"@next/swc-darwin-arm64@13.4.10":
-  "version" "13.4.10"
+"@next/swc-darwin-arm64@13.4.12":
+  "integrity" "sha512-deUrbCXTMZ6ZhbOoloqecnUeNpUOupi8SE2tx4jPfNS9uyUR9zK4iXBvH65opVcA/9F5I/p8vDXSYbUlbmBjZg=="
+  "resolved" "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.4.12.tgz"
+  "version" "13.4.12"
 
 "@nodelib/fs.scandir@2.1.5":
   "version" "2.1.5"
@@ -1237,12 +1241,12 @@
 "natural-compare@^1.4.0":
   "version" "1.4.0"
 
-"next@^13.4.10":
-  "integrity" "sha512-4ep6aKxVTQ7rkUW2fBLhpBr/5oceCuf4KmlUpvG/aXuDTIf9mexNSpabUD6RWPspu6wiJJvozZREhXhueYO36A=="
-  "resolved" "https://registry.npmjs.org/next/-/next-13.4.10.tgz"
-  "version" "13.4.10"
+"next@^13.4.12":
+  "integrity" "sha512-eHfnru9x6NRmTMcjQp6Nz0J4XH9OubmzOa7CkWL+AUrUxpibub3vWwttjduu9No16dug1kq04hiUUpo7J3m3Xw=="
+  "resolved" "https://registry.npmjs.org/next/-/next-13.4.12.tgz"
+  "version" "13.4.12"
   dependencies:
-    "@next/env" "13.4.10"
+    "@next/env" "13.4.12"
     "@swc/helpers" "0.5.1"
     "busboy" "1.6.0"
     "caniuse-lite" "^1.0.30001406"
@@ -1251,15 +1255,15 @@
     "watchpack" "2.4.0"
     "zod" "3.21.4"
   optionalDependencies:
-    "@next/swc-darwin-arm64" "13.4.10"
-    "@next/swc-darwin-x64" "13.4.10"
-    "@next/swc-linux-arm64-gnu" "13.4.10"
-    "@next/swc-linux-arm64-musl" "13.4.10"
-    "@next/swc-linux-x64-gnu" "13.4.10"
-    "@next/swc-linux-x64-musl" "13.4.10"
-    "@next/swc-win32-arm64-msvc" "13.4.10"
-    "@next/swc-win32-ia32-msvc" "13.4.10"
-    "@next/swc-win32-x64-msvc" "13.4.10"
+    "@next/swc-darwin-arm64" "13.4.12"
+    "@next/swc-darwin-x64" "13.4.12"
+    "@next/swc-linux-arm64-gnu" "13.4.12"
+    "@next/swc-linux-arm64-musl" "13.4.12"
+    "@next/swc-linux-x64-gnu" "13.4.12"
+    "@next/swc-linux-x64-musl" "13.4.12"
+    "@next/swc-win32-arm64-msvc" "13.4.12"
+    "@next/swc-win32-ia32-msvc" "13.4.12"
+    "@next/swc-win32-x64-msvc" "13.4.12"
 
 "normalize-path@^3.0.0", "normalize-path@~3.0.0":
   "version" "3.0.0"

@@ -3,10 +3,6 @@ import styles from './about.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import PROJECTS from '@/app/_assets/about/projects.jpeg';
-import PROFESSIONADEVELOPMENT from '@/app/_assets/about/professionaldevelopment.png';
-import MENTORSHIP from '@/app/_assets/about/mentorship.jpeg';
-
 import exec from './exec.json';
 
 const About = () => {
@@ -37,8 +33,11 @@ const About = () => {
           <div className={styles.initiativesCard}>
             <Image
               className={styles.cardAvatar}
-              src={PROJECTS}
+              src="/about/projects.jpeg"
               alt="projects image"
+              width={100}
+              height={100}
+              unoptimized
             />
             <div className={styles.cardTitle}>Projects</div>
             <div className={styles.cardDescription}>
@@ -51,8 +50,11 @@ const About = () => {
           <div className={styles.initiativesCard}>
             <Image
               className={styles.cardAvatar}
-              src={PROFESSIONADEVELOPMENT}
+              src="/about/professionalDevelopment.png"
               alt="professional development image"
+              width={100}
+              height={100}
+              unoptimized
             />
             <div className={styles.cardTitle}>Professional Development</div>
             <div className={styles.cardDescription}>
@@ -64,8 +66,11 @@ const About = () => {
           <div className={styles.initiativesCard}>
             <Image
               className={styles.cardAvatar}
-              src={MENTORSHIP}
+              src="/about/mentorship.jpeg"
               alt="mentorship image"
+              width={100}
+              height={100}
+              unoptimized
             />
             <div className={styles.cardTitle}>Mentorship & Community</div>
             <div className={styles.cardDescription}>
@@ -84,12 +89,13 @@ const About = () => {
         </h6>
         <div className={styles.teamPhotosContainer}>
           {exec.team.map((member) => {
-            const imagePath = require(`@/app/_assets/about/execImages/${member.image}`);
             return (
               <div className={styles.execProfile}>
                 <Image
-                  src={imagePath}
+                  src={`/about/execImages/${member.image}`}
                   alt="exec image"
+                  width={300}
+                  height={300}
                   className={styles.execHeadshot}
                 />
                 <div className={styles.execInfoContainer}>
