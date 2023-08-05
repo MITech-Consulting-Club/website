@@ -1,18 +1,16 @@
 import styles from './joinUs.module.scss';
 import Image from 'next/image';
 
-import SPONSORSBG from '@/app/_assets/sponsorsBG.webp';
-import MAGGIE from '@/app/_assets//about/execImages/maggie.jpg';
-import KAREN from '@/app/_assets//about/execImages/karen.jpg';
-
 const joinUs = () => {
   return (
     <div>
       <div className={styles.getInvolvedContainer}>
         <Image
           className={styles.getInvolvedImage}
-          src={SPONSORSBG}
+          src="/sponsors/sponsorsBG.webp"
           alt="abstract image"
+          fill
+          objectFit="contain"
         />
         <div className={styles.getInvolvedTextContainer}>
           <h1 className={styles.getInvolvedHeading}>Get Involved</h1>
@@ -95,8 +93,10 @@ const joinUs = () => {
         <div className={styles.directorsProfilesContainer}>
           <div className={styles.directorProfile}>
             <Image
-              src={MAGGIE}
+              src="/about/execImages/maggie.jpg"
               alt="director image"
+              width={100}
+              height={100}
               className={styles.directorHeadshot}
             />
             <div className={styles.directorInfoContainer}>
@@ -107,8 +107,10 @@ const joinUs = () => {
 
           <div className={styles.directorProfile}>
             <Image
-              src={KAREN}
+              src="/about/execImages/karen.jpg"
               alt="director image"
+              width={100}
+              height={100}
               className={styles.directorHeadshot}
             />
             <div className={styles.directorInfoContainer}>

@@ -55,7 +55,6 @@
 
 .alumniEngagementsCardsContainer {
   display: flex;
-  // align-items: center;
   flex-direction: row;
   justify-content: center;
 }
@@ -73,8 +72,6 @@
 }
 
 .cardAvatar {
-  height: 100px;
-  width: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -120,10 +117,10 @@
 }
 
 .alumniAdvisorsProfessionalHeadshot {
-  max-width: 50%;
-  height: auto;
   margin: 15% 0 0 25%;
   position: relative;
+  width: 50%;
+  aspect-ratio: 1/1;
   z-index: 1;
 }
 
@@ -176,17 +173,24 @@
   align-items: flex-start;
   background-color: #f9f0ff;
   padding: 5%;
+  position: relative;
 }
 
 .alumniSupportingMitechLeftImg {
-  max-width: 100%;
-  height: auto;
+  flex: 50;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: -18% 0 0 0;
+  z-index: 1;
 }
 
 .alumniSupportingMitechRightTextContainer {
+  flex: 50;
   background-color: #ffffff;
   padding: 5%;
   margin: 5% 0 0 -20%;
+  z-index: 2;
 }
 
 .alumniSupportingMitechDescription {
