@@ -12,6 +12,7 @@
   "dependencies": {
     "@reach/skip-nav": "^0.18.0",
     "@types/react-router-dom": "^5.3.3",
+    "@types/swiper": "^6.0.0",
     "next": "^13.4.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
