@@ -1,0 +1,177 @@
+@import '@/app/_styles/theme.scss';
+@import '@/app/_styles/responsive.scss';
+
+.getInvolvedContainer {
+  background-color: #ececef;
+  display: flex;
+  align-items: flex-start;
+  padding: 5%;
+}
+
+.getInvolvedImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.getInvolvedTextContainer {
+  background-color: #ffffff;
+  padding: 5%;
+  margin: 5% 0 0 -20%;
+}
+
+.getInvolvedHeading {
+  font-size: 56px;
+  font-family: 'Avenir';
+}
+
+.getInvolvedDescription {
+  font-size: 16px;
+  font-family: 'Avenir Light';
+  line-height: 1.8;
+  margin-top: 4%;
+}
+
+.lookForContainer {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.lookForLeftTextContainer {
+  flex: 30;
+  padding: 5%;
+  background-color: #15163f;
+}
+
+.lookForHeading {
+  font-size: 56px;
+  color: #ffffff;
+}
+
+.lookForRightTextContainer {
+  flex: 70;
+  background-color: #ffffff;
+  padding: 5%;
+}
+
+.lookForMiniHeading {
+  font-size: 20px;
+  font-family: 'Avenir';
+}
+
+.lookForDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  line-height: 1.8;
+  margin: 2% 5% 0 0;
+}
+
+.questionsContainer {
+  background-color: #ececef;
+  padding: 5%;
+}
+
+.questionsCardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
+}
+
+.questionsCard {
+  background-color: #ffffff;
+  width: 20%;
+  padding: 5% 2% 2% 2%;
+  text-align: center;
+}
+
+.cardHeading {
+  font-size: 20px;
+  font-family: 'Avenir';
+  margin-bottom: 4%;
+}
+
+.cardDescription {
+  font-size: 16px;
+  font-family: 'Avenir Light';
+  line-height: 1.8;
+}
+
+.directorsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3% 20%;
+}
+
+.directorsHeading {
+  font-size: 36px;
+  text-align: center;
+}
+
+.directorsDescription {
+  font-size: 16px;
+  font-family: 'Avenir Light';
+  text-align: center;
+  margin: 2% 0 4% 0;
+}
+
+.directorsProfilesContainer {
+  background-color: #ececef;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.directorProfile {
+  width: 20%;
+  height: auto;
+  margin: 5% 8%;
+  position: relative;
+}
+
+.directorHeadshot {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.directorInfoContainer {
+  background-color: #ffffff;
+  padding: 5%;
+  margin: -20% 0 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+.directorName {
+  font-size: 20px;
+  font-family: 'Avenir';
+}
+
+.directorRole {
+  font-size: 16px;
+  font-family: 'Avenir Light';
+}
+
+.joinCommunity {
+  background-color: #101c45;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4%;
+  color: #ffffff;
+}
+
+.joinCommunityHeading {
+  font-size: 56px;
+}
+
+.joinCommunityDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  margin-top: 2%;
+  padding: 0 20%;
+  text-align: center;
+}

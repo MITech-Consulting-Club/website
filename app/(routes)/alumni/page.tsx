@@ -2,16 +2,11 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import Image from 'next/image';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
-
 import styles from './alumni.module.scss';
-import Image from 'next/image';
-import ADVISING from '@/app/_assets/alumni/advising.png';
-import NETWORK from '@/app/_assets/alumni/network.png';
-import EVENTS from '@/app/_assets/alumni/events.png';
-import ABSTRACT from '@/app/_assets/alumni/alumniAbstract.webp';
-
 import alumni from './alumni.json';
 
 const Alumni = () => {
@@ -38,8 +33,11 @@ const Alumni = () => {
           <div className={styles.alumniEngagementsCard}>
             <Image
               className={styles.cardAvatar}
-              src={ADVISING}
+              src="/alumni/advising.png"
               alt="advising image"
+              width={100}
+              height={100}
+              unoptimized
             />
             <div className={styles.cardTitle}>Advising</div>
             <div className={styles.cardDescription}>
@@ -51,8 +49,11 @@ const Alumni = () => {
           <div className={styles.alumniEngagementsCard}>
             <Image
               className={styles.cardAvatar}
-              src={NETWORK}
+              src="/alumni/network.png"
               alt="networking image"
+              width={100}
+              height={100}
+              unoptimized
             />
             <div className={styles.cardTitle}>Network</div>
             <div className={styles.cardDescription}>
@@ -64,8 +65,11 @@ const Alumni = () => {
           <div className={styles.alumniEngagementsCard}>
             <Image
               className={styles.cardAvatar}
-              src={EVENTS}
+              src="/alumni/events.png"
               alt="events image"
+              width={100}
+              height={100}
+              unoptimized
             />
             <div className={styles.cardTitle}>Events</div>
             <div className={styles.cardDescription}>
@@ -101,14 +105,16 @@ const Alumni = () => {
           className={styles.alumniAdvisorCarousel}
         >
           {alumni.advisors.map((advisor) => {
-            const imagePath = require(`@/app/_assets/alumni/advisorImages/${advisor.image}`);
             return (
               <SwiperSlide>
-                <Image
-                  className={styles.alumniAdvisorsProfessionalHeadshot}
-                  src={imagePath}
-                  alt="alumni advisor headshot"
-                />
+                <div className={styles.alumniAdvisorsProfessionalHeadshot}>
+                  <Image
+                    src={`/alumni/advisorImages/${advisor.image}`}
+                    alt="alumni advisor headshot"
+                    fill
+                    objectFit="contain"
+                  />
+                </div>
                 <div className={styles.alumniAdvisorInfoContainer}>
                   <h3 className={styles.alumniAdvisorName}>{advisor.name}</h3>
                   <h4 className={styles.alumniAdvisorRole}>{advisor.role}</h4>
@@ -135,11 +141,14 @@ const Alumni = () => {
         </div>
       </div>
       <div className={styles.alumniSupportingMitechContainer}>
-        <Image
-          className={styles.alumniSupportingMitechLeftImg}
-          src={ABSTRACT}
-          alt="abstract image"
-        />
+        <div className={styles.alumniSupportingMitechLeftImg}>
+          <Image
+            src="/alumni/alumniAbstract.webp"
+            alt="abstract image"
+            fill
+            objectFit="contain"
+          />
+        </div>
         <div className={styles.alumniSupportingMitechRightTextContainer}>
           <h1 className={styles.alumniSupportingMitechHeading}>
             Supporting MITech

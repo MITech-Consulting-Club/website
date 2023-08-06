@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md';
 import Link from 'next/link';
 import { Route, routes } from './routes';
 import { usePathname } from 'next/navigation';
-import logo from '@/app/_assets/logo.png';
+import logo from '@/public/logo.png';
 
 export interface HeaderProps {}
 
