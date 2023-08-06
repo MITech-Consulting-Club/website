@@ -141,14 +141,14 @@ const Alumni = () => {
         </div>
       </div>
       <div className={styles.alumniSupportingMitechContainer}>
-        <div className={styles.alumniSupportingMitechLeftImg}>
+        {/* <div className={styles.alumniSupportingMitechLeftImg}>
           <Image
             src="/alumni/alumniAbstract.webp"
             alt="abstract image"
             fill
             objectFit="contain"
           />
-        </div>
+        </div> */}
         <div className={styles.alumniSupportingMitechRightTextContainer}>
           <h1 className={styles.alumniSupportingMitechHeading}>
             Supporting MITech

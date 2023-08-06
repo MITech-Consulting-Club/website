@@ -1,17 +1,10 @@
-import styles from './joinUs.module.scss';
+import styles from './join.module.scss';
 import Image from 'next/image';
 
 const joinUs = () => {
   return (
     <div>
       <div className={styles.getInvolvedContainer}>
-        <Image
-          className={styles.getInvolvedImage}
-          src="/sponsors/sponsorsBG.webp"
-          alt="abstract image"
-          fill
-          objectFit="contain"
-        />
         <div className={styles.getInvolvedTextContainer}>
           <h1 className={styles.getInvolvedHeading}>Get Involved</h1>
           <p className={styles.getInvolvedDescription}>
@@ -95,8 +88,8 @@ const joinUs = () => {
             <Image
               src="/about/execImages/maggie.jpg"
               alt="director image"
-              width={100}
-              height={100}
+              width={500}
+              height={500}
               className={styles.directorHeadshot}
             />
             <div className={styles.directorInfoContainer}>
@@ -109,8 +102,8 @@ const joinUs = () => {
             <Image
               src="/about/execImages/karen.jpg"
               alt="director image"
-              width={100}
-              height={100}
+              width={500}
+              height={500}
               className={styles.directorHeadshot}
             />
             <div className={styles.directorInfoContainer}>

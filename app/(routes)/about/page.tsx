@@ -115,7 +115,7 @@ const About = () => {
           special community. Found out more about our recruitment cycle and how
           to become part of the team.
         </p>
-        <Link href="/joinUs" className={styles.joinUsButton}>
+        <Link href="/join" className={styles.joinUsButton}>
           Visit Here
         </Link>
       </div>

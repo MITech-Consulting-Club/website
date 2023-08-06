@@ -2,10 +2,12 @@
 @import '@/app/_styles/responsive.scss';
 
 .getInvolvedContainer {
-  background-color: #ececef;
+  background-image: url(/sponsors/sponsorsBG.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: flex-start;
-  padding: 5%;
+  padding: 5% 19%;
 }
 
 .getInvolvedImage {
@@ -15,8 +17,9 @@
 
 .getInvolvedTextContainer {
   background-color: #ffffff;
-  padding: 5%;
-  margin: 5% 0 0 -20%;
+  text-align: center;
+  padding: 5% 25%;
+  opacity: 0.8;
 }
 
 .getInvolvedHeading {
@@ -28,7 +31,7 @@
   font-size: 16px;
   font-family: 'Avenir Light';
   line-height: 1.8;
-  margin-top: 4%;
+  margin-top: 2%;
 }
 
 .lookForContainer {
@@ -123,16 +126,16 @@
 }
 
 .directorProfile {
-  width: 20%;
+  width: 28%;
   height: auto;
-  margin: 5% 8%;
+  margin: 5% 4%;
   position: relative;
 }
 
 .directorHeadshot {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+  width: 100% !important;
+  height: 350px !important;
+  object-fit: fill;
   position: relative;
   z-index: 1;
 }
@@ -140,7 +143,7 @@
 .directorInfoContainer {
   background-color: #ffffff;
   padding: 5%;
-  margin: -20% 0 0 0;
+  margin: -15% -7% 0 20%;
   position: relative;
   z-index: 2;
 }
