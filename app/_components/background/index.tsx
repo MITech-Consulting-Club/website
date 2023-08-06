@@ -29,6 +29,7 @@ export const BackgroundGraph = ({ isAnimated }: BackgroundGraphProps) => {
       if (isAnimated) {
         increment += 0.5;
       }
+      // TODO Optimize animation to stop crashing
       animationFrameId = window.requestAnimationFrame(render);
     };
     render();
@@ -42,6 +43,7 @@ export const BackgroundGraph = ({ isAnimated }: BackgroundGraphProps) => {
       height="100vh"
       style={{
         // TODO Get rid of inline styles
+        zIndex: -1,
         position: 'absolute',
         top: 0,
         backgroundColor: '#f7f1fe',
