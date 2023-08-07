@@ -24,7 +24,7 @@
 }
 
 .headerLink {
-  font-size: 20px;
+  font-size: 15px;
   padding: 15px 25px;
   border-radius: 40px;
   background-color: $primary;
@@ -43,12 +43,14 @@
 
 .servicesSubtitle {
   font-size: 16px;
+  font-family: 'Avenir Light';
   color: $primary;
 }
 
 .servicesTitle {
   font-size: 36px;
-  margin: 10px 0;
+  font-family: 'Avenir';
+  margin: 2% 0;
 }
 
 .servicesGallery {
@@ -57,7 +59,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 5px;
 }
 
 .servicesGalleryItem {
@@ -66,7 +68,7 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  width: 250px;
+  width: 300px;
   margin: 25px;
 }
 
@@ -78,9 +80,58 @@
 
 .servicesGalleryItemTitle {
   font-size: 16px;
+  font-family: 'Avenir';
   margin: 10px 0;
 }
 
 .servicesGalleryItemDescription {
   font-size: 18px;
+  font-family: 'Avenir Light';
+}
+
+.servicesLink {
+  font-size: 15px;
+  padding: 15px 25px;
+  border-radius: 40px;
+  background-color: $primary;
+  color: $background;
+  margin-top: 40px;
+}
+
+.sponsorsInterestContainer {
+  background-color: white;
+  display: flex;
+}
+
+.leftTextContainer {
+  flex: 30;
+  background-color: #16163f;
+  color: white;
+  padding: 5%;
+}
+
+.sponsorsInterestHeading {
+  font-size: 56px;
+}
+
+.sponsorsInterestHeadingDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  margin-top: 5%;
+}
+
+.rightTextContainer {
+  flex: 70;
+  padding: 5%;
+}
+
+.sponsorsInterestDescription1 {
+  font-size: 20px;
+  font-family: 'Avenir';
+}
+
+.sponsorsInterestDescription2 {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  margin-top: 3%;
 }
