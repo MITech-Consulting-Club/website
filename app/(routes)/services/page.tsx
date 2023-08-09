@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from './services.module.scss';
 import Image from 'next/image';
+import { BsLinkedin } from 'react-icons/bs';
 
 const Services = () => {
   return (
@@ -100,6 +101,13 @@ const Services = () => {
               <h5 className={styles.profileName}>Nayeemur Rahman</h5>
               <p className={styles.profileTitle}>Director of Projects</p>
               <p className={styles.profileEmail}>nayeem31@mit.edu</p>
+              <a
+                href="https://www.linkedin.com/in/nayeemurrahman/"
+                target="_blank"
+                className={styles.socialIcon}
+              >
+                <BsLinkedin />
+              </a>
             </div>
           </div>
 
@@ -116,6 +124,13 @@ const Services = () => {
               <h5 className={styles.profileName}>Colin Clark</h5>
               <p className={styles.profileTitle}>VP External</p>
               <p className={styles.profileEmail}>colclark@mit.edu</p>
+              <a
+                href="https://www.linkedin.com/in/superc03/"
+                target="_blank"
+                className={styles.socialIcon}
+              >
+                <BsLinkedin />
+              </a>
             </div>
           </div>
         </div>

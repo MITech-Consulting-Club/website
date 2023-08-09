@@ -2,7 +2,7 @@
 @import '@/app/_styles/responsive.scss';
 
 .teamContainer {
-  background-image: url(/about/aboutBG.webp);
+  background-color: #f8f0ff;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5% 20%;
@@ -83,7 +83,7 @@
 }
 
 .meetTeamContainer {
-  background-color: #ececef;
+  background-image: url(/services/graphLines.png);
   display: flex;
   align-items: center;
   flex-direction: column;

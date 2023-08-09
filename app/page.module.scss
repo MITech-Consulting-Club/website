@@ -98,28 +98,33 @@
   margin-top: 40px;
 }
 
-.aboutContainer {
+.aboutContainer,
+.contactContainer {
   display: flex;
 }
 
-.aboutLeftTextContainer {
+.aboutLeftTextContainer,
+.contactLeftTextContainer {
   flex: 50;
   padding: 10%;
 }
 
-.aboutSubHeading {
+.aboutSubHeading,
+.contactSubHeading {
   font-size: 16px;
   font-family: 'Avenir';
   color: $primary;
 }
 
-.aboutHeading {
+.aboutHeading,
+.contactHeading {
   font-size: 36px;
   font-family: 'Avenir';
   margin: 4% 0;
 }
 
-.aboutDescription {
+.aboutDescription,
+.contactDescription {
   font-size: 18px;
   font-family: 'Avenir Light';
   line-height: 1.8;
@@ -134,11 +139,13 @@
   color: $background;
 }
 
-.aboutImageContainer {
+.aboutImageContainer,
+.contactImageContainer {
   flex: 50;
 }
 
-.aboutImage {
+.aboutImage,
+.contactImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -279,4 +286,46 @@
   font-size: 18px;
   font-family: 'Avenir Light';
   margin-top: 3%;
+}
+
+.contactLeftTextContainer {
+  background-image: url(/services/graphLines.png);
+}
+
+.contactSocials {
+  margin-bottom: 4%;
+}
+
+.socialIcon {
+  font-size: 25px;
+  margin: 10px;
+  transition: color 0.3s;
+}
+
+.socialIcon:hover {
+  color: $primary;
+}
+
+.contactForm {
+  font-size: 24px;
+  font-family: 'Avenir Light';
+  text-decoration: underline;
+  margin: 2% 0;
+}
+
+.communityContainer {
+  background-color: $dark;
+  padding: 4% 15%;
+  color: white;
+  text-align: center;
+}
+
+.communityHeading {
+  font-size: 56px;
+  margin-bottom: 2%;
+}
+
+.communityDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
 }

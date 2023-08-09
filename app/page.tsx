@@ -8,6 +8,8 @@ import {
   TbCloudCog,
   TbDeviceMobileCog,
 } from 'react-icons/tb';
+import { BsInstagram, BsLinkedin } from 'react-icons/bs';
+import { MdEmail } from 'react-icons/md';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -128,7 +130,7 @@ export default function Home() {
             interests, majors, and backgrounds with people involved in many
             different activities across campus.
           </p>
-          <Link href="/about" className={styles.aboutLink}>
+          <Link href="/about#meetTeam" className={styles.aboutLink}>
             Learn More
           </Link>
         </div>
@@ -190,8 +192,83 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="contact"></section>
-      <section id="community"></section>
+      <section id="contact">
+        <div className={styles.contactContainer}>
+          <div className={styles.contactLeftTextContainer}>
+            <h6 className={styles.contactSubHeading}>Contact Us</h6>
+            <h4 className={styles.contactHeading}>Get in Touch</h4>
+            <p className={styles.contactDescription}>
+              Want to learn more about us, what we do, and our services? Visit
+              pages dedicated to your interests and fill out the forms below; we
+              will get back to you as soon as we can to schedule a call to see
+              how we can best work together!
+            </p>
+
+            <div className={styles.contactSocials}>
+              <a
+                href="https://www.linkedin.com/company/mitech-consulting-club/"
+                target="_blank"
+                className={styles.socialIcon}
+              >
+                <BsLinkedin />
+              </a>
+              <a
+                href="https://www.instagram.com/mitechconsulting/"
+                target="_blank"
+                style={{ fontSize: 25 }}
+                className={styles.socialIcon}
+              >
+                <BsInstagram />
+              </a>
+              <a
+                href="mailto:mitech-exec@mit.edu"
+                target="_blank"
+                className={styles.socialIcon}
+              >
+                <MdEmail />
+              </a>
+            </div>
+
+            <a
+              href="https://forms.gle/SnicvC9TUVHBG2t6A"
+              target="_blank"
+              className={styles.contactForm}
+            >
+              Client/Project Interest Form
+            </a>
+            <p className={styles.contactForm}>
+              Corporate Sponsor Interest Form
+            </p>
+            <a
+              href="https://forms.gle/ybUAHDBbNmAP82Dr9"
+              target="_blank"
+              className={styles.contactForm}
+            >
+              Alumni Interest Form
+            </a>
+          </div>
+
+          <div className={styles.contactImageContainer}>
+            <Image
+              src="/sponsors/sponsorsBG.webp"
+              alt="background image"
+              width={500}
+              height={500}
+              className={styles.contactImage}
+              unoptimized
+            />
+          </div>
+        </div>
+      </section>
+      <section id="community">
+        <div className={styles.communityContainer}>
+          <h1 className={styles.communityHeading}>Join Our Community</h1>
+          <p className={styles.communityDescription}>
+            Join our email list to stay updated on our events and receive our
+            newsletters.
+          </p>
+        </div>
+      </section>
     </>
   );
 }

@@ -82,31 +82,33 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className={styles.meetTeamContainer}>
-        <h2 className={styles.meetTeamHeading}>Meet Our Executive Team</h2>
-        <h6 className={styles.meetTeamDescription}>
-          What makes MITech so special
-        </h6>
-        <div className={styles.teamPhotosContainer}>
-          {exec.team.map((member) => {
-            return (
-              <div className={styles.execProfile}>
-                <Image
-                  src={`/about/execImages/${member.image}`}
-                  alt="exec image"
-                  width={300}
-                  height={300}
-                  className={styles.execHeadshot}
-                />
-                <div className={styles.execInfoContainer}>
-                  <h3 className={styles.execName}>{member.name}</h3>
-                  <h4 className={styles.execRole}>{member.role}</h4>
+      <section id="meetTeam">
+        <div className={styles.meetTeamContainer}>
+          <h2 className={styles.meetTeamHeading}>Meet Our Executive Team</h2>
+          <h6 className={styles.meetTeamDescription}>
+            What makes MITech so special
+          </h6>
+          <div className={styles.teamPhotosContainer}>
+            {exec.team.map((member) => {
+              return (
+                <div className={styles.execProfile}>
+                  <Image
+                    src={`/about/execImages/${member.image}`}
+                    alt="exec image"
+                    width={300}
+                    height={300}
+                    className={styles.execHeadshot}
+                  />
+                  <div className={styles.execInfoContainer}>
+                    <h3 className={styles.execName}>{member.name}</h3>
+                    <h4 className={styles.execRole}>{member.role}</h4>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
+      </section>
       <div className={styles.joinUsContainer}>
         <h3 className={styles.joinUsHeading}>Interested in Joining Us?</h3>
         <p className={styles.joinUsDescription}>

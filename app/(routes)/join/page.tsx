@@ -17,7 +17,6 @@ const joinUs = () => {
           </p>
         </div>
       </div>
-
       <div className={styles.lookForContainer}>
         <div className={styles.lookForLeftTextContainer}>
           <h1 className={styles.lookForHeading}>Who Do We Look For?</h1>
@@ -37,7 +36,6 @@ const joinUs = () => {
           </p>
         </div>
       </div>
-
       <div className={styles.questionsContainer}>
         <div className={styles.questionsCardsContainer}>
           <div className={styles.questionsCard}>
@@ -82,7 +80,6 @@ const joinUs = () => {
           </div>
         </div>
       </div>
-
       <div className={styles.directorsContainer}>
         <h1 className={styles.directorsHeading}>
           Meet Our Directors of Recruitment!
@@ -105,7 +102,6 @@ const joinUs = () => {
               <h4 className={styles.directorRole}>Director of Recruitment</h4>
             </div>
           </div>
-
           <div className={styles.directorProfile}>
             <Image
               src="/about/execImages/karen.jpg"
@@ -121,7 +117,6 @@ const joinUs = () => {
           </div>
         </div>
       </div>
-
       <div className={styles.joinCommunity}>
         <h1 className={styles.joinCommunityHeading}>Join Our Community</h1>
         <p className={styles.joinCommunityDescription}>
