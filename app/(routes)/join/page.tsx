@@ -41,6 +41,8 @@ const joinUs = () => {
       <div className={styles.questionsContainer}>
         <div className={styles.questionsCardsContainer}>
           <div className={styles.questionsCard}>
+            <div className={styles.numberCircle}>1</div>
+
             <h5 className={styles.cardHeading}>
               Do I have to be a Course 6 to join MITech?
             </h5>
@@ -53,6 +55,8 @@ const joinUs = () => {
             </p>
           </div>
           <div className={styles.questionsCard}>
+            <div className={styles.numberCircle}>2</div>
+
             <h5 className={styles.cardHeading}>
               What about prior experiences?
             </h5>
@@ -63,6 +67,8 @@ const joinUs = () => {
             </p>
           </div>
           <div className={styles.questionsCard}>
+            <div className={styles.numberCircle}>3</div>
+
             <h5 className={styles.cardHeading}>
               Eh, I don't even know how to code at all...
             </h5>

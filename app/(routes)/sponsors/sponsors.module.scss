@@ -55,3 +55,72 @@
   font-family: 'Avenir Light';
   margin-top: 3%;
 }
+
+.packagesContainer {
+  background-color: #ececef;
+  padding: 5%;
+}
+
+.packagesCardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
+}
+
+.silverCard,
+.goldCard,
+.platinumCard {
+  background-color: #ffffff;
+  width: 20%;
+  padding: 5% 2% 2% 2%;
+  position: relative;
+}
+
+.silverCard {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+.goldCard {
+  background-color: #ffdfaa;
+  background-image: linear-gradient(315deg, #ffdfaa 0%, #fff6bf 74%);
+}
+
+.platinumCard {
+  background-color: #fee2f8;
+  background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+}
+
+.numberCircle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  background: #ffffff;
+  margin: 0 auto;
+  z-index: 1;
+  line-height: 4.5;
+  font-family: 'Avenir';
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cardHeading {
+  font-size: 20px;
+  font-family: 'Avenir';
+  text-align: center;
+  margin-bottom: 4%;
+  color: $primary;
+}
+
+.packageOffers {
+  font-size: 16px;
+  font-family: 'Avenir Light';
+  line-height: 1.8;
+  margin-left: 10%;
+}
