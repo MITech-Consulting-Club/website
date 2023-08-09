@@ -98,6 +98,151 @@
   margin-top: 40px;
 }
 
+.aboutContainer {
+  display: flex;
+}
+
+.aboutLeftTextContainer {
+  flex: 50;
+  padding: 10%;
+}
+
+.aboutSubHeading {
+  font-size: 16px;
+  font-family: 'Avenir';
+  color: $primary;
+}
+
+.aboutHeading {
+  font-size: 36px;
+  font-family: 'Avenir';
+  margin: 4% 0;
+}
+
+.aboutDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  line-height: 1.8;
+  margin-bottom: 5%;
+}
+
+.ourServicesLink {
+  font-size: 15px;
+  padding: 15px 25px;
+  border-radius: 40px;
+  background-color: $primary;
+  color: $background;
+}
+
+.aboutImageContainer {
+  flex: 50;
+}
+
+.aboutImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teamContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+}
+
+.teamHeading {
+  font-size: 56px;
+  font-family: 'Avenir';
+  margin-bottom: 2%;
+}
+
+.teamSubHeading {
+  font-size: 20px;
+  font-family: 'Avenir';
+  margin-bottom: 2%;
+}
+
+.teamDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  line-height: 1.8;
+  padding: 0 30%;
+  margin-bottom: 2%;
+}
+
+.aboutLink {
+  font-size: 15px;
+  padding: 15px 25px;
+  border-radius: 40px;
+  background-color: $primary;
+  color: $background;
+}
+
+.alumniContainer {
+  background-color: #f9f0ff;
+  display: flex;
+}
+
+.alumniLeftTextContainer {
+  flex: 50;
+  padding: 10%;
+}
+
+.alumniHeading {
+  font-size: 52px;
+  font-family: 'Avenir';
+}
+
+.alumniDescription {
+  font-size: 18px;
+  font-family: 'Avenir Light';
+  line-height: 1.8;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.alumniLink {
+  font-size: 15px;
+  padding: 15px 25px;
+  border-radius: 40px;
+  background-color: $primary;
+  color: $background;
+}
+
+.alumniRightImageContainer {
+  flex: 50;
+  background: linear-gradient(-225deg, #65379b 0%, #886aea 53%, #6457c6 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alumniAdvisorHeadshot {
+  width: 50%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.alumniAdvisorName,
+.alumniAdvisorTitle {
+  font-size: 18px;
+  font-family: 'Avenir';
+  color: white;
+  margin-top: 1%;
+}
+
+.alumniAdvisorRole,
+.alumniAdvisorClass {
+  font-size: 16px;
+  font-family: 'Avenir';
+  color: #e9d2ff;
+  margin-top: 1%;
+}
+
 .sponsorsInterestContainer {
   background-color: white;
   display: flex;

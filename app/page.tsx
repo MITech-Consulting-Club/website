@@ -8,6 +8,7 @@ import {
   TbCloudCog,
   TbDeviceMobileCog,
 } from 'react-icons/tb';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -85,9 +86,87 @@ export default function Home() {
           Learn More
         </Link>
       </section>
-      <section id="about"></section>
-      <section id="team"></section>
-      <section id="alumni"></section>
+      <section id="about">
+        <div className={styles.aboutContainer}>
+          <div className={styles.aboutLeftTextContainer}>
+            <h6 className={styles.aboutSubHeading}>About</h6>
+            <h4 className={styles.aboutHeading}>Our Mission</h4>
+            <p className={styles.aboutDescription}>
+              At MITech Consulting Club, we seek to empower students at MIT to
+              become tech leaders and consultants by delivering practical
+              projects and fostering a culture of continuous learning. Through
+              mentorship, professional development, and a vibrant community, we
+              create an environment where members thrive, making a meaningful
+              impact in the ever-evolving world of technology consulting.
+            </p>
+            <a className={styles.ourServicesLink} href="#services">
+              Learn More
+            </a>
+          </div>
+
+          <div className={styles.aboutImageContainer}>
+            <Image
+              src="/home/homeAboutGraph.png"
+              alt="graph"
+              width={500}
+              height={500}
+              className={styles.aboutImage}
+              unoptimized
+            />
+          </div>
+        </div>
+      </section>
+      <section id="team">
+        <div className={styles.teamContainer}>
+          <h1 className={styles.teamHeading}>Team</h1>
+          <h6 className={styles.teamSubHeading}>
+            Dedication. Expertise. Passion.
+          </h6>
+          <p className={styles.teamDescription}>
+            We are a diverse group of MIT undergraduate students who are
+            passionate about technology. We represent a wide variety of
+            interests, majors, and backgrounds with people involved in many
+            different activities across campus.
+          </p>
+          <Link href="/about" className={styles.aboutLink}>
+            Learn More
+          </Link>
+        </div>
+      </section>
+      <section id="alumni">
+        <div className={styles.alumniContainer}>
+          <div className={styles.alumniLeftTextContainer}>
+            <h3 className={styles.alumniHeading}>Alumni</h3>
+            <p className={styles.alumniDescription}>
+              Our club is proud of the relationships that we establish with MIT
+              alumni, which allows us to support the growth and development of
+              our members. By working closely with alumni that are experts in
+              the tech industry, we help our members gain valuable skills and
+              connections.
+            </p>
+            <Link href="/alumni" className={styles.alumniLink}>
+              Learn More
+            </Link>
+          </div>
+          <div className={styles.alumniRightImageContainer}>
+            <Image
+              src="/alumni/advisorImages/sam.jpg"
+              alt="alumni advisor headshot"
+              width={500}
+              height={500}
+              className={styles.alumniAdvisorHeadshot}
+            />
+            <h5 className={styles.alumniAdvisorName}>Sam Kwei</h5>
+            <h5 className={styles.alumniAdvisorTitle}>
+              Staff Technical Program Manager at Google
+            </h5>
+            <p className={styles.alumniAdvisorRole}>
+              Professional Development Advisor
+            </p>
+            <p className={styles.alumniAdvisorClass}>MIT Class of 2005</p>
+          </div>
+        </div>
+      </section>
       <section id="sponsors">
         <div className={styles.sponsorsInterestContainer}>
           <div className={styles.leftTextContainer}>
