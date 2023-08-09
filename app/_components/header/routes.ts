@@ -26,7 +26,7 @@ export const routes: Array<Route> = [
     title: 'Sponsors',
   },
   {
-    path: '/contact',
+    path: '/#contact',
     title: 'Contact',
   },
 ];

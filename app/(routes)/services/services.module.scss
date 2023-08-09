@@ -129,3 +129,11 @@
   font-family: 'Avenir Light';
   color: #000000;
 }
+
+.socialIcon {
+  transition: color 0.3s;
+}
+
+.socialIcon:hover {
+  color: $primary;
+}

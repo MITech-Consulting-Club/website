@@ -64,7 +64,11 @@ export const Header = () => {
           >
             <BsInstagram />
           </a>
-          <a href="mailto:" target="_blank" className={styles.socialIcon}>
+          <a
+            href="mailto:mitech-exec@mit.edu"
+            target="_blank"
+            className={styles.socialIcon}
+          >
             <MdEmail />
           </a>
         </div>

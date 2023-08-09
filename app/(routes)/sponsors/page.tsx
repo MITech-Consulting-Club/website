@@ -27,7 +27,6 @@ const Sponsors = () => {
           </p>
         </div>
       </div>
-
       <div className={styles.packagesContainer}>
         <div className={styles.packagesCardsContainer}>
           <div className={styles.silverCard}>
@@ -40,7 +39,6 @@ const Sponsors = () => {
               <li>Access to resume book</li>
             </ul>
           </div>
-
           <div className={styles.goldCard}>
             <div className={styles.numberCircle}>2</div>
             <h5 className={styles.cardHeading}>Gold Sponsor - $2,500</h5>
@@ -58,7 +56,6 @@ const Sponsors = () => {
               </li>
             </ul>
           </div>
-
           <div className={styles.platinumCard}>
             <div className={styles.numberCircle}>3</div>
             <h5 className={styles.cardHeading}>Platinum Sponsor - $4,000</h5>
