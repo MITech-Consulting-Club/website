@@ -306,6 +306,11 @@
   color: $primary;
 }
 
+.contactForms {
+  display: flex;
+  flex-direction: column;
+}
+
 .contactForm {
   font-size: 24px;
   font-family: 'Avenir Light';
