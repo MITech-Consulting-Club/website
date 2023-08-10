@@ -4,7 +4,6 @@ import React from 'react';
 import '@/app/_styles/globals.scss';
 // import type { Metadata } from 'next';
 import { Work_Sans } from 'next/font/google';
-// import { SkipNavContent } from '@reach/skip-nav';
 import { Header } from '@/app/_components/header';
 import styles from './layout.module.scss';
 import { Footer } from '@/app/_components/footer';
@@ -27,10 +26,7 @@ const RootLayout = ({ children }: RootProps) => {
     <html lang="en">
       <body className={workSans.className}>
         <Header />
-        <main className={styles.content}>
-          {/*<SkipNavContent />*/}
-          {children}
-        </main>
+        <main className={styles.content}>{children}</main>
         <Footer />
       </body>
     </html>
