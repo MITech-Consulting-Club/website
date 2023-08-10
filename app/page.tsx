@@ -228,24 +228,29 @@ export default function Home() {
                 <MdEmail />
               </a>
             </div>
-
-            <a
-              href="https://forms.gle/SnicvC9TUVHBG2t6A"
-              target="_blank"
-              className={styles.contactForm}
-            >
-              Client/Project Interest Form
-            </a>
-            <p className={styles.contactForm}>
-              Corporate Sponsor Interest Form
-            </p>
-            <a
-              href="https://forms.gle/ybUAHDBbNmAP82Dr9"
-              target="_blank"
-              className={styles.contactForm}
-            >
-              Alumni Interest Form
-            </a>
+            <div className={styles.contactForms}>
+              <a
+                href="https://forms.gle/SnicvC9TUVHBG2t6A"
+                target="_blank"
+                className={styles.contactForm}
+              >
+                Client/Project Interest Form
+              </a>
+              <a
+                href="https://forms.gle/bFhpZPFDNdcj39q9A"
+                target="_blank"
+                className={styles.contactForm}
+              >
+                Corporate Sponsor Interest Form
+              </a>
+              <a
+                href="https://forms.gle/ybUAHDBbNmAP82Dr9"
+                target="_blank"
+                className={styles.contactForm}
+              >
+                Alumni Interest Form
+              </a>
+            </div>
           </div>
 
           <div className={styles.contactImageContainer}>
