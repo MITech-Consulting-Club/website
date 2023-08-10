@@ -12,19 +12,21 @@ export interface HeaderProps {}
 
 export const Header = () => {
   const path = usePathname();
-  const [atTop, setAtTop] = React.useState(Math.round(window.scrollY) === 0);
+  const [atTop, setAtTop] = React.useState(true);
   // Check if page is at top to update the background color
   React.useEffect(() => {
-    window.addEventListener('scroll', () => {
-      // A bit hacky way to make sure the component doesn't re-render every single scroll event
-      if (Math.round(window.scrollY) != 0 && atTop) {
-        setAtTop(false);
-        return;
-      } else if (Math.round(window.scrollY) == 0) {
-        setAtTop(true);
-        return;
-      }
-    });
+    if (typeof window != 'undefined') {
+      window.addEventListener('scroll', () => {
+        // A bit hacky way to make sure the component doesn't re-render every single scroll event
+        if (Math.round(window.scrollY) != 0 && atTop) {
+          setAtTop(false);
+          return;
+        } else if (Math.round(window.scrollY) == 0) {
+          setAtTop(true);
+          return;
+        }
+      });
+    }
   }, []);
 
   return (

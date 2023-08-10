@@ -10,30 +10,32 @@ export const BackgroundGraph = ({ isAnimated }: BackgroundGraphProps) => {
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
 
   React.useEffect(() => {
-    let animationFrameId: number;
-    let increment = 0;
-    while (!canvasRef.current);
-    if (!canvasRef.current) {
-      return;
-    }
-    // Resize
-    canvasRef.current.width = window.innerWidth;
-    canvasRef.current.height = window.innerHeight;
-    const ctx = canvasRef.current.getContext('2d');
-    if (!ctx) {
-      return;
-    }
-
-    const render = () => {
-      draw(ctx, increment);
-      if (isAnimated) {
-        increment += 0.5;
+    if (typeof window != 'undefined') {
+      let animationFrameId: number;
+      let increment = 0;
+      while (!canvasRef.current);
+      if (!canvasRef.current) {
+        return;
       }
-      // TODO Optimize animation to stop crashing
-      animationFrameId = window.requestAnimationFrame(render);
-    };
-    render();
-    return () => window.cancelAnimationFrame(animationFrameId);
+      // Resize
+      canvasRef.current.width = window.innerWidth;
+      canvasRef.current.height = window.innerHeight;
+      const ctx = canvasRef.current.getContext('2d');
+      if (!ctx) {
+        return;
+      }
+
+      const render = () => {
+        draw(ctx, increment);
+        if (isAnimated) {
+          increment += 0.5;
+        }
+        // TODO Optimize animation to stop crashing
+        // animationFrameId = window.requestAnimationFrame(render);
+      };
+      render();
+      return () => window.cancelAnimationFrame(animationFrameId);
+    }
   }, []);
 
   return (
