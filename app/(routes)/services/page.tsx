@@ -26,7 +26,6 @@ const Services = () => {
               alt="service"
               width={112.5}
               height={72}
-              className={styles.ourServicesAvatar}
             />
             <p className={styles.ourServicesTitle}>Software Engineering</p>
           </div>
@@ -36,7 +35,6 @@ const Services = () => {
               alt="service"
               width={50}
               height={75}
-              className={styles.ourServicesAvatar}
             />
             <p className={styles.ourServicesTitle}>Web & Mobile Development</p>
           </div>
@@ -46,7 +44,6 @@ const Services = () => {
               alt="service"
               width={100}
               height={75}
-              className={styles.ourServicesAvatar}
             />
             <p className={styles.ourServicesTitle}>Data Analysis</p>
           </div>
@@ -56,7 +53,6 @@ const Services = () => {
               alt="service"
               width={100}
               height={75}
-              className={styles.ourServicesAvatar}
             />
             <p className={styles.ourServicesTitle}>Business Development</p>
           </div>

@@ -32,7 +32,7 @@ const Sponsors = () => {
           <div className={styles.silverCard}>
             <div className={styles.numberCircle}>1</div>
 
-            <h5 className={styles.cardHeading}>Silver Sponsor - $1,500</h5>
+            <h5 className={styles.cardHeading}>Silver Sponsor</h5>
             <ul className={styles.packageOffers}>
               <li>Company Branding & Presence</li>
               <li>Access to our annual networking conference</li>
@@ -41,7 +41,7 @@ const Sponsors = () => {
           </div>
           <div className={styles.goldCard}>
             <div className={styles.numberCircle}>2</div>
-            <h5 className={styles.cardHeading}>Gold Sponsor - $2,500</h5>
+            <h5 className={styles.cardHeading}>Gold Sponsor</h5>
             <ul className={styles.packageOffers}>
               <li>Premium Company Branding & Presence</li>
               <li>Access to our annual networking conference</li>
@@ -58,7 +58,7 @@ const Sponsors = () => {
           </div>
           <div className={styles.platinumCard}>
             <div className={styles.numberCircle}>3</div>
-            <h5 className={styles.cardHeading}>Platinum Sponsor - $4,000</h5>
+            <h5 className={styles.cardHeading}>Platinum Sponsor</h5>
             <ul className={styles.packageOffers}>
               <li>Highest Level of Company Branding & Presence</li>
               <li>Access to our annual networking conference </li>
