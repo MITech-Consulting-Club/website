@@ -37,7 +37,13 @@ export default function Home() {
         </h2>
         <div className={styles.servicesGallery}>
           <div className={styles.servicesGalleryItem}>
-            <TbCloudCog className={styles.servicesGalleryItemIcon} />
+            {/* <TbCloudCog className={styles.servicesGalleryItemIcon} /> */}
+            <Image
+              src="/services/cloud.png"
+              alt="service"
+              width={112.5}
+              height={72}
+            />
             <h5 className={styles.servicesGalleryItemTitle}>
               Software Engineering
             </h5>
@@ -50,7 +56,13 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.servicesGalleryItem}>
-            <TbDeviceMobileCog className={styles.servicesGalleryItemIcon} />
+            {/* <TbDeviceMobileCog className={styles.servicesGalleryItemIcon} /> */}
+            <Image
+              src="/services/mobile.png"
+              alt="service"
+              width={50}
+              height={75}
+            />
             <h5 className={styles.servicesGalleryItemTitle}>
               Web & Mobile Development
             </h5>
@@ -62,7 +74,13 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.servicesGalleryItem}>
-            <TbChartHistogram className={styles.servicesGalleryItemIcon} />
+            {/* <TbChartHistogram className={styles.servicesGalleryItemIcon} /> */}
+            <Image
+              src="/services/chart.png"
+              alt="service"
+              width={100}
+              height={75}
+            />
             <h5 className={styles.servicesGalleryItemTitle}>Data Analysis</h5>
             <p className={styles.servicesGalleryItemDescription}>
               Our consulting team possesses proficiency in data analysis and is
@@ -73,7 +91,13 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.servicesGalleryItem}>
-            <TbBriefcase className={styles.servicesGalleryItemIcon} />
+            {/* <TbBriefcase className={styles.servicesGalleryItemIcon} /> */}
+            <Image
+              src="/services/suitcase.png"
+              alt="service"
+              width={100}
+              height={75}
+            />
             <h5 className={styles.servicesGalleryItemTitle}>
               Business Development
             </h5>
