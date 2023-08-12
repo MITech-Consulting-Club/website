@@ -2,38 +2,60 @@
 @import '@/app/_styles/responsive.scss';
 
 .sponsorsTopContainer {
-  background-image: url(/sponsors/sponsorsBG.webp);
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include respond-to('md') {
+    background-image: url(/sponsors/sponsorsBG.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  text-align: center;
+  padding: 5%;
 }
 
 .sponsorsTopHeading {
-  font-size: 56px;
+  @include respond-to('md') {
+    font-size: 56px;
+  }
+  font-size: 22px;
   color: #15163f;
 }
 
 .sponsorsInterestContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+  }
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
 }
 
 .sponsorsInterestLeftTextContainer {
+  @include respond-to('md') {
+    text-align: left;
+  }
   flex: 50;
   padding: 5%;
   background-color: #15163f;
+  text-align: center;
 }
 
 .sponsorsInterestHeading {
-  font-size: 56px;
+  @include respond-to('md') {
+    font-size: 56px;
+  }
+  font-size: 18px;
   color: #ffffff;
 }
 
 .sponsorsInterestHeadingDescription {
-  font-size: 18px;
+  @include respond-to('md') {
+    font-size: 18px;
+  }
+  font-size: 16px;
   font-family: 'Avenir Light';
   color: #ffffff;
   margin-top: 5%;
@@ -62,8 +84,11 @@
 }
 
 .packagesCardsContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+  }
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   gap: 2%;
 }
@@ -71,9 +96,14 @@
 .silverCard,
 .goldCard,
 .platinumCard {
-  width: 20%;
-  padding: 5% 2% 2% 2%;
+  @include respond-to('md') {
+    width: 20%;
+    margin: 0;
+    padding: 5% 2% 2% 2%;
+  }
+  padding: 5%;
   position: relative;
+  margin: 5% 0;
 }
 
 .silverCard {
@@ -92,21 +122,25 @@
 }
 
 .numberCircle {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 22px;
-  color: black;
-  background: #ffffff;
-  margin: 0 auto;
-  z-index: 1;
-  line-height: 4.5;
-  font-family: 'Avenir';
-  top: -10%;
-  left: 50%;
-  transform: translateX(-50%);
+  @include respond-to('md') {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    background: #ffffff;
+    margin: 0 auto;
+    z-index: 1;
+    line-height: 4.5;
+    font-family: 'Avenir';
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  display: none;
 }
 
 .cardHeading {
