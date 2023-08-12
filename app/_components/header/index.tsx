@@ -34,7 +34,7 @@ export const Header = () => {
       <div className={styles.navbarContainer}>
         <div>
           <Link href="/">
-            <img src={logo.src} alt="MCC Logo" width={250} />
+            <img src={logo.src} alt="MCC Logo" className={styles.logo} />
           </Link>
         </div>
         <div className={styles.navbarRoutes}>
@@ -61,7 +61,6 @@ export const Header = () => {
           <a
             href="https://www.instagram.com/mitechconsulting/"
             target="_blank"
-            style={{ fontSize: 25 }}
             className={styles.socialIcon}
           >
             <BsInstagram />
