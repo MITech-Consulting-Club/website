@@ -17,24 +17,55 @@
 }
 
 .navbarContainer {
-  max-width: $lg;
+  @include respond-to('md') {
+    max-width: $lg;
+    padding: 0 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  max-width: $sm;
   padding: 0 20px;
   margin: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
-.socialIcon {
-  font-size: 25px;
-  margin: 10px;
-  transition: color 0.3s;
+.logo {
+  @include respond-to('md') {
+    width: 250px;
+  }
+  width: 150px;
+}
+
+.navbarRoutes {
+  @include respond-to('md') {
+  }
+  display: flex;
+  flex-direction: row;
 }
 
 .navbarRoute {
+  @include respond-to('md') {
+    transition: color 0.3s;
+    padding: 30px 15px;
+  }
   transition: color 0.3s;
-  padding: 30px 15px;
+  padding: 0 2px;
+}
+
+.socialIcon {
+  @include respond-to('md') {
+    font-size: 25px;
+    margin: 10px;
+    transition: color 0.3s;
+  }
+  font-size: 20px;
+  margin: 5px;
+  transition: color 0.3s;
 }
 
 .socialIcon:hover,

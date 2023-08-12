@@ -2,21 +2,16 @@
 
 import { BackgroundGraph } from '@/app/_components/background';
 import styles from './page.module.scss';
-import {
-  TbBriefcase,
-  TbChartHistogram,
-  TbCloudCog,
-  TbDeviceMobileCog,
-} from 'react-icons/tb';
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
+  const mobile = window.matchMedia('(max-width: 767px)').matches;
   return (
     <>
-      <BackgroundGraph isAnimated={true} />
+      {!mobile && <BackgroundGraph isAnimated={true} />}
       <header className={styles.header}>
         <h1 className={styles.headerTitle}>MITech Consulting Club</h1>
         <p className={styles.headerSubtitle}>
@@ -37,7 +32,6 @@ export default function Home() {
         </h2>
         <div className={styles.servicesGallery}>
           <div className={styles.servicesGalleryItem}>
-            {/* <TbCloudCog className={styles.servicesGalleryItemIcon} /> */}
             <Image
               src="/services/cloud.png"
               alt="service"
@@ -56,7 +50,6 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.servicesGalleryItem}>
-            {/* <TbDeviceMobileCog className={styles.servicesGalleryItemIcon} /> */}
             <Image
               src="/services/mobile.png"
               alt="service"
@@ -74,7 +67,6 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.servicesGalleryItem}>
-            {/* <TbChartHistogram className={styles.servicesGalleryItemIcon} /> */}
             <Image
               src="/services/chart.png"
               alt="service"
@@ -91,7 +83,6 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.servicesGalleryItem}>
-            {/* <TbBriefcase className={styles.servicesGalleryItemIcon} /> */}
             <Image
               src="/services/suitcase.png"
               alt="service"
@@ -209,9 +200,9 @@ export default function Home() {
               We are currently looking for corporate sponsors.
             </h5>
             <p className={styles.sponsorsInterestDescription2}>
-              Please reach out at mitech-corporate@mit.edu if you would like to
-              learn more about our sponsorship packages & offerings; we would
-              love to hear from you!
+              Please reach out at <strong>mitech-corporate@mit.edu</strong> if
+              you would like to learn more about our sponsorship packages &
+              offerings; we would love to hear from you!
             </p>
           </div>
         </div>
