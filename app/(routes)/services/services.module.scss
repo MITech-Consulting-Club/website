@@ -10,31 +10,44 @@
 }
 
 .ourServicesHeading {
-  font-size: 56px;
+  @include respond-to('md') {
+    font-size: 56px;
+  }
+  font-size: 22px;
 }
 
 .ourServicesDescription {
-  font-size: 18px;
+  @include respond-to('md') {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.8;
+    margin: 2% 20%;
+  }
+  font-size: 16px;
   font-family: 'Avenir Light';
-  text-align: center;
-  line-height: 1.8;
-  margin: 2% 20%;
 }
 
 .ourServicesCardsContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+  }
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row;
   justify-content: center;
   margin-top: 2%;
 }
 
 .ourServicesCard {
+  @include respond-to('md') {
+    margin: 0;
+  }
   width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 5%;
 }
 
 .ourServicesTitle {
@@ -49,20 +62,32 @@
 }
 
 .projectStructureHeading {
-  font-size: 36px;
+  @include respond-to('md') {
+    font-size: 36px;
+    text-align: left;
+  }
+  font-size: 22px;
   font-family: 'Avenir';
+  text-align: center;
   color: #682aa9;
 }
 
 .projectStructureDescription {
-  font-size: 18px;
+  @include respond-to('md') {
+    font-size: 18px;
+    margin: 1% 10% 0 0;
+  }
+  font-size: 16px;
   font-family: 'Avenir Light';
-  margin: 1% 10% 0 0;
 }
 
 .contactUsContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+  }
   background-image: url(/services/graphLines.png);
   display: flex;
+  flex-direction: column;
 }
 
 .leftTextContainer {
@@ -77,42 +102,71 @@
 }
 
 .contactUsHeading {
-  font-size: 36px;
+  @include respond-to('md') {
+    font-size: 36px;
+  }
+  font-size: 22px;
   font-family: 'Avenir';
   margin: 2% 0;
 }
 
 .contactUsDescription {
-  font-size: 18px;
+  @include respond-to('md') {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  font-size: 16px;
   font-family: 'Avenir Light';
-  line-height: 1.8;
   margin-right: 10%;
 }
 
 .rightProfilesContainer {
-  flex: 50;
+  @include respond-to('md') {
+    flex: 50;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    padding: 0;
+  }
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 10%;
+  flex-direction: column;
+  padding: 5%;
 }
 
 .profile {
-  position: relative;
+  @include respond-to('md') {
+    position: relative;
+    display: block;
+  }
+  display: flex;
+  flex-direction: row;
 }
 
 .squareImageWrapper {
+  @include respond-to('md') {
+    margin: 0;
+    width: 183px;
+    height: 204px;
+  }
   position: relative;
-  width: 183px;
+  width: 160px;
   height: 204px;
   overflow: hidden;
   z-index: 1;
+
+  margin: 10px 0;
 }
 
 .profileInfoContainer {
+  @include respond-to('md') {
+    display: block;
+    margin: -20% -10% 0 20%;
+  }
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 5%;
-  margin: -20% -10% 0 20%;
   position: relative;
   z-index: 2;
 }
