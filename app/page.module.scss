@@ -412,11 +412,17 @@
 }
 
 .communityHeading {
-  font-size: 56px;
+  @include respond-to('md') {
+    font-size: 56px;
+  }
+  font-size: 22px;
   margin-bottom: 2%;
 }
 
 .communityDescription {
-  font-size: 18px;
+  @include respond-to('md') {
+    font-size: 18px;
+  }
+  font-size: 16px;
   font-family: 'Avenir Light';
 }
