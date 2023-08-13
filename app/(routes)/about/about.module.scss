@@ -2,59 +2,86 @@
 @import '@/app/_styles/responsive.scss';
 
 .teamContainer {
+  @include respond-to('md') {
+    padding: 5% 20%;
+  }
   background-color: #f8f0ff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 5% 20%;
 }
 
 .teamBox {
+  @include respond-to('md') {
+    align-items: center;
+    padding: 2% 10%;
+  }
   background-color: #f7f6fa;
   opacity: 0.8;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  padding: 2% 10%;
   color: #000000;
+  padding: 20px;
 }
 
 .teamHeading {
-  font-size: 56px;
+  @include respond-to('md') {
+    font-size: 56px;
+    text-align: left;
+  }
+  font-size: 22px;
+  text-align: center;
 }
 
 .teamMiniHeading {
-  font-size: 20px;
+  @include respond-to('md') {
+    font-size: 20px;
+  }
+  font-size: 18px;
   font-family: 'Avenir';
+  text-align: center;
   margin: 2% 0;
 }
 
 .teamDescription {
-  font-size: 18px;
+  @include respond-to('md') {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  font-size: 16px;
   font-family: 'Avenir Light';
-  text-align: center;
-  line-height: 1.8;
 }
 
 .initiativesContainer {
+  @include respond-to('md') {
+  }
+
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 2% 20%;
 }
 
 .initiativesHeading {
-  font-size: 56px;
+  @include respond-to('md') {
+    font-size: 56px;
+  }
+  font-size: 22px;
 }
 
 .initiativesCardsContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+  }
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .initiativesCard {
-  width: 30%;
+  @include respond-to('md') {
+    width: 30%;
+    margin: 0;
+  }
   height: 50%;
   padding: 2%;
 
@@ -62,7 +89,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  margin: 5% 0;
 }
 
 .cardAvatar {
@@ -71,7 +98,10 @@
 }
 
 .cardTitle {
-  font-size: 20px;
+  @include respond-to('md') {
+    font-size: 20px;
+  }
+  font-size: 18px;
   font-family: 'Avenir';
   margin: 5% 0;
 }
@@ -91,7 +121,10 @@
 }
 
 .meetTeamHeading {
-  font-size: 36px;
+  @include respond-to('md') {
+    font-size: 36px;
+  }
+  font-size: 22px;
   margin-top: 4%;
 }
 
@@ -102,17 +135,25 @@
 }
 
 .teamPhotosContainer {
-  padding: 3%;
-  gap: 2%;
+  @include respond-to('md') {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    padding: 3%;
+  }
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
 }
 
 .execProfile {
-  width: 20%;
-  margin-bottom: 2%;
+  @include respond-to('md') {
+    width: 20%;
+  }
   height: auto;
+  margin-bottom: 2%;
   position: relative;
 }
 
@@ -123,9 +164,12 @@
 }
 
 .execInfoContainer {
+  @include respond-to('md') {
+    margin: -20% 0 0 20%;
+  }
+  // height: 150px;
   background-color: #ffffff;
   padding: 5%;
-  margin: -20% 0 0 20%;
   position: relative;
   z-index: 2;
 }
@@ -141,17 +185,24 @@
 }
 
 .joinUsContainer {
+  @include respond-to('md') {
+    padding: 5% 20%;
+  }
   background-color: #15163f;
   color: #ffffff;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 5% 20%;
+  padding: 5%;
 }
 
 .joinUsHeading {
-  font-size: 30px;
+  @include respond-to('md') {
+    font-size: 30px;
+  }
+  font-size: 22px;
+  text-align: center;
 }
 
 .joinUsDescription {
@@ -166,6 +217,7 @@
   color: #a64cfe;
   padding: 1.5% 4%;
   border: none;
+  border-radius: 5px;
 }
 
 .joinUsButton:hover {
