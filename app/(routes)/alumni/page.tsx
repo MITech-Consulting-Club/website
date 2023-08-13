@@ -11,10 +11,10 @@ import alumni from './alumni.json';
 const Alumni = () => {
   return (
     <div>
-      <div className={styles.alumniTopContainer}>
-        <div className={styles.alumniTopCard}>
-          <h1 className={styles.alumniTopHeading}>Alumni</h1>
-          <p className={styles.alumniTopDescription}>
+      <div className={styles.topContainer}>
+        <div className={styles.topCard}>
+          <h1 className={styles.topHeading}>Alumni</h1>
+          <p className={styles.topDescription}>
             MITech is proud of the relationships that we establish with MIT
             alumni, which allows us to support the growth and development of our
             members. By working closely with alumni that are experts in the tech
@@ -22,14 +22,14 @@ const Alumni = () => {
           </p>
         </div>
       </div>
-      <div className={styles.alumniEngagementsContainer}>
-        <h1 className={styles.alumniEngagementsHeading}>Engagements</h1>
-        <p className={styles.alumniEngagementsDescription}>
+      <div className={styles.engagementsContainer}>
+        <h1 className={styles.engagementsHeading}>Engagements</h1>
+        <p className={styles.engagementsDescription}>
           MITech collaborates with MIT alumni in the three following ways to
           foster connections, mentorships, and community initiatives.
         </p>
-        <div className={styles.alumniEngagementsCardsContainer}>
-          <div className={styles.alumniEngagementsCard}>
+        <div className={styles.engagementsCardsContainer}>
+          <div className={styles.engagementsCard}>
             <Image
               className={styles.cardAvatar}
               src="/alumni/advising.png"
@@ -45,7 +45,7 @@ const Alumni = () => {
               major at MIT to applying for opportunities beyond undergrad.
             </div>
           </div>
-          <div className={styles.alumniEngagementsCard}>
+          <div className={styles.engagementsCard}>
             <Image
               className={styles.cardAvatar}
               src="/alumni/network.png"
@@ -61,7 +61,7 @@ const Alumni = () => {
               networking opportunities and established club-alumni connections.
             </div>
           </div>
-          <div className={styles.alumniEngagementsCard}>
+          <div className={styles.engagementsCard}>
             <Image
               className={styles.cardAvatar}
               src="/alumni/events.png"
@@ -79,10 +79,10 @@ const Alumni = () => {
           </div>
         </div>
       </div>
-      <div className={styles.alumniAdvisorsContainer}>
-        <div className={styles.alumniAdvisorsLeftTextContainer}>
-          <h1 className={styles.alumniAdvisorsHeading}>Our Alumni Advisors</h1>
-          <p className={styles.alumniAdvisorsDescriptionP1}>
+      <div className={styles.advisorsContainer}>
+        <div className={styles.advisorsLeftTextContainer}>
+          <h1 className={styles.advisorsHeading}>Our Alumni Advisors</h1>
+          <p className={styles.advisorsDescriptionP1}>
             From MITech's internal operations to students' professional
             development, our alumni advisors are pivotal to the success of
             MITech Consulting Club as well as the growth of our members. In
@@ -90,7 +90,7 @@ const Alumni = () => {
             MITech students to engage in regular advising sessions in the form
             of group lunches & dinners.
           </p>
-          <p className={styles.alumniAdvisorsDescriptionP2}>
+          <p className={styles.advisorsDescriptionP2}>
             Get to know our advisors and their involvement with the club by
             clicking into their profile. We have defined four main alumni
             advisors for the club necessary for our growth: Professional
@@ -101,12 +101,12 @@ const Alumni = () => {
         <Swiper
           modules={[Navigation]}
           navigation
-          className={styles.alumniAdvisorCarousel}
+          className={styles.advisorCarousel}
         >
           {alumni.advisors.map((advisor) => {
             return (
               <SwiperSlide>
-                <div className={styles.alumniAdvisorsProfessionalHeadshot}>
+                <div className={styles.advisorsProfessionalHeadshot}>
                   <Image
                     src={`/alumni/advisorImages/${advisor.image}`}
                     alt="alumni advisor headshot"
@@ -114,22 +114,22 @@ const Alumni = () => {
                     objectFit="contain"
                   />
                 </div>
-                <div className={styles.alumniAdvisorInfoContainer}>
-                  <h3 className={styles.alumniAdvisorName}>{advisor.name}</h3>
-                  <h4 className={styles.alumniAdvisorRole}>{advisor.role}</h4>
-                  <p className={styles.alumniAdvisorType}>{advisor.type}</p>
+                <div className={styles.advisorInfoContainer}>
+                  <h3 className={styles.advisorName}>{advisor.name}</h3>
+                  <h4 className={styles.avisorRole}>{advisor.role}</h4>
+                  <p className={styles.advisorType}>{advisor.type}</p>
                 </div>
               </SwiperSlide>
             );
           })}
         </Swiper>
       </div>
-      <div className={styles.alumniMentorsContainer}>
-        <div className={styles.alumniMentorsLeftTextContainer}>
-          <h1 className={styles.alumniMentorsHeading}>Alumni Career Mentors</h1>
+      <div className={styles.mentorsContainer}>
+        <div className={styles.mentorsLeftTextContainer}>
+          <h1 className={styles.mentorsHeading}>Alumni Career Mentors</h1>
         </div>
-        <div className={styles.alumniMentorsRightTextContainer}>
-          <p className={styles.alumniMentorsDescription}>
+        <div className={styles.mentorsRightTextContainer}>
+          <p className={styles.mentorsDescription}>
             In addition to our four main advisors, we aim to establish
             connections with alumni who are interested in mentoring our
             students. Our Alumni Career Mentors come from a wide range of
@@ -139,12 +139,10 @@ const Alumni = () => {
           </p>
         </div>
       </div>
-      <div className={styles.alumniSupportingMitechContainer}>
-        <div className={styles.alumniSupportingMitechRightTextContainer}>
-          <h1 className={styles.alumniSupportingMitechHeading}>
-            Supporting MITech
-          </h1>
-          <p className={styles.alumniSupportingMitechDescription}>
+      <div className={styles.supportingMitechContainer}>
+        <div className={styles.supportingMitechTextContainer}>
+          <h1 className={styles.supportingMitechHeading}>Supporting MITech</h1>
+          <p className={styles.supportingMitechDescription}>
             We are always looking to welcome more people like you to join our
             community of talented students, alumni, and industry professionals
             who share a passion for technology, problem-solving, and

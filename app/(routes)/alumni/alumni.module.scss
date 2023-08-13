@@ -1,42 +1,53 @@
 @import '@/app/_styles/theme.scss';
 @import '@/app/_styles/responsive.scss';
 
-.alumniTopContainer {
+.topContainer {
+  @include respond-to('md') {
+    height: 40vh;
+  }
   background-image: linear-gradient(45.34deg, #da9bff 5.66%, #6f56f9 94.35%);
-  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.alumniTopCard {
+.topCard {
+  @include respond-to('md') {
+    margin: 0 30%;
+  }
   background-color: #eff0f3;
   opacity: 0.7;
-  margin: 0 30%;
   padding: 3%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin: 10%;
 }
 
-.alumniTopHeading,
-.alumniEngagementsHeading,
-.alumniAdvisorsHeading,
-.alumniMentorsHeading,
-.alumniSupportingMitechHeading {
-  font-size: 56px;
+.topHeading,
+.engagementsHeading,
+.advisorsHeading,
+.mentorsHeading,
+.supportingMitechHeading {
+  @include respond-to('md') {
+    font-size: 56px;
+  }
+  font-size: 22px;
   color: #000000;
 }
 
-.alumniTopDescription,
-.alumniEngagementsDescription {
-  font-size: 18px;
+.topDescription,
+.engagementsDescription {
+  @include respond-to('md') {
+    font-size: 18px;
+  }
+  font-size: 16px;
   font-family: 'Avenir Light';
   text-align: center;
 }
 
-.alumniEngagementsContainer {
+.engagementsContainer {
   background-color: #ececef;
   display: flex;
   align-items: center;
@@ -45,30 +56,40 @@
   padding: 0 15%;
 }
 
-.alumniEngagementsHeading {
-  margin: 3% 0 2% 0;
+.engagementsHeading {
+  @include respond-to('md') {
+    margin: 3% 0 2% 0;
+  }
+  margin: 20px 0;
 }
 
-.alumniEngagementsDescription {
+.engagementsDescription {
   margin: 0 0 1% 0;
 }
 
-.alumniEngagementsCardsContainer {
+.engagementsCardsContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+    align-items: normal;
+  }
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.alumniEngagementsCard {
-  width: 30%;
-  height: 50%;
+.engagementsCard {
+  @include respond-to('md') {
+    width: 30%;
+    height: 50%;
+    margin: 0;
+  }
   background: #ececef;
-  padding: 2%;
-
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding: 2%;
+  margin: 20px 0;
 }
 
 .cardAvatar {
@@ -86,45 +107,55 @@
   text-align: center;
 }
 
-.alumniAdvisorsContainer {
+.advisorsContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+  }
   background-color: #ececef;
   display: flex;
+  flex-direction: column;
   padding: 3%;
 }
 
-.alumniAdvisorsLeftTextContainer {
+.advisorsLeftTextContainer {
   flex: 60;
   background-color: #ffffff;
   padding: 5%;
 }
 
-.alumniAdvisorsDescriptionP1,
-.alumniAdvisorsDescriptionP2,
-.alumniMentorsDescription,
-.alumniSupportingMitechDescription {
-  font-size: 18px;
+.advisorsDescriptionP1,
+.advisorsDescriptionP2,
+.mentorsDescription,
+.supportingMitechDescription {
+  @include respond-to('md') {
+    font-size: 18px;
+  }
+  font-size: 16px;
   font-family: 'Avenir Light';
 }
 
-.alumniAdvisorsDescriptionP1 {
+.advisorsDescriptionP1 {
   margin: 3% 0;
 }
 
-.alumniAdvisorCarousel {
+.advisorCarousel {
   flex: 40;
   background-image: linear-gradient(45.34deg, #da9bff 5.66%, #6f56f9 94.35%);
   position: relative;
 }
 
-.alumniAdvisorsProfessionalHeadshot {
-  margin: 15% 0 0 25%;
+.advisorsProfessionalHeadshot {
+  @include respond-to('md') {
+    margin: 15% 0 0 25%;
+    position: relative;
+    width: 50%;
+    aspect-ratio: 1/1;
+    z-index: 1;
+  }
   position: relative;
-  width: 50%;
-  aspect-ratio: 1/1;
-  z-index: 1;
 }
 
-.alumniAdvisorInfoContainer {
+.advisorInfoContainer {
   background-color: #ffffff;
   padding: 2%;
   margin: -10% 10% 0 40%;
@@ -132,70 +163,79 @@
   z-index: 2;
 }
 
-.alumniAdvisorName {
+.advisorName {
   font-size: 18px;
   font-family: 'Avenir';
 }
 
-.alumniAdvisorRole {
+.advisorRole {
   font-size: 14px;
   font-family: 'Avenir';
 }
 
-.alumniAdvisorType {
+.advisorType {
   font-size: 13px;
   font-family: 'Avenir Light';
 }
 
-.alumniMentorsContainer {
+.mentorsContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+  }
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
 }
 
-.alumniMentorsLeftTextContainer {
+.mentorsLeftTextContainer {
   flex: 30;
   padding: 5%;
   background-color: #15163f;
 }
 
-.alumniMentorsHeading {
+.mentorsHeading {
+  @include respond-to('md') {
+    text-align: left;
+  }
+  text-align: center;
   color: #ffffff;
 }
 
-.alumniMentorsRightTextContainer {
+.mentorsRightTextContainer {
   flex: 70;
   background-color: #ffffff;
   padding: 5%;
 }
 
-.alumniSupportingMitechContainer {
+.supportingMitechContainer {
+  @include respond-to('md') {
+    padding: 5% 25%;
+  }
   background-image: url(/services/graphLines.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: flex-start;
   background-color: #f9f0ff;
-  padding: 5% 25%;
-  position: relative;
-}
-
-.alumniSupportingMitechLeftImg {
-  flex: 50;
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1/1;
-  margin: -18% 0 0 0;
-  z-index: 1;
-}
-
-.alumniSupportingMitechRightTextContainer {
-  background-color: #ffffff;
   padding: 5%;
-  text-align: center;
-  z-index: 2;
+}
+
+.supportingMitechTextContainer {
+  @include respond-to('md') {
+    padding: 5%;
+  }
+  background-color: #ffffff;
   opacity: 0.9;
 }
 
-.alumniSupportingMitechDescription {
+.supportingMitechHeading,
+.supportingMitechDescription {
+  @include respond-to('md') {
+    text-align: center;
+  }
+  text-align: left;
+  color: #000000;
+}
+
+.supportingMitechDescription {
   margin-top: 4%;
 }
