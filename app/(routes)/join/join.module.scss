@@ -2,41 +2,51 @@
 @import '@/app/_styles/responsive.scss';
 
 .getInvolvedContainer {
-  background-image: url(/sponsors/sponsorsBG.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include respond-to('md') {
+    background-image: url(/sponsors/sponsorsBG.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 19%;
+  }
   display: flex;
   align-items: flex-start;
-  padding: 5% 19%;
-}
-
-.getInvolvedImage {
-  max-width: 100%;
-  height: auto;
 }
 
 .getInvolvedTextContainer {
+  @include respond-to('md') {
+    text-align: center;
+    padding: 5% 25%;
+  }
   background-color: #ffffff;
-  text-align: center;
-  padding: 5% 25%;
   opacity: 0.8;
+  padding: 5%;
 }
 
 .getInvolvedHeading {
-  font-size: 56px;
+  @include respond-to('md') {
+    font-size: 56px;
+  }
+  font-size: 22px;
   font-family: 'Avenir';
 }
 
 .getInvolvedDescription {
+  @include respond-to('md') {
+    font-size: 18px;
+    line-height: 1.8;
+  }
   font-size: 16px;
   font-family: 'Avenir Light';
-  line-height: 1.8;
   margin-top: 2%;
 }
 
 .lookForContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+  }
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
 }
 
 .lookForLeftTextContainer {
@@ -46,7 +56,12 @@
 }
 
 .lookForHeading {
-  font-size: 56px;
+  @include respond-to('md') {
+    font-size: 56px;
+    text-align: left;
+  }
+  font-size: 22px;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -57,113 +72,154 @@
 }
 
 .lookForMiniHeading {
-  font-size: 20px;
+  @include respond-to('md') {
+    font-size: 20px;
+  }
+  font-size: 16px;
   font-family: 'Avenir';
 }
 
 .lookForDescription {
-  font-size: 18px;
+  @include respond-to('md') {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  font-size: 16px;
   font-family: 'Avenir Light';
-  line-height: 1.8;
   margin: 2% 5% 0 0;
 }
 
 .questionsContainer {
   background: linear-gradient(#cd9cf2 0%, #f6f3ff 100%);
-
   padding: 5%;
 }
 
 .questionsCardsContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+    gap: 2%;
+  }
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  gap: 2%;
 }
 
 .questionsCard {
+  @include respond-to('md') {
+    width: 30%;
+    margin: 0;
+  }
   background-color: #ffffff;
-  width: 20%;
   padding: 5% 2% 2% 2%;
   text-align: center;
   position: relative;
+  margin: 10px 0;
 }
 
 .numberCircle {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 22px;
-  color: black;
-  background: #ececef;
-  margin: 0 auto;
-  z-index: 1;
-  line-height: 4.5;
-  font-family: 'Avenir';
-  top: -13%;
-  left: 50%;
-  transform: translateX(-50%);
+  @include respond-to('md') {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    background: #ececef;
+    margin: 0 auto;
+    z-index: 1;
+    line-height: 4.5;
+    font-family: 'Avenir';
+    top: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  display: none;
 }
 
 .cardHeading {
-  font-size: 20px;
+  @include respond-to('md') {
+    font-size: 20px;
+  }
+  font-size: 18px;
   font-family: 'Avenir';
   margin-bottom: 4%;
 }
 
 .cardDescription {
+  @include respond-to('md') {
+    line-height: 1.8;
+  }
   font-size: 16px;
   font-family: 'Avenir Light';
-  line-height: 1.8;
 }
 
 .directorsContainer {
+  @include respond-to('md') {
+    padding: 3% 20%;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3% 20%;
+  padding: 5%;
 }
 
 .directorsHeading {
-  font-size: 36px;
-  text-align: center;
+  @include respond-to('md') {
+    font-size: 36px;
+    text-align: center;
+  }
+  font-size: 18px;
+  text-align: left;
 }
 
 .directorsDescription {
+  @include respond-to('md') {
+    text-align: center;
+  }
   font-size: 16px;
   font-family: 'Avenir Light';
-  text-align: center;
+  text-align: left;
   margin: 2% 0 4% 0;
 }
 
 .directorsProfilesContainer {
+  @include respond-to('md') {
+    flex-direction: row;
+  }
   background-color: #ececef;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
 .directorProfile {
-  width: 28%;
+  @include respond-to('md') {
+    width: 28%;
+  }
   height: auto;
   margin: 5% 4%;
   position: relative;
 }
 
 .directorHeadshot {
+  @include respond-to('md') {
+    height: 300px !important;
+  }
   width: 100% !important;
-  height: 350px !important;
+  height: 400px !important;
   object-fit: fill;
   position: relative;
   z-index: 1;
 }
 
 .directorInfoContainer {
+  @include respond-to('md') {
+    margin: -15% -7% 0 20%;
+  }
   background-color: #ffffff;
   padding: 5%;
-  margin: -15% -7% 0 20%;
   position: relative;
   z-index: 2;
 }
@@ -188,13 +244,19 @@
 }
 
 .joinCommunityHeading {
-  font-size: 56px;
+  @include respond-to('md') {
+    font-size: 56px;
+  }
+  font-size: 22px;
 }
 
 .joinCommunityDescription {
-  font-size: 18px;
+  @include respond-to('md') {
+    font-size: 18px;
+    padding: 0 20%;
+  }
+  font-size: 16px;
   font-family: 'Avenir Light';
   margin-top: 2%;
-  padding: 0 20%;
   text-align: center;
 }
