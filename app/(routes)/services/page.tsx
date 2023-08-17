@@ -1,8 +1,9 @@
 'use client';
-import React from 'react';
 import styles from './services.module.scss';
 import Image from 'next/image';
 import { BsLinkedin } from 'react-icons/bs';
+
+import execs from './execs.json';
 
 const Services = () => {
   return (
@@ -78,57 +79,42 @@ const Services = () => {
           <h4 className={styles.contactUsHeading}>Get In Touch</h4>
           <p className={styles.contactUsDescription}>
             Want to learn more about our services or schedule a consultation?
-            Fill out our client interest form or reach out to our team and we
-            will get back to you as soon as possible. We are currently sourcing
-            projects for Fall 2023 and we would love to hear from you!
+            Fill out our{' '}
+            <a href="https://forms.gle/SnicvC9TUVHBG2t6A" target="_blank">
+              <u>client interest form</u>
+            </a>{' '}
+            or reach out to our team and we will get back to you as soon as
+            possible. We are currently sourcing projects for Fall 2023 and we
+            would love to hear from you!
           </p>
         </div>
         <div className={styles.rightProfilesContainer}>
-          <div className={styles.profile}>
-            <div className={styles.squareImageWrapper}>
-              <Image
-                src="/services/nayeemur.jpg"
-                alt="profile"
-                layout="fill"
-                objectFit="contain"
-              />
-            </div>
-            <div className={styles.profileInfoContainer}>
-              <h5 className={styles.profileName}>Nayeemur Rahman</h5>
-              <p className={styles.profileTitle}>Director of Projects</p>
-              <p className={styles.profileEmail}>nayeem31@mit.edu</p>
-              <a
-                href="https://www.linkedin.com/in/nayeemurrahman/"
-                target="_blank"
-                className={styles.socialIcon}
-              >
-                <BsLinkedin />
-              </a>
-            </div>
-          </div>
-
-          <div className={styles.profile}>
-            <div className={styles.squareImageWrapper}>
-              <Image
-                src="/services/colin.jpg"
-                alt="profile"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-            <div className={styles.profileInfoContainer}>
-              <h5 className={styles.profileName}>Colin Clark</h5>
-              <p className={styles.profileTitle}>VP External</p>
-              <p className={styles.profileEmail}>colclark@mit.edu</p>
-              <a
-                href="https://www.linkedin.com/in/superc03/"
-                target="_blank"
-                className={styles.socialIcon}
-              >
-                <BsLinkedin />
-              </a>
-            </div>
-          </div>
+          {execs.execs.map((exec) => {
+            return (
+              <div className={styles.profile}>
+                <div className={styles.squareImageWrapper}>
+                  <Image
+                    src={`/services/execsImages/${exec.image}`}
+                    alt="profile"
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                </div>
+                <div className={styles.profileInfoContainer}>
+                  <h5 className={styles.profileName}>{exec.name}</h5>
+                  <p className={styles.profileTitle}>{exec.role}</p>
+                  <p className={styles.profileEmail}>{exec.email}</p>
+                  <a
+                    href={exec.linkedin}
+                    target="_blank"
+                    className={styles.socialIcon}
+                  >
+                    <BsLinkedin />
+                  </a>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

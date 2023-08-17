@@ -1,0 +1,25 @@
+{
+  "execs": [
+    {
+      "name": "Nayeemur Rahman",
+      "role": "Director of Projects",
+      "email": "nayeem31@mit.edu",
+      "linkedin": "https://www.linkedin.com/in/nayeemurrahman/",
+      "image": "nayeemur.jpg"
+    },
+    {
+      "name": "Colin Clark",
+      "role": "VP External",
+      "email": "colclark@mit.edu",
+      "linkedin": "https://www.linkedin.com/in/superc03/",
+      "image": "colin.jpg"
+    },
+    {
+      "name": "Luis Barros",
+      "role": "Faculty Advisor",
+      "email": "lbarros@mit.edu",
+      "linkedin": "https://www.linkedin.com/in/luismsmbarros/",
+      "image": "luis.jpg"
+    }
+  ]
+}
