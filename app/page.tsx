@@ -1,17 +1,38 @@
 'use client';
 
-import { BackgroundGraph } from '@/app/_components/background';
 import styles from './page.module.scss';
+import { useState, useEffect } from 'react';
+import { BackgroundGraph } from '@/app/_components/background';
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
-  // const mobile = window.matchMedia('(max-width: 767px)').matches;
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if the device is mobile
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const handleResize = (event: MediaQueryListEvent) => {
+      setMobile(event.matches);
+    };
+
+    // Set the initial value
+    setMobile(mediaQuery.matches);
+
+    // Listen for changes in the media query
+    mediaQuery.addEventListener('change', handleResize);
+
+    // Clean up the event listener
+    return () => {
+      mediaQuery.removeEventListener('change', handleResize);
+    };
+  }, []);
+
   return (
     <>
-      {<BackgroundGraph isAnimated={true} />}
+      {!mobile && <BackgroundGraph isAnimated={true} />}
       <header className={styles.header}>
         <h1 className={styles.headerTitle}>MITech Consulting Club</h1>
         <p className={styles.headerSubtitle}>
