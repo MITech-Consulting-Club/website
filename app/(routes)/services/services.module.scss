@@ -124,6 +124,7 @@
   @include respond-to('md') {
     flex: 50;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10%;
     padding: 0;
@@ -137,6 +138,7 @@
   @include respond-to('md') {
     position: relative;
     display: block;
+    margin: 10px 0;
   }
   display: flex;
   flex-direction: row;
