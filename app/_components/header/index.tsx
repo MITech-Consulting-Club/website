@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import { useEffect, useState } from 'react';
 import styles from './header.module.scss';
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
@@ -12,9 +12,11 @@ export interface HeaderProps {}
 
 export const Header = () => {
   const path = usePathname();
-  const [atTop, setAtTop] = React.useState(true);
+  const [atTop, setAtTop] = useState(true);
+  const [mobile, setMobile] = useState(false);
+
   // Check if page is at top to update the background color
-  React.useEffect(() => {
+  useEffect(() => {
     if (typeof window != 'undefined') {
       window.addEventListener('scroll', () => {
         // A bit hacky way to make sure the component doesn't re-render every single scroll event
@@ -27,53 +29,124 @@ export const Header = () => {
         }
       });
     }
+
+    // Check if the device is mobile
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const handleResize = (event: MediaQueryListEvent) => {
+      setMobile(event.matches);
+    };
+
+    // Set the initial value
+    setMobile(mediaQuery.matches);
+
+    // Listen for changes in the media query
+    mediaQuery.addEventListener('change', handleResize);
+
+    // Clean up the event listener
+    return () => {
+      mediaQuery.removeEventListener('change', handleResize);
+    };
   }, []);
 
   return (
     <nav className={` ${styles.navbar} ${!atTop ? styles.navbarScrolled : ''}`}>
-      <div className={styles.navbarContainer}>
-        <div>
-          <Link href="/">
-            <img src={logo.src} alt="MCC Logo" className={styles.logo} />
-          </Link>
+      {/* Mobile Navbar */}
+      {mobile && (
+        <div className={styles.mobileNavbarContainer}>
+          <div className={styles.mobileTopNavbar}>
+            <div>
+              <Link href="/">
+                <img src={logo.src} alt="MCC Logo" className={styles.logo} />
+              </Link>
+            </div>
+            <div className={styles.navbarSocials}>
+              <a
+                href="https://www.linkedin.com/company/mitech-consulting-club/"
+                target="_blank"
+                className={styles.socialIcon}
+              >
+                <BsLinkedin />
+              </a>
+              <a
+                href="https://www.instagram.com/mitechconsulting/"
+                target="_blank"
+                className={styles.socialIcon}
+              >
+                <BsInstagram />
+              </a>
+              <a
+                href="mailto:mitech-exec@mit.edu"
+                target="_blank"
+                className={styles.socialIcon}
+              >
+                <MdEmail />
+              </a>
+            </div>
+          </div>
+          <div className={styles.mobileBottomNavbar}>
+            <div className={styles.navbarRoutes}>
+              {routes.map((r: Route) => (
+                <Link
+                  key={r.path + r.title}
+                  href={r.path}
+                  className={` ${styles.navbarRoute} ${
+                    path == r.path ? styles.navbarActiveRoute : ''
+                  }`}
+                >
+                  {r.title}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
-        <div className={styles.navbarRoutes}>
-          {routes.map((r: Route) => (
-            <Link
-              key={r.path + r.title}
-              href={r.path}
-              className={` ${styles.navbarRoute} ${
-                path == r.path ? styles.navbarActiveRoute : ''
-              }`}
-            >
-              {r.title}
+      )}
+
+      {/* Desktop Navbar */}
+      {!mobile && (
+        <div className={styles.navbarContainer}>
+          <div>
+            <Link href="/">
+              <img src={logo.src} alt="MCC Logo" className={styles.logo} />
             </Link>
-          ))}
+          </div>
+          <div className={styles.navbarRoutes}>
+            {routes.map((r: Route) => (
+              <Link
+                key={r.path + r.title}
+                href={r.path}
+                className={` ${styles.navbarRoute} ${
+                  path == r.path ? styles.navbarActiveRoute : ''
+                }`}
+              >
+                {r.title}
+              </Link>
+            ))}
+          </div>
+          <div className={styles.navbarSocials}>
+            <a
+              href="https://www.linkedin.com/company/mitech-consulting-club/"
+              target="_blank"
+              className={styles.socialIcon}
+            >
+              <BsLinkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/mitechconsulting/"
+              target="_blank"
+              className={styles.socialIcon}
+            >
+              <BsInstagram />
+            </a>
+            <a
+              href="mailto:mitech-exec@mit.edu"
+              target="_blank"
+              className={styles.socialIcon}
+            >
+              <MdEmail />
+            </a>
+          </div>
         </div>
-        <div className={styles.navbarSocials}>
-          <a
-            href="https://www.linkedin.com/company/mitech-consulting-club/"
-            target="_blank"
-            className={styles.socialIcon}
-          >
-            <BsLinkedin />
-          </a>
-          <a
-            href="https://www.instagram.com/mitechconsulting/"
-            target="_blank"
-            className={styles.socialIcon}
-          >
-            <BsInstagram />
-          </a>
-          <a
-            href="mailto:mitech-exec@mit.edu"
-            target="_blank"
-            className={styles.socialIcon}
-          >
-            <MdEmail />
-          </a>
-        </div>
-      </div>
+      )}
     </nav>
   );
 };
