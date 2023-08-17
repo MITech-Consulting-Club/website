@@ -8,10 +8,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
-  const mobile = window.matchMedia('(max-width: 767px)').matches;
+  // const mobile = window.matchMedia('(max-width: 767px)').matches;
   return (
     <>
-      {!mobile && <BackgroundGraph isAnimated={true} />}
+      {<BackgroundGraph isAnimated={true} />}
       <header className={styles.header}>
         <h1 className={styles.headerTitle}>MITech Consulting Club</h1>
         <p className={styles.headerSubtitle}>
