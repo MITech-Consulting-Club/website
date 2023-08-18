@@ -165,11 +165,15 @@
 
 .execInfoContainer {
   @include respond-to('md') {
+    width: auto;
+    height: 95px;
     margin: -20% 0 0 20%;
+    padding: 20px;
   }
-  // height: 150px;
-  background-color: #ffffff;
-  padding: 5%;
+  background-color: white;
+  width: 280px;
+  height: auto;
+  padding: 20px 0 20px 20px;
   position: relative;
   z-index: 2;
 }
@@ -217,7 +221,6 @@
   color: #a64cfe;
   padding: 1.5% 4%;
   border: none;
-  border-radius: 5px;
 }
 
 .joinUsButton:hover {
