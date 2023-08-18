@@ -140,25 +140,32 @@
 
 .advisorCarousel {
   flex: 40;
+  width: 100%; // needs a width to work
+  height: auto;
   background-image: linear-gradient(45.34deg, #da9bff 5.66%, #6f56f9 94.35%);
   position: relative;
 }
 
 .advisorsProfessionalHeadshot {
   @include respond-to('md') {
-    margin: 15% 0 0 25%;
-    position: relative;
     width: 50%;
-    aspect-ratio: 1/1;
-    z-index: 1;
+    height: 60%;
   }
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 15% 0 0 25%;
   position: relative;
+  z-index: 1;
 }
 
 .advisorInfoContainer {
+  @include respond-to('md') {
+    margin: -10% 10% 0 40%;
+  }
   background-color: #ffffff;
   padding: 2%;
-  margin: -10% 10% 0 40%;
+  margin: 20px;
   position: relative;
   z-index: 2;
 }

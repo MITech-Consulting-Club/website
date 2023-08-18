@@ -124,6 +124,7 @@ const Alumni = () => {
           })}
         </Swiper>
       </div>
+
       <div className={styles.mentorsContainer}>
         <div className={styles.mentorsLeftTextContainer}>
           <h1 className={styles.mentorsHeading}>Alumni Career Mentors</h1>
