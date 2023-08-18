@@ -5,8 +5,13 @@ import { useState, useEffect } from 'react';
 import { BackgroundGraph } from '@/app/_components/background';
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import alumni from './(routes)/alumni/alumni.json';
 
 export default function Home() {
   const [mobile, setMobile] = useState(false);
@@ -186,23 +191,38 @@ export default function Home() {
               Learn More
             </Link>
           </div>
-          <div className={styles.alumniRightImageContainer}>
-            <Image
-              src="/alumni/advisorImages/sam.jpg"
-              alt="alumni advisor headshot"
-              width={500}
-              height={500}
-              className={styles.alumniAdvisorHeadshot}
-            />
-            <h5 className={styles.alumniAdvisorName}>Sam Kwei</h5>
-            <h5 className={styles.alumniAdvisorTitle}>
-              Staff Technical Program Manager at Google
-            </h5>
-            <p className={styles.alumniAdvisorRole}>
-              Professional Development Advisor
-            </p>
-            <p className={styles.alumniAdvisorClass}>MIT Class of 2005</p>
-          </div>
+          <Swiper
+            modules={[Navigation]}
+            navigation
+            className={styles.advisorCarousel}
+          >
+            {alumni.advisors.map((advisor) => {
+              return (
+                <SwiperSlide>
+                  <div className={styles.advisorsProfessionalHeadshot}>
+                    <Image
+                      src={`/alumni/advisorImages/${advisor.image}`}
+                      alt="alumni advisor headshot"
+                      fill
+                      objectFit="contain"
+                    />
+                  </div>
+                  <div className={styles.advisorInfoContainer}>
+                    <h5 className={styles.alumniAdvisorName}>
+                      {advisor.name.slice(0, -4)}
+                    </h5>
+                    <h5 className={styles.alumniAdvisorTitle}>
+                      {advisor.role}
+                    </h5>
+                    <p className={styles.alumniAdvisorRole}>{advisor.type}</p>
+                    <p className={styles.alumniAdvisorClass}>
+                      MIT Class of {advisor.class}
+                    </p>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </section>
       <section id="sponsors">
