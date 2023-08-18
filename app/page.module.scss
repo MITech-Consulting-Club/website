@@ -279,23 +279,28 @@
   color: $background;
 }
 
-.alumniRightImageContainer {
-  @include respond-to('md') {
-    padding: 0;
-  }
+.advisorCarousel {
   flex: 50;
+  width: 100%; // needs a width to work
+  height: auto;
   background: linear-gradient(-225deg, #65379b 0%, #886aea 53%, #6457c6 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 8% 4%;
 }
 
-.alumniAdvisorHeadshot {
-  width: 50%;
-  height: 60%;
+.advisorsProfessionalHeadshot {
+  @include respond-to('md') {
+    width: 50%;
+    height: 50%;
+  }
+  width: 200px;
+  height: 200px;
   object-fit: cover;
+  margin: 15% 0 0 25%;
+  position: relative;
+  z-index: 1;
+}
+
+.advisorInfoContainer {
+  text-align: center;
 }
 
 .alumniAdvisorName,
