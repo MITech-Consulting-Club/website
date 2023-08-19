@@ -204,22 +204,15 @@
 }
 
 .directorHeadshot {
-  @include respond-to('md') {
-    height: 300px !important;
-  }
-  width: 100% !important;
-  height: 400px !important;
-  object-fit: fill;
+  object-fit: cover;
   position: relative;
-  z-index: 1;
 }
 
 .directorInfoContainer {
-  @include respond-to('md') {
-    margin: -15% -7% 0 20%;
-  }
-  background-color: #ffffff;
-  padding: 5%;
+  background-color: white;
+  width: 285px;
+  height: auto;
+  padding: 15px 0 15px 15px;
   position: relative;
   z-index: 2;
 }

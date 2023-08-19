@@ -1,0 +1,12 @@
+{
+  "directors": [
+    {
+      "name": "Maggie Yu",
+      "image": "maggie.jpg"
+    },
+    {
+      "name": "Karen Guo",
+      "image": "karen.jpg"
+    }
+  ]
+}

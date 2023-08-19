@@ -2,6 +2,7 @@
 
 import styles from './join.module.scss';
 import Image from 'next/image';
+import directors from './directors.json';
 
 const joinUs = () => {
   return (
@@ -89,40 +90,35 @@ const joinUs = () => {
           you!
         </p>
         <div className={styles.directorsProfilesContainer}>
-          <div className={styles.directorProfile}>
-            <Image
-              src="/about/execImages/maggie.jpg"
-              alt="director image"
-              width={500}
-              height={500}
-              className={styles.directorHeadshot}
-            />
-            <div className={styles.directorInfoContainer}>
-              <h3 className={styles.directorName}>Maggie Yu</h3>
-              <h4 className={styles.directorRole}>Director of Recruitment</h4>
+          {directors.directors.map((director) => (
+            <div className={styles.directorProfile}>
+              <Image
+                src={`/about/execImages/${director.image}`}
+                alt="director image"
+                width={300}
+                height={300}
+                className={styles.directorHeadshot}
+              />
+              <div className={styles.directorInfoContainer}>
+                <h3 className={styles.directorName}>{director.name}</h3>
+                <h4 className={styles.directorRole}>Director of Recruitment</h4>
+              </div>
             </div>
-          </div>
-          <div className={styles.directorProfile}>
-            <Image
-              src="/about/execImages/karen.jpg"
-              alt="director image"
-              width={500}
-              height={500}
-              className={styles.directorHeadshot}
-            />
-            <div className={styles.directorInfoContainer}>
-              <h3 className={styles.directorName}>Karen Guo</h3>
-              <h4 className={styles.directorRole}>Director of Recruitment</h4>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
       <div className={styles.joinCommunity}>
         <h1 className={styles.joinCommunityHeading}>Join Our Community</h1>
         <p className={styles.joinCommunityDescription}>
-          Join our email list to stay updated on our recruitment & MIT-wide
-          events and receive our newsletters. This page will soon be updated
-          with our recruitment events this Fall!
+          Join our{' '}
+          <u>
+            <a href="https://forms.gle/2umo5ePtrVtkHETx6" target="_blank">
+              email list
+            </a>
+          </u>{' '}
+          to stay updated on our recruitment & MIT-wide events and receive our
+          newsletters. This page will soon be updated with our recruitment
+          events this Fall!
         </p>
       </div>
     </div>
