@@ -90,7 +90,7 @@
 }
 
 .questionsContainer {
-  background: linear-gradient(#cd9cf2 0%, #f6f3ff 100%);
+  background-image: url(/services/graphLines.png);
   padding: 5%;
 }
 
@@ -114,6 +114,10 @@
   text-align: center;
   position: relative;
   margin: 10px 0;
+  border-radius: 10px;
+  box-shadow:
+    0 4px 8px 0 rgba(251, 248, 255, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .numberCircle {
