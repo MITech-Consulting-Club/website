@@ -1,7 +1,13 @@
 @import '@/app/_styles/theme.scss';
 @import '@/app/_styles/responsive.scss';
 
-.card {
+@property --rotate {
+  syntax: '<angle>';
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.popupContainer {
   @include respond-to('md') {
     flex-direction: row;
     top: 25%; /* Center the pop-up vertically */
@@ -10,17 +16,52 @@
     margin: 0;
   }
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Make sure the popup container is on top */
+}
+
+.card {
+  @include respond-to('md') {
+    flex-direction: row;
+  }
+  position: relative;
   background-color: white;
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  margin: 0 20px;
+  margin: 10px;
   border-radius: 10px;
   box-shadow:
     0 4px 8px 0 rgba(251, 248, 255, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  z-index: 1000; /* Make sure the pop-up is on top */
+}
+
+.animationBackground {
+  position: fixed;
+  width: 100%;
+  height: 102%;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  position: absolute;
+  z-index: -1;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
 }
 
 .profileImage {
