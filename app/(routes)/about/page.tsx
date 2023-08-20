@@ -1,13 +1,41 @@
 'use client';
+import { useState } from 'react';
 import styles from './about.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import PopUp from '@/app/_components/popUp';
 
 import exec from './exec.json';
 
 const About = () => {
+  const [showPopUp, setShowPopUp] = useState(false);
+  const [selectedExecutive, setSelectedExecutive] = useState(null);
+
+  const handleshowProfile = (executive) => {
+    setSelectedExecutive(executive);
+    setShowPopUp(true);
+  };
+
+  const handlecloseProfile = () => {
+    setSelectedExecutive(null);
+    setShowPopUp(false);
+  };
+
   return (
     <div>
+      <div
+        className={`${styles.overlay} ${showPopUp ? styles.showOverlay : ''}`}
+      ></div>
+
+      {showPopUp && selectedExecutive && (
+        <PopUp
+          image={selectedExecutive.image}
+          name={selectedExecutive.name}
+          role={selectedExecutive.role}
+          bio={selectedExecutive.bio}
+          onCloseProfile={handlecloseProfile}
+        />
+      )}
       <div className={styles.teamContainer}>
         <div className={styles.teamBox}>
           <h1 className={styles.teamHeading}>The MITech Team</h1>
@@ -91,7 +119,10 @@ const About = () => {
           <div className={styles.teamPhotosContainer}>
             {exec.team.map((member) => {
               return (
-                <div className={styles.execProfile}>
+                <div
+                  className={styles.execProfile}
+                  onClick={() => handleshowProfile(member)}
+                >
                   <Image
                     src={`/about/execImages/${member.image}`}
                     alt="exec image"
