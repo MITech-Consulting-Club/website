@@ -172,10 +172,20 @@
   position: relative;
 }
 
+.execProfile:hover {
+  cursor: pointer;
+}
+
 .execHeadshot {
   object-fit: cover;
   position: relative;
   z-index: 1;
+}
+
+.execHeadshot:hover {
+  box-shadow:
+    0 4px 8px 0 rgba(251, 248, 255, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .execInfoContainer {
