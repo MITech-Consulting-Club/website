@@ -196,9 +196,9 @@ export default function Home() {
             navigation
             className={styles.advisorCarousel}
           >
-            {alumni.advisors.map((advisor) => {
+            {alumni.advisors.map((advisor, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <div className={styles.advisorsProfessionalHeadshot}>
                     <Image
                       src={`/alumni/advisorImages/${advisor.image}`}
