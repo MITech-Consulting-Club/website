@@ -1,0 +1,57 @@
+@import '@/app/_styles/theme.scss';
+@import '@/app/_styles/responsive.scss';
+
+.card {
+  @include respond-to('md') {
+    flex-direction: row;
+    top: 25%; /* Center the pop-up vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  position: fixed;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow:
+    0 4px 8px 0 rgba(251, 248, 255, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1000; /* Make sure the pop-up is on top */
+}
+
+.profileImage {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.profileContainer {
+  color: black;
+  font-family: 'Avenir Light';
+}
+
+.profileName {
+  font-size: 18px;
+  font-family: 'Avenir';
+}
+
+.profileRole {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.profileBio {
+  font-size: 16px;
+}
+
+.closeButton {
+  position: absolute;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+}
