@@ -325,8 +325,13 @@ export default function Home() {
         <div className={styles.communityContainer}>
           <h1 className={styles.communityHeading}>Join Our Community</h1>
           <p className={styles.communityDescription}>
-            Join our email list to stay updated on our events and receive our
-            newsletters.
+            Join our{' '}
+            <u>
+              <a href="https://forms.gle/2umo5ePtrVtkHETx6" target="_blank">
+                email list
+              </a>
+            </u>{' '}
+            to stay updated on our events and receive our newsletters.
           </p>
         </div>
       </section>
