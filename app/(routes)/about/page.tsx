@@ -7,17 +7,34 @@ import PopUp from '@/app/_components/popUp';
 
 import exec from './exec.json';
 
+interface Executive {
+  name: string;
+  role: string;
+  image: string;
+  bio: string;
+}
+
 const About = () => {
   const [showPopUp, setShowPopUp] = useState(false);
-  const [selectedExecutive, setSelectedExecutive] = useState(null);
+  const [selectedExecutive, setSelectedExecutive] = useState({
+    name: '',
+    role: '',
+    image: '',
+    bio: '',
+  });
 
-  const handleshowProfile = (executive) => {
+  const handleshowProfile = (executive: Executive) => {
     setSelectedExecutive(executive);
     setShowPopUp(true);
   };
 
   const handlecloseProfile = () => {
-    setSelectedExecutive(null);
+    setSelectedExecutive({
+      name: '',
+      role: '',
+      image: '',
+      bio: '',
+    });
     setShowPopUp(false);
   };
 
