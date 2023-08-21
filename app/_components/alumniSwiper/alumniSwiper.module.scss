@@ -1,0 +1,53 @@
+@import '@/app/_styles/theme.scss';
+@import '@/app/_styles/responsive.scss';
+
+.advisorCarousel {
+  @include respond-to('md') {
+    max-width: 500px;
+  }
+  max-width: 400px;
+}
+.advisorSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.advisorProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.advisorImageContainer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.advisorInfoContainer {
+  margin-top: 10px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.alumniAdvisorName,
+.alumniAdvisorTitle {
+  @include respond-to('md') {
+    font-size: 18px;
+  }
+  font-size: 17px;
+  font-family: 'Avenir';
+  color: white;
+  margin-top: 1%;
+}
+
+.alumniAdvisorRole,
+.alumniAdvisorClass {
+  font-size: 16px;
+  font-family: 'Avenir';
+  color: #e9d2ff;
+  margin-top: 1%;
+}

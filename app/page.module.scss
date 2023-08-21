@@ -248,7 +248,9 @@
 }
 
 .alumniLeftTextContainer {
-  flex: 50;
+  @include respond-to('md') {
+    flex: 50;
+  }
   padding: 10% 7%;
 }
 
@@ -279,47 +281,16 @@
   color: $background;
 }
 
-.advisorCarousel {
-  flex: 50;
-  width: 100%; // needs a width to work
-  height: auto;
+.alumniCarousel {
+  @include respond-to('md') {
+    flex: 50;
+    padding: 0;
+  }
   background: linear-gradient(-225deg, #65379b 0%, #886aea 53%, #6457c6 100%);
-}
-
-.advisorsProfessionalHeadshot {
-  @include respond-to('md') {
-    width: 50%;
-    height: 50%;
-  }
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  margin: 15% 0 0 25%;
-  position: relative;
-  z-index: 1;
-}
-
-.advisorInfoContainer {
-  text-align: center;
-}
-
-.alumniAdvisorName,
-.alumniAdvisorTitle {
-  @include respond-to('md') {
-    font-size: 18px;
-  }
-  font-size: 17px;
-  font-family: 'Avenir';
-  color: white;
-  margin-top: 1%;
-}
-
-.alumniAdvisorRole,
-.alumniAdvisorClass {
-  font-size: 16px;
-  font-family: 'Avenir';
-  color: #e9d2ff;
-  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 .sponsorsInterestContainer {
