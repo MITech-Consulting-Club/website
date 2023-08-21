@@ -94,7 +94,7 @@ const Alumni = () => {
           </p>
         </div>
         <div className={styles.alumniCarousel}>
-          <AlumniSwiper />
+          <AlumniSwiper width={250} height={250} />
         </div>
       </div>
       <div className={styles.mentorsContainer}>

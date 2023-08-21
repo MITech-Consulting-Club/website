@@ -188,7 +188,7 @@ export default function Home() {
             </Link>
           </div>
           <div className={styles.alumniCarousel}>
-            <AlumniSwiper />
+            <AlumniSwiper width={300} height={300} />
           </div>
         </div>
       </section>
