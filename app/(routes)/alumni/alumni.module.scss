@@ -136,51 +136,16 @@
   margin: 3% 0;
 }
 
-.advisorCarousel {
-  flex: 40;
-  width: 100%; // needs a width to work
-  height: auto;
-  background-image: linear-gradient(45.34deg, #da9bff 5.66%, #6f56f9 94.35%);
-  position: relative;
-}
-
-.advisorsProfessionalHeadshot {
+.alumniCarousel {
   @include respond-to('md') {
-    width: 50%;
-    height: 60%;
+    flex: 40;
+    padding: 0;
   }
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  margin: 15% 0 0 25%;
-  position: relative;
-  z-index: 1;
-}
-
-.advisorInfoContainer {
-  @include respond-to('md') {
-    margin: -10% 10% 0 40%;
-  }
-  background-color: #ffffff;
-  padding: 2%;
-  margin: 20px;
-  position: relative;
-  z-index: 2;
-}
-
-.advisorName {
-  font-size: 18px;
-  font-family: 'Avenir';
-}
-
-.advisorRole {
-  font-size: 14px;
-  font-family: 'Avenir';
-}
-
-.advisorType {
-  font-size: 13px;
-  font-family: 'Avenir Light';
+  background: linear-gradient(-225deg, #65379b 0%, #886aea 53%, #6457c6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 .mentorsContainer {

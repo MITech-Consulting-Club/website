@@ -13,6 +13,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import alumni from './(routes)/alumni/alumni.json';
 
+import AlumniSwiper from '@/app/_components/alumniSwiper';
+
 export default function Home() {
   const [mobile, setMobile] = useState(false);
 
@@ -191,38 +193,9 @@ export default function Home() {
               Learn More
             </Link>
           </div>
-          <Swiper
-            modules={[Navigation]}
-            navigation
-            className={styles.advisorCarousel}
-          >
-            {alumni.advisors.map((advisor, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <div className={styles.advisorsProfessionalHeadshot}>
-                    <Image
-                      src={`/alumni/advisorImages/${advisor.image}`}
-                      alt="alumni advisor headshot"
-                      fill
-                      objectFit="contain"
-                    />
-                  </div>
-                  <div className={styles.advisorInfoContainer}>
-                    <h5 className={styles.alumniAdvisorName}>
-                      {advisor.name.slice(0, -4)}
-                    </h5>
-                    <h5 className={styles.alumniAdvisorTitle}>
-                      {advisor.role}
-                    </h5>
-                    <p className={styles.alumniAdvisorRole}>{advisor.type}</p>
-                    <p className={styles.alumniAdvisorClass}>
-                      MIT Class of {advisor.class}
-                    </p>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+          <div className={styles.alumniCarousel}>
+            <AlumniSwiper />
+          </div>
         </div>
       </section>
       <section id="sponsors">

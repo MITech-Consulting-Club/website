@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
+import AlumniSwiper from '@/app/_components/alumniSwiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -98,33 +99,10 @@ const Alumni = () => {
             & Projects.
           </p>
         </div>
-        <Swiper
-          modules={[Navigation]}
-          navigation
-          className={styles.advisorCarousel}
-        >
-          {alumni.advisors.map((advisor, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <div className={styles.advisorsProfessionalHeadshot}>
-                  <Image
-                    src={`/alumni/advisorImages/${advisor.image}`}
-                    alt="alumni advisor headshot"
-                    fill
-                    objectFit="contain"
-                  />
-                </div>
-                <div className={styles.advisorInfoContainer}>
-                  <h3 className={styles.advisorName}>{advisor.name}</h3>
-                  <h4 className={styles.avisorRole}>{advisor.role}</h4>
-                  <p className={styles.advisorType}>{advisor.type}</p>
-                </div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+        <div className={styles.alumniCarousel}>
+          <AlumniSwiper />
+        </div>
       </div>
-
       <div className={styles.mentorsContainer}>
         <div className={styles.mentorsLeftTextContainer}>
           <h1 className={styles.mentorsHeading}>Alumni Career Mentors</h1>
