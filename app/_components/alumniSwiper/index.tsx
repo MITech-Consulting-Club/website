@@ -7,7 +7,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import alumni from '@/app/(routes)/alumni/alumni.json';
 
-const AlumniSwiper = () => {
+interface AlumniSwiperProps {
+  width: number;
+  height: number;
+}
+
+const AlumniSwiper = ({ width, height }: AlumniSwiperProps) => {
   return (
     <div>
       <Swiper
@@ -23,8 +28,8 @@ const AlumniSwiper = () => {
                   <Image
                     src={`/alumni/advisorImages/${advisor.image}`}
                     alt="alumni advisor headshot"
-                    layout="fill"
-                    objectFit="cover"
+                    width={width}
+                    height={height}
                   />
                 </div>
                 <div className={styles.advisorInfoContainer}>
