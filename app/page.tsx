@@ -5,14 +5,8 @@ import { useState, useEffect } from 'react';
 import { BackgroundGraph } from '@/app/_components/background';
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import alumni from './(routes)/alumni/alumni.json';
-
 import AlumniSwiper from '@/app/_components/alumniSwiper';
 
 export default function Home() {

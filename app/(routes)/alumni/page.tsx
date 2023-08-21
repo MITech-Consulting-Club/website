@@ -1,13 +1,7 @@
 'use client';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import AlumniSwiper from '@/app/_components/alumniSwiper';
-
-import 'swiper/css';
-import 'swiper/css/navigation';
 import styles from './alumni.module.scss';
-import alumni from './alumni.json';
 
 const Alumni = () => {
   return (
