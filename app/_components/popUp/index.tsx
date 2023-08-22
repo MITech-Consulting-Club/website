@@ -10,7 +10,13 @@ interface PopUpProps {
   onCloseProfile: () => void;
 }
 
-const PopUp = ({ image, name, role, bio, onCloseProfile }: PopUpProps) => {
+export default function PopUp({
+  image,
+  name,
+  role,
+  bio,
+  onCloseProfile,
+}: PopUpProps) {
   return (
     <div className={styles.popupContainer}>
       <div className={styles.card}>
@@ -37,6 +43,4 @@ const PopUp = ({ image, name, role, bio, onCloseProfile }: PopUpProps) => {
       ></div>
     </div>
   );
-};
-
-export default PopUp;
+}
