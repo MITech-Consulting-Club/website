@@ -12,7 +12,7 @@ interface AlumniSwiperProps {
   height: number;
 }
 
-const AlumniSwiper = ({ width, height }: AlumniSwiperProps) => {
+export default function AlumniSwiper({ width, height }: AlumniSwiperProps) {
   return (
     <div>
       <Swiper
@@ -49,6 +49,4 @@ const AlumniSwiper = ({ width, height }: AlumniSwiperProps) => {
       </Swiper>
     </div>
   );
-};
-
-export default AlumniSwiper;
+}
