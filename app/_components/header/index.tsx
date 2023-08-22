@@ -13,7 +13,7 @@ export interface HeaderProps {}
 export const Header = () => {
   const path = usePathname();
   const [atTop, setAtTop] = useState(true);
-  const [mobile, setMobile] = useState(false);
+  const [desktop, setDesktop] = useState(false);
 
   // Check if page is at top to update the background color
   useEffect(() => {
@@ -30,14 +30,14 @@ export const Header = () => {
       });
     }
 
-    // Check if the device is mobile
-    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    // Check if the device is desktop
+    const mediaQuery = window.matchMedia('(min-width: 1200px)');
     const handleResize = (event: MediaQueryListEvent) => {
-      setMobile(event.matches);
+      setDesktop(event.matches);
     };
 
     // Set the initial value
-    setMobile(mediaQuery.matches);
+    setDesktop(mediaQuery.matches);
 
     // Listen for changes in the media query
     mediaQuery.addEventListener('change', handleResize);
@@ -50,8 +50,8 @@ export const Header = () => {
 
   return (
     <nav className={` ${styles.navbar} ${!atTop ? styles.navbarScrolled : ''}`}>
-      {/* Mobile Navbar */}
-      {mobile && (
+      {/* Mobile and Tablet Navbar */}
+      {!desktop && (
         <div className={styles.mobileNavbarContainer}>
           <div className={styles.mobileTopNavbar}>
             <div>
@@ -102,7 +102,7 @@ export const Header = () => {
       )}
 
       {/* Desktop Navbar */}
-      {!mobile && (
+      {desktop && (
         <div className={styles.navbarContainer}>
           <div>
             <Link href="/">
