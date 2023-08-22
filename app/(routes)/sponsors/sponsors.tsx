@@ -29,14 +29,21 @@ export default function Sponsors() {
       </div>
       <div className={styles.packagesContainer}>
         <div className={styles.packagesCardsContainer}>
-          <div className={styles.silverCard}>
+          <div className={styles.platinumCard}>
             <div className={styles.numberCircle}>1</div>
-
-            <h5 className={styles.cardHeading}>Silver Sponsor</h5>
+            <h5 className={styles.cardHeading}>Platinum Sponsor</h5>
             <ul className={styles.packageOffers}>
-              <li>Company Branding & Presence</li>
-              <li>Access to our annual networking conference</li>
+              <li>Highest Level of Company Branding & Presence</li>
+              <li>Access to our annual networking conference </li>
               <li>Access to resume book</li>
+              <li>
+                Unlimited small-scale (less than 50) club-sponsored events
+              </li>
+              <li>
+                Up to two large-scale (50 or greater) club-sponsored events
+              </li>
+              <li>Guaranteed coffee chat slots with our members</li>
+              <li>Tailored recruitment support</li>
             </ul>
           </div>
           <div className={styles.goldCard}>
@@ -56,21 +63,13 @@ export default function Sponsors() {
               </li>
             </ul>
           </div>
-          <div className={styles.platinumCard}>
+          <div className={styles.silverCard}>
             <div className={styles.numberCircle}>3</div>
-            <h5 className={styles.cardHeading}>Platinum Sponsor</h5>
+            <h5 className={styles.cardHeading}>Silver Sponsor</h5>
             <ul className={styles.packageOffers}>
-              <li>Highest Level of Company Branding & Presence</li>
-              <li>Access to our annual networking conference </li>
+              <li>Company Branding & Presence</li>
+              <li>Access to our annual networking conference</li>
               <li>Access to resume book</li>
-              <li>
-                Unlimited small-scale (less than 50) club-sponsored events
-              </li>
-              <li>
-                Up to two large-scale (50 or greater) club-sponsored events
-              </li>
-              <li>Guaranteed coffee chat slots with our members</li>
-              <li>Tailored recruitment support</li>
             </ul>
           </div>
         </div>
