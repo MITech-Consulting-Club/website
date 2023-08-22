@@ -68,26 +68,28 @@
 .engagementsCardsContainer {
   @include respond-to('md') {
     flex-direction: row;
-    align-items: normal;
+    gap: 2%;
   }
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  margin: 3% 0 0 0;
 }
 
 .engagementsCard {
   @include respond-to('md') {
     width: 30%;
-    height: 50%;
     margin: 0;
   }
-  background: #ececef;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  background-color: #ececef;
   padding: 2%;
-  margin: 20px 0;
+  text-align: center;
+  position: relative;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow:
+    0 4px 8px 0 rgba(251, 248, 255, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cardAvatar {
@@ -96,7 +98,6 @@
 }
 
 .cardTitle {
-  font-size: 20px;
   margin: 5% 0;
 }
 .cardDescription {
