@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'MITech Consulting Club',
     'MITech',
   ],
-  themeColor: '#9e3ffd',
+  themeColor: '#debdff',
 };
 
 export interface RootProps {
