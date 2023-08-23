@@ -208,10 +208,18 @@ export default function Home() {
               We are currently looking for corporate sponsors.
             </h5>
             <p className={styles.sponsorsInterestDescription2}>
-              Please reach out at <strong>mitech-corporate@mit.edu</strong> if
-              you would like to learn more about our sponsorship packages &
+              Please reach out at{' '}
+              <u>
+                <a href="mailto:mitech-corporate@mit.edu" target="_blank">
+                  mitech-corporate@mit.edu
+                </a>
+              </u>{' '}
+              if you would like to learn more about our sponsorship packages &
               offerings; we would love to hear from you!
             </p>
+            <Link href="/sponsors" className={styles.servicesLink}>
+              Learn More
+            </Link>
           </div>
         </div>
       </section>
