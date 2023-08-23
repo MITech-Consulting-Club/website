@@ -48,7 +48,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
+  padding: 40px 20%;
 }
 
 .servicesSubtitle {
@@ -71,8 +71,7 @@
   @include respond-to('md') {
     max-width: 1500px;
     flex-direction: row;
-    align-items: flex-start;
-    margin-top: 0;
+    gap: 2%;
   }
   display: flex;
   flex-direction: column;
@@ -81,13 +80,18 @@
 }
 
 .servicesGalleryItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  @include respond-to('md') {
+    width: 350px;
+    margin: 0;
+    text-align: left;
+    border-bottom: none;
+    border-right: #debdff 1px solid;
+  }
+  position: relative;
   text-align: center;
-  width: 300px;
-  margin: 25px;
+  margin: 10px 0;
+  border-bottom: #debdff 1px solid;
+  padding: 2%;
 }
 
 .servicesGalleryItemTitle {
@@ -341,7 +345,16 @@
 .sponsorsInterestDescription2 {
   font-size: 18px;
   font-family: 'Avenir Light';
-  margin-top: 3%;
+  margin: 3% 0 30px 0;
+}
+
+.sponsorsLink {
+  position: relative;
+  background-color: $primary;
+  color: $background;
+  font-size: 15px;
+  padding: 15px 25px;
+  border-radius: 40px;
 }
 
 .contactLeftTextContainer {
