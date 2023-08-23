@@ -1,6 +1,21 @@
 @import '@/app/_styles/theme.scss';
 @import '@/app/_styles/responsive.scss';
 
+.overlay {
+  display: none; /* Initially hide the overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Position the overlay behind the pop-up but above other content */
+}
+
+.showOverlay {
+  display: block; /* Show the overlay when profile is clicked */
+}
+
 .advisorCarousel {
   @include respond-to('md') {
     max-width: 500px;

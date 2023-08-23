@@ -3,7 +3,7 @@ import styles from './popUp.module.scss';
 import Image from 'next/image';
 
 interface PopUpProps {
-  image: string;
+  imageURL: string;
   name: string;
   role: string;
   bio: string;
@@ -11,7 +11,7 @@ interface PopUpProps {
 }
 
 export default function PopUp({
-  image,
+  imageURL,
   name,
   role,
   bio,
@@ -21,7 +21,7 @@ export default function PopUp({
     <div className={styles.popupContainer}>
       <div className={styles.card}>
         <Image
-          src={`/about/execImages/${image}`}
+          src={imageURL}
           alt="profile"
           width={500}
           height={500}

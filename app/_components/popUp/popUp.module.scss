@@ -70,6 +70,16 @@
 .profileContainer {
   color: black;
   font-family: 'Avenir Light';
+  // allow scrolling if the content is too long
+  max-height: 250px;
+  overflow-y: scroll;
+  // hide scrollbar
+  -ms-overflow-style: none; // Internet Explorer 10+ //
+  scrollbar-width: none; // Firefox //
+}
+
+.profileContainer::-webkit-scrollbar {
+  display: none; // Safari and Chrome //
 }
 
 .profileName {

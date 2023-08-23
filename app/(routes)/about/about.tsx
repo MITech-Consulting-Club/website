@@ -46,7 +46,7 @@ export default function About() {
 
       {showPopUp && selectedExecutive && (
         <PopUp
-          image={selectedExecutive.image}
+          imageURL={`/about/execImages/${selectedExecutive.image}`}
           name={selectedExecutive.name}
           role={selectedExecutive.role}
           bio={selectedExecutive.bio}
