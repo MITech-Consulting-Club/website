@@ -44,7 +44,7 @@ export default function Home() {
           today's competitive market.
         </p>
         <Link href="#about" aria-label="About Us" className={styles.headerLink}>
-          Learn More
+          About Us
         </Link>
       </header>
       <section className={styles.services} id="services">
@@ -126,7 +126,7 @@ export default function Home() {
           aria-label="Our Services"
           className={styles.servicesLink}
         >
-          Learn More
+          Our Services
         </Link>
       </section>
       <section id="about">
@@ -144,10 +144,10 @@ export default function Home() {
             </p>
             <Link
               href="#services"
-              aria-label="Our Services"
+              aria-label="Our Mission"
               className={styles.ourServicesLink}
             >
-              Learn More
+              Our Mission
             </Link>
           </div>
 
@@ -180,7 +180,7 @@ export default function Home() {
             aria-label="Our Team"
             className={styles.aboutLink}
           >
-            Learn More
+            Our Team
           </Link>
         </div>
       </section>
@@ -200,7 +200,7 @@ export default function Home() {
               aria-label="Alumni Advisors"
               className={styles.alumniLink}
             >
-              Learn More
+              Alumni Advisors
             </Link>
           </div>
           <div className={styles.alumniCarousel}>
@@ -228,7 +228,7 @@ export default function Home() {
               <u>
                 <Link
                   href="mailto:mitech-corporate@mit.edu"
-                  aria-label="MITech Corporate Relations Email"
+                  aria-label="mitech-corporate@mit.edu"
                   target="_blank"
                 >
                   mitech-corporate@mit.edu
@@ -239,10 +239,10 @@ export default function Home() {
             </p>
             <Link
               href="/sponsors"
-              aria-label="Sponsors Page"
+              aria-label="Sponsor MITech"
               className={styles.servicesLink}
             >
-              Learn More
+              Sponsor MITech
             </Link>
           </div>
         </div>
