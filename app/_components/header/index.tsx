@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import styles from './header.module.scss';
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Route, routes } from './routes';
 import { usePathname } from 'next/navigation';
@@ -56,7 +57,13 @@ export const Header = () => {
           <div className={styles.mobileTopNavbar}>
             <div>
               <Link href="/">
-                <img src={logo.src} alt="MCC Logo" className={styles.logo} />
+                <Image
+                  src={logo.src}
+                  alt="MCC Logo"
+                  width={150}
+                  height={62}
+                  className={styles.logo}
+                />
               </Link>
             </div>
             <div className={styles.navbarSocials}>
@@ -109,7 +116,13 @@ export const Header = () => {
         <div className={styles.navbarContainer}>
           <div>
             <Link href="/">
-              <img src={logo.src} alt="MCC Logo" className={styles.logo} />
+              <Image
+                src={logo.src}
+                alt="MCC Logo"
+                width={250}
+                height={104}
+                className={styles.logo}
+              />
             </Link>
           </div>
           <div className={styles.navbarRoutes}>

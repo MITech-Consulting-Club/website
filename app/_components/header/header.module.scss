@@ -56,13 +56,6 @@
   flex-direction: column;
 }
 
-.logo {
-  @include respond-to('md') {
-    width: 250px;
-  }
-  width: 150px;
-}
-
 .navbarRoutes {
   @include respond-to('md') {
   }
