@@ -1,5 +1,6 @@
 'use client';
 import styles from './sponsors.module.scss';
+import Link from 'next/link';
 
 export default function Sponsors() {
   return (
@@ -21,9 +22,18 @@ export default function Sponsors() {
             We are currently looking for corporate sponsors.
           </h5>
           <p className={styles.sponsorsInterestDescription2}>
-            Please reach out at <strong>mitech-corporate@mit.edu</strong> if you
-            would like to learn more about our sponsorship packages & offerings.
-            We would love to hear from you!
+            Please reach out at{' '}
+            <u>
+              <Link
+                href="mailto:mitech-corporate@mit.edu"
+                aria-label="mitech-corporate@mit.edu"
+                target="_blank"
+              >
+                mitech-corporate@mit.edu
+              </Link>
+            </u>{' '}
+            if you would like to learn more about our sponsorship packages &
+            offerings. We would love to hear from you!
           </p>
         </div>
       </div>
