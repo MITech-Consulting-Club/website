@@ -60,27 +60,30 @@ export const Header = () => {
               </Link>
             </div>
             <div className={styles.navbarSocials}>
-              <a
+              <Link
                 href="https://www.linkedin.com/company/mitech-consulting-club/"
                 target="_blank"
+                aria-label="MITech LinkedIn"
                 className={styles.socialIcon}
               >
                 <BsLinkedin />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com/mitechconsulting/"
                 target="_blank"
+                aria-label="MITech Instagram"
                 className={styles.socialIcon}
               >
                 <BsInstagram />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="mailto:mitech-exec@mit.edu"
                 target="_blank"
+                aria-label="MITech Email"
                 className={styles.socialIcon}
               >
                 <MdEmail />
-              </a>
+              </Link>
             </div>
           </div>
           <div className={styles.mobileBottomNavbar}>
@@ -123,27 +126,30 @@ export const Header = () => {
             ))}
           </div>
           <div className={styles.navbarSocials}>
-            <a
+            <Link
               href="https://www.linkedin.com/company/mitech-consulting-club/"
               target="_blank"
+              aria-label="MITech LinkedIn"
               className={styles.socialIcon}
             >
               <BsLinkedin />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.instagram.com/mitechconsulting/"
               target="_blank"
+              aria-label="MITech Instagram"
               className={styles.socialIcon}
             >
               <BsInstagram />
-            </a>
-            <a
+            </Link>
+            <Link
               href="mailto:mitech-exec@mit.edu"
               target="_blank"
+              aria-label="MITech Email"
               className={styles.socialIcon}
             >
               <MdEmail />
-            </a>
+            </Link>
           </div>
         </div>
       )}
