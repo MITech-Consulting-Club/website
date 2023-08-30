@@ -43,12 +43,12 @@ export default function Home() {
           comprehensive advice and guidance to help businesses succeed in
           today's competitive market.
         </p>
-        <a className={styles.headerLink} href="#about">
+        <Link href="#about" aria-label="About Us" className={styles.headerLink}>
           Learn More
-        </a>
+        </Link>
       </header>
       <section className={styles.services} id="services">
-        <h4 className={styles.servicesSubtitle}>Our Services</h4>
+        <p className={styles.servicesSubtitle}>Our Services</p>
         <h2 className={styles.servicesTitle}>
           Technical and Strategy Consulting
         </h2>
@@ -121,7 +121,11 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <Link href="/services" className={styles.servicesLink}>
+        <Link
+          href="/services"
+          aria-label="Our Services"
+          className={styles.servicesLink}
+        >
           Learn More
         </Link>
       </section>
@@ -138,9 +142,13 @@ export default function Home() {
               create an environment where members thrive, making a meaningful
               impact in the ever-evolving world of technology consulting.
             </p>
-            <a className={styles.ourServicesLink} href="#services">
+            <Link
+              href="#services"
+              aria-label="Our Services"
+              className={styles.ourServicesLink}
+            >
               Learn More
-            </a>
+            </Link>
           </div>
 
           <div className={styles.aboutImageContainer}>
@@ -167,7 +175,11 @@ export default function Home() {
             interests, majors, and backgrounds with people involved in many
             different activities across campus.
           </p>
-          <Link href="/about#meetTeam" className={styles.aboutLink}>
+          <Link
+            href="/about#meetTeam"
+            aria-label="Our Team"
+            className={styles.aboutLink}
+          >
             Learn More
           </Link>
         </div>
@@ -183,7 +195,11 @@ export default function Home() {
               the tech industry, we help our members gain valuable skills and
               connections.
             </p>
-            <Link href="/alumni" className={styles.alumniLink}>
+            <Link
+              href="/alumni"
+              aria-label="Alumni Advisors"
+              className={styles.alumniLink}
+            >
               Learn More
             </Link>
           </div>
@@ -210,14 +226,22 @@ export default function Home() {
             <p className={styles.sponsorsInterestDescription2}>
               Please reach out at{' '}
               <u>
-                <a href="mailto:mitech-corporate@mit.edu" target="_blank">
+                <Link
+                  href="mailto:mitech-corporate@mit.edu"
+                  aria-label="MITech Corporate Relations Email"
+                  target="_blank"
+                >
                   mitech-corporate@mit.edu
-                </a>
+                </Link>
               </u>{' '}
               if you would like to learn more about our sponsorship packages &
               offerings; we would love to hear from you!
             </p>
-            <Link href="/sponsors" className={styles.servicesLink}>
+            <Link
+              href="/sponsors"
+              aria-label="Sponsors Page"
+              className={styles.servicesLink}
+            >
               Learn More
             </Link>
           </div>
@@ -305,9 +329,9 @@ export default function Home() {
           <p className={styles.communityDescription}>
             Join our{' '}
             <u>
-              <a href="https://forms.gle/2umo5ePtrVtkHETx6" target="_blank">
+              <Link href="https://forms.gle/2umo5ePtrVtkHETx6" target="_blank">
                 email list
-              </a>
+              </Link>
             </u>{' '}
             to stay updated on our events and receive our newsletters.
           </p>
