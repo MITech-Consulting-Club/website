@@ -236,51 +236,54 @@ export default function Home() {
             </p>
 
             <div className={styles.contactSocials}>
-              <a
+              <Link
                 href="https://www.linkedin.com/company/mitech-consulting-club/"
                 target="_blank"
+                aria-label="MITech LinkedIn"
                 className={styles.socialIcon}
               >
                 <BsLinkedin />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com/mitechconsulting/"
                 target="_blank"
+                aria-label="MITech Instagram"
                 style={{ fontSize: 25 }}
                 className={styles.socialIcon}
               >
                 <BsInstagram />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="mailto:mitech-exec@mit.edu"
                 target="_blank"
+                aria-label="MITech Email"
                 className={styles.socialIcon}
               >
                 <MdEmail />
-              </a>
+              </Link>
             </div>
             <div className={styles.contactForms}>
-              <a
+              <Link
                 href="https://forms.gle/SnicvC9TUVHBG2t6A"
                 target="_blank"
                 className={styles.contactForm}
               >
                 Client/Project Interest Form
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://forms.gle/bFhpZPFDNdcj39q9A"
                 target="_blank"
                 className={styles.contactForm}
               >
                 Corporate Sponsor Interest Form
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://forms.gle/ybUAHDBbNmAP82Dr9"
                 target="_blank"
                 className={styles.contactForm}
               >
                 Alumni Interest Form
-              </a>
+              </Link>
             </div>
           </div>
 
