@@ -1,10 +1,32 @@
 'use client';
 
 import styles from './join.module.scss';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import directors from './directors.json';
 
 export default function joinUs() {
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if the device is mobile
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const handleResize = (event: MediaQueryListEvent) => {
+      setMobile(event.matches);
+    };
+
+    // Set the initial value
+    setMobile(mediaQuery.matches);
+
+    // Listen for changes in the media query
+    mediaQuery.addEventListener('change', handleResize);
+
+    // Clean up the event listener
+    return () => {
+      mediaQuery.removeEventListener('change', handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <div className={styles.getInvolvedContainer}>
@@ -17,6 +39,29 @@ export default function joinUs() {
             with us!
           </p>
         </div>
+      </div>
+      <div className={styles.recruitingTimelineContainer}>
+        <h1 className={styles.recruitingTimelineHeading}>
+          View Our Recruiting Timeline Below
+        </h1>
+        {mobile && (
+          <Image
+            src="/join/recruitingTimelineVertical.png"
+            alt="Recruiting Timeline"
+            layout="responsive"
+            width={500}
+            height={500}
+          />
+        )}
+        {!mobile && (
+          <Image
+            src="/join/recruitingTimelineHorizontal.png"
+            alt="Recruiting Timeline"
+            layout="responsive"
+            width={500}
+            height={500}
+          />
+        )}
       </div>
       <div className={styles.lookForContainer}>
         <div className={styles.lookForLeftTextContainer}>
