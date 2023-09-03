@@ -95,6 +95,12 @@
       "role": "Secretary",
       "image": "momo.jpg",
       "bio": "Yo, I'm a 6-2 major who's interested in computer hardware. I enjoy gaming, playing basketball, and bass guitar."
+    },
+    {
+      "name": "Jason Li",
+      "role": "Project Leader",
+      "image": "jason.jpg",
+      "bio": "I’m Jason! A sophomore studying Electrical Engineering at MIT. I enjoy running, working out, and chatting with my friends over calls."
     }
   ]
 }
