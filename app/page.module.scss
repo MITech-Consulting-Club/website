@@ -384,7 +384,10 @@
 }
 
 .contactForm {
-  font-size: 24px;
+  @include respond-to('md') {
+    font-size: 24px;
+  }
+  font-size: 18px;
   font-family: 'Avenir Light';
   text-decoration: underline;
   margin: 2% 0;
