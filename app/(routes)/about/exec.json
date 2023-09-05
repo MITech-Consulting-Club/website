@@ -101,6 +101,12 @@
       "role": "Project Leader",
       "image": "jason.jpg",
       "bio": "I’m Jason! A sophomore studying Electrical Engineering at MIT. I enjoy running, working out, and chatting with my friends over calls."
+    },
+    {
+      "name": "Niko Tsakiris",
+      "role": "Project Leader",
+      "image": "niko.jpg",
+      "bio": "I am a junior studying mechanical engineering from Greece that has a passion for entrepreneurship, soccer, and windsurfing."
     }
   ]
 }
