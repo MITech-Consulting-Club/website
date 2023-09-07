@@ -149,7 +149,7 @@ export const Header = () => {
                         path == r.path ? styles.navbarActiveRoute : ''
                       }`}
                     >
-                      {r.title}
+                      {r.title} ▾
                     </Link>
                     <Link
                       key={r.path + r.title + 'sub'}
