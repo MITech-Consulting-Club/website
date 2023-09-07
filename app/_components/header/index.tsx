@@ -127,15 +127,42 @@ export const Header = () => {
           </div>
           <div className={styles.navbarRoutes}>
             {routes.map((r: Route) => (
-              <Link
-                key={r.path + r.title}
-                href={r.path}
-                className={` ${styles.navbarRoute} ${
-                  path == r.path ? styles.navbarActiveRoute : ''
-                }`}
-              >
-                {r.title}
-              </Link>
+              <>
+                {!r.subpath && (
+                  <Link
+                    key={r.path + r.title}
+                    href={r.path}
+                    className={` ${styles.navbarRoute} ${
+                      path == r.path ? styles.navbarActiveRoute : ''
+                    }`}
+                  >
+                    {r.title}
+                  </Link>
+                )}
+                {/* if the link has a sublink associated with it, only show it on hover */}
+                {r.subpath && (
+                  <div className={styles.hiddenRouteContainer}>
+                    <Link
+                      key={r.path + r.title}
+                      href={r.path}
+                      className={` ${styles.navbarRoute} ${
+                        path == r.path ? styles.navbarActiveRoute : ''
+                      }`}
+                    >
+                      {r.title}
+                    </Link>
+                    <Link
+                      key={r.path + r.title + 'sub'}
+                      href={r.subpath}
+                      className={` ${styles.hiddenRoute} ${
+                        path == r.subpath ? styles.navbarActiveRoute : ''
+                      }`}
+                    >
+                      {r.subtitle}
+                    </Link>
+                  </div>
+                )}
+              </>
             ))}
           </div>
           <div className={styles.navbarSocials}>
