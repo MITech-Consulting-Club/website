@@ -2,6 +2,8 @@ export interface Route {
   path: string;
   title: string;
   children?: Array<Route>;
+  subpath?: string;
+  subtitle?: string;
 }
 
 export const routes: Array<Route> = [
@@ -12,6 +14,8 @@ export const routes: Array<Route> = [
   {
     path: '/about',
     title: 'About Us',
+    subpath: '/join',
+    subtitle: 'Join Us',
   },
   {
     path: '/services',

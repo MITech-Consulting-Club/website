@@ -65,11 +65,26 @@
 
 .navbarRoute {
   @include respond-to('md') {
-    transition: color 0.3s;
     padding: 30px 15px;
   }
   transition: color 0.3s;
   padding: 0 5px;
+}
+
+.hiddenRouteContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hiddenRoute {
+  display: none;
+  position: absolute;
+  top: 75px;
+}
+
+.hiddenRouteContainer:hover .hiddenRoute {
+  display: block;
 }
 
 .socialIcon {
