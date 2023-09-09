@@ -308,13 +308,6 @@ export default function Home() {
               >
                 Alumni Interest Form
               </Link>
-              <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSf1HdTKD66rR-Pzofe9CkR0SUTGWebmkT2-EIB5VGO0tCBU2A/viewform"
-                target="_blank"
-                className={styles.contactForm}
-              >
-                Student Fall 2023 Recruitment Form
-              </Link>
             </div>
           </div>
 
