@@ -36,16 +36,7 @@ export default function joinUs() {
             We are always looking for more aspiring leaders who are passionate
             about technology to join our team. Check this page regularly to stay
             updated on our recruitment and MIT-wide events and stay in touch
-            with us! If you are looking to join us this fall, here is the{' '}
-            <u>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSf1HdTKD66rR-Pzofe9CkR0SUTGWebmkT2-EIB5VGO0tCBU2A/viewform"
-                target="_blank"
-              >
-                recruitment form
-              </a>
-            </u>{' '}
-            you can fill out!
+            with us!
           </p>
         </div>
       </div>
