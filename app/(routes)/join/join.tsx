@@ -40,29 +40,6 @@ export default function joinUs() {
           </p>
         </div>
       </div>
-      <div className={styles.recruitingTimelineContainer}>
-        <h1 className={styles.recruitingTimelineHeading}>
-          View Our Recruiting Timeline Below
-        </h1>
-        {mobile && (
-          <Image
-            src="/join/recruitingTimelineVertical.png"
-            alt="Recruiting Timeline"
-            layout="responsive"
-            width={500}
-            height={500}
-          />
-        )}
-        {!mobile && (
-          <Image
-            src="/join/recruitingTimelineHorizontal.png"
-            alt="Recruiting Timeline"
-            layout="responsive"
-            width={500}
-            height={500}
-          />
-        )}
-      </div>
       <div className={styles.lookForContainer}>
         <div className={styles.lookForLeftTextContainer}>
           <h1 className={styles.lookForHeading}>Who Do We Look For?</h1>
