@@ -1,32 +1,10 @@
 'use client';
 
 import styles from './join.module.scss';
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import directors from './directors.json';
 
 export default function joinUs() {
-  const [mobile, setMobile] = useState(false);
-
-  useEffect(() => {
-    // Check if the device is mobile
-    const mediaQuery = window.matchMedia('(max-width: 767px)');
-    const handleResize = (event: MediaQueryListEvent) => {
-      setMobile(event.matches);
-    };
-
-    // Set the initial value
-    setMobile(mediaQuery.matches);
-
-    // Listen for changes in the media query
-    mediaQuery.addEventListener('change', handleResize);
-
-    // Clean up the event listener
-    return () => {
-      mediaQuery.removeEventListener('change', handleResize);
-    };
-  }, []);
-
   return (
     <div>
       <div className={styles.getInvolvedContainer}>
