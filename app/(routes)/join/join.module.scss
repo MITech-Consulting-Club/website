@@ -40,23 +40,6 @@
   margin-top: 2%;
 }
 
-.recruitingTimelineContainer {
-  width: 100vw;
-}
-
-.recruitingTimelineHeading {
-  @include respond-to('lg') {
-    margin: 40px 0;
-  }
-
-  @include respond-to('md') {
-    font-size: 36px;
-  }
-  font-size: 18px;
-  text-align: center;
-  margin: 0 0 10px 0;
-}
-
 .lookForContainer {
   @include respond-to('md') {
     flex-direction: row;
