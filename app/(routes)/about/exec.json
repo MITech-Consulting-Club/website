@@ -37,6 +37,24 @@
       "bio": "I am a member of the Class of 2025, pursuing a dual major in Mechanical Engineering and Business. I am passionate about the dynamic fields of consulting and technology, and I strive to combine my technical expertise with strategic thinking to drive innovation. As an aspiring consultant, I am eager to explore the intersection of engineering and business to create meaningful impact."
     },
     {
+      "name": "Jason Li",
+      "role": "Project Leader",
+      "image": "jason.jpg",
+      "bio": "I’m Jason! A sophomore studying Electrical Engineering at MIT. I enjoy running, working out, and chatting with my friends over calls."
+    },
+    {
+      "name": "Niko Tsakiris",
+      "role": "Project Leader",
+      "image": "niko.jpg",
+      "bio": "I am a junior studying mechanical engineering from Greece that has a passion for entrepreneurship, soccer, and windsurfing."
+    },
+    {
+      "name": "Sean Mintz",
+      "role": "Project Leader",
+      "image": "sean.jpg",
+      "bio": "Hi all! I’m Sean, a Sophomore originally from Washington. I’m interested in software engineering and applying computational solutions to natural sciences, especially chemistry. Always happy to connect with new people, so don’t hesitate to reach out!"
+    },
+    {
       "name": "Ashley Williams",
       "role": "Director of Corporate Relations",
       "image": "ashley.jpg",
@@ -95,18 +113,6 @@
       "role": "Secretary",
       "image": "momo.jpg",
       "bio": "Yo, I'm a 6-2 major who's interested in computer hardware. I enjoy gaming, playing basketball, and bass guitar."
-    },
-    {
-      "name": "Jason Li",
-      "role": "Project Leader",
-      "image": "jason.jpg",
-      "bio": "I’m Jason! A sophomore studying Electrical Engineering at MIT. I enjoy running, working out, and chatting with my friends over calls."
-    },
-    {
-      "name": "Niko Tsakiris",
-      "role": "Project Leader",
-      "image": "niko.jpg",
-      "bio": "I am a junior studying mechanical engineering from Greece that has a passion for entrepreneurship, soccer, and windsurfing."
     }
   ]
 }
