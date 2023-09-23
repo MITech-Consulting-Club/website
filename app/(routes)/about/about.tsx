@@ -59,7 +59,17 @@ export default function About() {
           <h6 className={styles.teamMiniHeading}>
             Finding Inspiration in Every Turn
           </h6>
-          <p>MITech is cool</p>
+          <p className={styles.teamDescription}>
+            We are a diverse group of talented students from various disciplines
+            that are passionate about community-building and problem-solving
+            with technology. At MITech Consulting Club, we seek to empower
+            students to become tech leaders and consultants by delivering
+            practical projects and fostering a culture of continuous learning.
+            Through mentorship, professional development, and a vibrant
+            community, we create an environment where members thrive, making a
+            meaningful impact in the ever-evolving world of technology
+            consulting.
+          </p>
         </div>
       </div>
       <div className={styles.initiativesContainer}>
