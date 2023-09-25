@@ -55,18 +55,6 @@
       "bio": "Hi all! I’m Sean, a Sophomore originally from Washington. I’m interested in software engineering and applying computational solutions to natural sciences, especially chemistry. Always happy to connect with new people, so don’t hesitate to reach out!"
     },
     {
-      "name": "Ashley Williams",
-      "role": "Director of Corporate Relations",
-      "image": "ashley.jpg",
-      "bio": "I am a junior from Kingston, Jamaica. In addition to my role in MITech, I am the President of the Society of Women Engineers, President and Choreographer of the MIT Muses, and social chair of the Burton Third Bombers. I love cooking, making and listening to music and reading."
-    },
-    {
-      "name": "Selam Brook",
-      "role": "Director of Corporate Relations",
-      "image": "selam.jpg",
-      "bio": "I'm a Junior studying CS- AI and decision making. I am interested in the intersection of tech and life science/healthcare. I enjoy exploring coffee shops and green spaces."
-    },
-    {
       "name": "Karen Guo",
       "role": "Director of Recruitment, Project Leader",
       "image": "karen.jpg",
@@ -85,10 +73,22 @@
       "bio": "I am a Dominican-American student, athlete, and aspiring innovator. I was born and raised in New York City. I love to play sports, especially soccer and basketball. My other hobbies include reading, coding, working out, and watching YouTube. I also love listening to music; my favorite artist is The Weeknd."
     },
     {
-      "name": "Steven Henry",
-      "role": "Director of Initiatives & Innovation",
-      "image": "steven.jpg",
-      "bio": "Hi, I'm Steven! Originally from Jamaica, I'm passionate about the thrilling intersection of finance and technology. I enjoy exploring software performance enhancement and uncovering cool algorithms. Outside of that world, you can find me playing and watching sports or hitting the gym for a good workout. I love to learn new things and I'm always open to lend a helping hand whenever I can. Most importantly, I'm excited to be a part of this club!"
+      "name": "Ashley Williams",
+      "role": "Director of Corporate Relations",
+      "image": "ashley.jpg",
+      "bio": "I am a junior from Kingston, Jamaica. In addition to my role in MITech, I am the President of the Society of Women Engineers, President and Choreographer of the MIT Muses, and social chair of the Burton Third Bombers. I love cooking, making and listening to music and reading."
+    },
+    {
+      "name": "Selam Brook",
+      "role": "Director of Corporate Relations",
+      "image": "selam.jpg",
+      "bio": "I'm a Junior studying CS- AI and decision making. I am interested in the intersection of tech and life science/healthcare. I enjoy exploring coffee shops and green spaces."
+    },
+    {
+      "name": "Kush Khamesra",
+      "role": "Director of Events",
+      "image": "kush.jpg",
+      "bio": "I'm a rising sophomore who's always been interested in the various applications of technology, especially in sports, space, and business. I play on the MIT Water Polo team and in the Theta Tau Fraternity."
     },
     {
       "name": "Joseph Li",
@@ -97,10 +97,10 @@
       "bio": "Hello! I'm a senior studying Computer Science, Economics, Data Science, and Business Analytics. I love everything in the intersection of tech and business, and I’m always looking to learn more about new industries, skills, and people! I pride myself on being versatile and ready to contribute in any way possible. Outside of school and work, I’m a college tennis player, a huge NBA fan, and a (not so great) recreational chess player!"
     },
     {
-      "name": "Kush Khamesra",
-      "role": "Director of Events",
-      "image": "kush.jpg",
-      "bio": "I'm a rising sophomore who's always been interested in the various applications of technology, especially in sports, space, and business. I play on the MIT Water Polo team and in the Theta Tau Fraternity."
+      "name": "Steven Henry",
+      "role": "Director of Initiatives & Innovation",
+      "image": "steven.jpg",
+      "bio": "Hi, I'm Steven! Originally from Jamaica, I'm passionate about the thrilling intersection of finance and technology. I enjoy exploring software performance enhancement and uncovering cool algorithms. Outside of that world, you can find me playing and watching sports or hitting the gym for a good workout. I love to learn new things and I'm always open to lend a helping hand whenever I can. Most importantly, I'm excited to be a part of this club!"
     },
     {
       "name": "Alexandra Volkova",
