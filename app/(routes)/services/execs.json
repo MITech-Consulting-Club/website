@@ -1,13 +1,6 @@
 {
   "execs": [
     {
-      "name": "Luis Barros",
-      "role": "Faculty Advisor",
-      "email": "lbarros@mit.edu",
-      "linkedin": "https://www.linkedin.com/in/luismsmbarros/",
-      "image": "luis.jpg"
-    },
-    {
       "name": "Colin Clark",
       "role": "VP External",
       "email": "colclark@mit.edu",
