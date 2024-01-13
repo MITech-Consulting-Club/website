@@ -25,16 +25,22 @@
       "bio": "I'm a sophomore at MIT studying Electrical Engineering and Physics. I enjoy biking, playing accordion, and learning the latest JavaScript framework of the week."
     },
     {
+      "name": "Alexandra Volkova",
+      "role": "Treasurer, Project Leader",
+      "image": "alexandra.jpg",
+      "bio": "I'm Alexandra, a sophomore majoring in CS & Molecular Biology and Finance, and I serve as the MITech Consulting Club Treasurer. I am interested in careers in the biotech sphere, and I currently pursue research on brain-on-a-chip designs in the Langer and Tsai Labs. During my free time, I enjoy working on a software start-up with friends and learning foreign languages."
+    },
+    {
       "name": "Nayeemur Rahman",
       "role": "Director of Projects, Director of Alumni Relations, Project Leader",
       "image": "nayeemur.jpg",
       "bio": "Woah... You just met the website developer, which means I can do cool stuff like this :) Besides that, I'm a sophomore studying 6-3 and I love learning new tech stacks and building my web dev skills. Recently, I've immersed myself in the exciting field of machine learning, and I'm always on the lookout for new avenues to delve deeper into it. I'm definitely a morning person and love to enjoy the outside world anytime I can."
     },
     {
-      "name": "Kade Killeen",
+      "name": "Charlie Goetz",
       "role": "Project Leader",
-      "image": "kade.jpg",
-      "bio": "I am a member of the Class of 2025, pursuing a dual major in Mechanical Engineering and Business. I am passionate about the dynamic fields of consulting and technology, and I strive to combine my technical expertise with strategic thinking to drive innovation. As an aspiring consultant, I am eager to explore the intersection of engineering and business to create meaningful impact."
+      "image": "charlie.jpg",
+      "bio": "I am pursuing a degree in Computer Science and Artificial Intelligence with a minor in Finance and Economics in the class of 2026. I’m interested in the intersection of business and technology. Outside of school, my favorite hobby is basketball."
     },
     {
       "name": "Jason Li",
@@ -43,16 +49,22 @@
       "bio": "I’m Jason! A sophomore studying Electrical Engineering at MIT. I enjoy running, working out, and chatting with my friends over calls."
     },
     {
-      "name": "Niko Tsakiris",
+      "name": "Adonis Serrano",
       "role": "Project Leader",
-      "image": "niko.jpg",
-      "bio": "I am a junior studying mechanical engineering from Greece that has a passion for entrepreneurship, soccer, and windsurfing."
+      "image": "adonis.jpg",
+      "bio": "I’m Adonis Serrano, born and raised in Miami, Florida, Majoring in 2A-6 (Mech-E and Comp-Sci). I love learning new things, socializing, listening to new music, and playing my bass guitar. Fun Fact: if you gave me Boba I would love you forever. I am very excited to see what the future holds for me as I continue to chase my dreams!"
     },
     {
       "name": "Sean Mintz",
       "role": "Project Leader",
       "image": "sean.jpg",
       "bio": "Hi all! I’m Sean, a Sophomore originally from Washington. I’m interested in software engineering and applying computational solutions to natural sciences, especially chemistry. Always happy to connect with new people, so don’t hesitate to reach out!"
+    },
+    {
+      "name": "Radia Wong",
+      "role": "Project Leader",
+      "image": "radia.jpg",
+      "bio": "Hi, I’m Radia! Majoring in computer science, I’m passionate about the fascinating avenues of collaboration between CS and many fields, allowing us to approach problems in new and innovative ways. In my free time I enjoy spending time with friends, reading fantasy, and crocheting. You can probably find me observing the campus squirrels!"
     },
     {
       "name": "Karen Guo",
@@ -95,12 +107,6 @@
       "role": "Director of Initiatives & Innovation",
       "image": "steven.jpg",
       "bio": "Hi, I'm Steven! Originally from Jamaica, I'm passionate about the thrilling intersection of finance and technology. I enjoy exploring software performance enhancement and uncovering cool algorithms. Outside of that world, you can find me playing and watching sports or hitting the gym for a good workout. I love to learn new things and I'm always open to lend a helping hand whenever I can. Most importantly, I'm excited to be a part of this club!"
-    },
-    {
-      "name": "Alexandra Volkova",
-      "role": "Treasurer",
-      "image": "alexandra.jpg",
-      "bio": "I'm Alexandra, a sophomore majoring in CS & Molecular Biology and Finance, and I serve as the MITech Consulting Club Treasurer. I am interested in careers in the biotech sphere, and I currently pursue research on brain-on-a-chip designs in the Langer and Tsai Labs. During my free time, I enjoy working on a software start-up with friends and learning foreign languages."
     },
     {
       "name": "Momo Omotoso",
