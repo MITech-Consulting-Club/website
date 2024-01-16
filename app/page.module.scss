@@ -94,6 +94,11 @@
   padding: 2%;
 }
 
+.servicesGalleryItemEnd {
+  @extend .servicesGalleryItem;
+  border-right: none;
+}
+
 .servicesGalleryItemTitle {
   font-size: 16px;
   font-family: 'Avenir';

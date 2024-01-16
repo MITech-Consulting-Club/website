@@ -88,7 +88,7 @@ export default function Home() {
               comprehensive support throughout the entire process.
             </p>
           </div>
-          <div className={styles.servicesGalleryItem}>
+          <div className={styles.servicesGalleryItemEnd}>
             <Image
               src="/services/chart.png"
               alt="service"
@@ -102,22 +102,6 @@ export default function Home() {
               your data. With our expertise in diverse data types and advanced
               analytical techniques, we can help unveil valuable insights and
               inform data-driven decision-making.
-            </p>
-          </div>
-          <div className={styles.servicesGalleryItem}>
-            <Image
-              src="/services/suitcase.png"
-              alt="service"
-              width={100}
-              height={75}
-            />
-            <h5 className={styles.servicesGalleryItemTitle}>
-              Business Development
-            </h5>
-            <p className={styles.servicesGalleryItemDescription}>
-              We prioritize business development and helping organizations
-              achieve sustainable growth and success through guidance, business
-              modeling, research, and analysis.
             </p>
           </div>
         </div>
