@@ -50,7 +50,7 @@ export default function Home() {
       <section className={styles.services} id="services">
         <p className={styles.servicesSubtitle}>Our Services</p>
         <h2 className={styles.servicesTitle}>
-          Technical and Strategy Consulting
+          Technical and Consulting
         </h2>
         <div className={styles.servicesGallery}>
           <div className={styles.servicesGalleryItem}>
@@ -88,7 +88,7 @@ export default function Home() {
               comprehensive support throughout the entire process.
             </p>
           </div>
-          <div className={styles.servicesGalleryItemEnd}>
+          <div className={styles.servicesGalleryItem}>
             <Image
               src="/services/chart.png"
               alt="service"
@@ -102,6 +102,18 @@ export default function Home() {
               your data. With our expertise in diverse data types and advanced
               analytical techniques, we can help unveil valuable insights and
               inform data-driven decision-making.
+            </p>
+          </div>
+          <div className={styles.servicesGalleryItemEnd}>
+            <Image
+                src="/services/hardware.png"
+                alt="service"
+                width={100}
+                height={75}
+            />
+            <h5 className={styles.servicesGalleryItemTitle}>Hardware Development</h5>
+            <p className={styles.servicesGalleryItemDescription}>
+              When your needs go beyond software, we have your back. From embedded systems to PCP design, MITech Consulting can develop versatile hardware-based solutions for your group's needs.
             </p>
           </div>
         </div>

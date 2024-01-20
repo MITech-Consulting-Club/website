@@ -50,12 +50,12 @@ export default function Services() {
           </div>
           <div className={styles.ourServicesCard}>
             <Image
-              src="/services/suitcase.png"
+              src="/services/hardware.png"
               alt="service"
               width={100}
               height={75}
             />
-            <p className={styles.ourServicesTitle}>Business Development</p>
+            <p className={styles.ourServicesTitle}>Hardware Development</p>
           </div>
         </div>
       </div>
