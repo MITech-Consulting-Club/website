@@ -113,7 +113,7 @@ export default function Home() {
             />
             <h5 className={styles.servicesGalleryItemTitle}>Hardware Development</h5>
             <p className={styles.servicesGalleryItemDescription}>
-              When your needs go beyond software, we have your back. From embedded systems to PCP design, MITech Consulting can develop versatile hardware-based solutions for your group's needs.
+              When your needs go beyond software, we have your back. From embedded systems to PCB design, MITech Consulting can develop versatile hardware-based solutions for your group's needs.
             </p>
           </div>
         </div>
