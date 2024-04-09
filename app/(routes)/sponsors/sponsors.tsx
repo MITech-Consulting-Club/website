@@ -43,8 +43,8 @@ export default function Sponsors() {
             <div className={styles.numberCircle}>1</div>
             <h5 className={styles.cardHeading}>Platinum Sponsor</h5>
             <ul className={styles.packageOffers}>
-              <li>Highest Level of Company Branding & Presence</li>
-              <li>Access to our annual networking conference </li>
+              <li>Premium Level of Company Branding & Presence</li>
+              <li>Guaranteed Project Collaboration</li>
               <li>Access to resume book</li>
               <li>
                 Unlimited small-scale (less than 50) club-sponsored events
@@ -60,8 +60,7 @@ export default function Sponsors() {
             <div className={styles.numberCircle}>2</div>
             <h5 className={styles.cardHeading}>Gold Sponsor</h5>
             <ul className={styles.packageOffers}>
-              <li>Premium Company Branding & Presence</li>
-              <li>Access to our annual networking conference</li>
+              <li>Advanced Company Branding & Presence</li>
               <li>Access to resume book</li>
               <li>Two small-scale (less than 50) club-sponsored events</li>
               <li>
@@ -77,9 +76,24 @@ export default function Sponsors() {
             <div className={styles.numberCircle}>3</div>
             <h5 className={styles.cardHeading}>Silver Sponsor</h5>
             <ul className={styles.packageOffers}>
-              <li>Company Branding & Presence</li>
-              <li>Access to our annual networking conference</li>
+              <li>Standard Branding & Presence</li>
               <li>Access to resume book</li>
+              <li>One small-scale (less than 50) club-sponsored event</li>
+            </ul>
+          </div>
+          <div className={styles.aLaCarteCard}>
+            <div className={styles.numberCircle}>4</div>
+            <h5 className={styles.cardHeading}>À La Carte</h5>
+            <h6 className={styles.cardSubHeading}>
+              Flexible to your firm’s needs
+            </h6>
+            <ul className={styles.packageOffers}>
+              <li>Guaranteed Project Collaboration: $2,500</li>
+              <li>Access to resume book: $400</li>
+              <li>Small-scale (less than 50) club-sponsored event: $1,000</li>
+              <li>Large-scale (50 or greater) club-sponsored event: $2,000</li>
+              <li>Guaranteed coffee chat slots with our members: $500</li>
+              <li>Company feature in quarterly newsletter: $200</li>
             </ul>
           </div>
         </div>
