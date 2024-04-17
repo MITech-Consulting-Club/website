@@ -84,16 +84,13 @@ export default function Sponsors() {
           <div className={styles.aLaCarteCard}>
             <div className={styles.numberCircle}>4</div>
             <h5 className={styles.cardHeading}>À La Carte</h5>
-            <h6 className={styles.cardSubHeading}>
-              Flexible to your firm’s needs
-            </h6>
             <ul className={styles.packageOffers}>
-              <li>Guaranteed Project Collaboration: $2,500</li>
-              <li>Access to resume book: $400</li>
-              <li>Small-scale (less than 50) club-sponsored event: $1,000</li>
-              <li>Large-scale (50 or greater) club-sponsored event: $2,000</li>
-              <li>Guaranteed coffee chat slots with our members: $500</li>
-              <li>Company feature in quarterly newsletter: $200</li>
+              <li>Guaranteed Project Collaboration</li>
+              <li>Access to resume book</li>
+              <li>Small-scale (less than 50) club-sponsored event</li>
+              <li>Large-scale (50 or greater) club-sponsored event</li>
+              <li>Guaranteed coffee chat slots with our members</li>
+              <li>Company feature in quarterly newsletter</li>
             </ul>
           </div>
         </div>
