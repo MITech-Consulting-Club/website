@@ -28,10 +28,10 @@ export const BackgroundGraph = ({ isAnimated }: BackgroundGraphProps) => {
       const render = () => {
         draw(ctx, increment);
         if (isAnimated) {
-          increment += 0.5;
+          increment += 2;
         }
         // TODO Optimize animation to stop crashing
-        // animationFrameId = window.requestAnimationFrame(render);
+        animationFrameId = window.requestAnimationFrame(render);
       };
       render();
       return () => window.cancelAnimationFrame(animationFrameId);
