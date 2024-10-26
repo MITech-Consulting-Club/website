@@ -69,7 +69,7 @@
 
 .servicesGallery {
   @include respond-to('md') {
-    max-width: 1500px;
+    // max-width: 1500 px;
     flex-direction: row;
     gap: 2%;
   }
@@ -81,7 +81,7 @@
 
 .servicesGalleryItem {
   @include respond-to('md') {
-    width: 350px;
+    width: 17vw;
     margin: 0;
     text-align: left;
     border-bottom: none;
