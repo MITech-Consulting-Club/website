@@ -53,6 +53,12 @@
       "role": "Director of Corporate Relations",
       "image": "kevin_c.jpeg",
       "bio": "Hello, my name is Kevin Chafloque and I am excited to be working with MITech this year."
+    },
+    {
+      "name": "Maeve Chen",
+      "role": "Web Master",
+      "image": "maeve.jpeg",
+      "bio": "Hi, I'm Maeve, a sophomore studying Electrical Engineering & Computer Science at MIT. I'm strongly interested in software, hardware, and AI/automation. I also have a passion for design, environmental sustainability, and linguistics."
     }
   ]
 }
