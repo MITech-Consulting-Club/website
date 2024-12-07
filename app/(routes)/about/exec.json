@@ -1,58 +1,28 @@
 {
   "team": [
     {
-      "name": "Sophie Sun",
-      "role": "Co-President",
-      "image": "sophie.jpg",
-      "bio": "Hi I'm Sophie and I'm a Junior majoring in 6-9 (CS & Neuroscience) and minoring in 15-1 (management). I'm originally from New Zealand, but I was born in Wellesley and lived in China for 8 years! Outside of classes, I love playing piano, blasting classical music, and being around animals (according to my piano teacher I'm her dog's favorite student)!"
-    },
-    {
-      "name": "Mannendri Olivares",
-      "role": "Co-President",
-      "image": "mannendri.jpg",
-      "bio": "Hello there! I'm a Dominican-American from New York City. Outside of MITech Consulting Club, I'm involved in the Society of Hispanic Professional Engineers, Engineers Without Borders, and the Sigma Nu fraternity. I am really interested in playing soccer & basketball, listening to audiobooks, lifting, journaling, listening to music, and going on exciting adventures. Feel free to reach out to me about anything!"
-    },
-    {
-      "name": "Alice Yu",
-      "role": "VP Internal",
-      "image": "alice.jpg",
-      "bio": "Hi, I’m Alice, a senior majoring in 6-14 (CS, Economics, and Data Science) and 15-2 (Business Analysis). I am interested in a career in consulting and love to help clients with my technical knowledge. Outside of classes, I enjoy drawing, reading, and gaming."
-    },
-    {
       "name": "Colin Clark",
-      "role": "VP External, Director of Member Education, Project Leader",
+      "role": "President",
       "image": "colin.jpg",
-      "bio": "I'm a sophomore at MIT studying Electrical Engineering and Physics. I enjoy biking, playing accordion, and learning the latest JavaScript framework of the week."
-    },
-    {
-      "name": "Momo Omotoso",
-      "role": "Secretary",
-      "image": "momo.jpg",
-      "bio": "Yo, I'm a 6-2 major who's interested in computer hardware. I enjoy gaming, playing basketball, and bass guitar."
+      "bio": "I'm a junior at MIT studying Electrical Engineering and Physics. I enjoy biking, playing accordion, and learning the latest JavaScript framework of the week."
     },
     {
       "name": "Alexandra Volkova",
-      "role": "Treasurer, Project Leader",
+      "role": "President",
       "image": "alexandra.png",
-      "bio": "I'm Alexandra, a sophomore majoring in CS & Molecular Biology and Finance, and I serve as the MITech Consulting Club Treasurer. I am interested in careers in the biotech sphere, and I currently pursue research on brain-on-a-chip designs in the Langer and Tsai Labs. During my free time, I enjoy working on a software start-up with friends and learning foreign languages."
+      "bio": "I'm Alexandra, a junior majoring in CS & Molecular Biology and Finance, and I serve as the MITech Consulting Club Treasurer. I am interested in careers in the biotech sphere, and I currently pursue research on brain-on-a-chip designs in the Langer and Tsai Labs. During my free time, I enjoy working on a software start-up with friends and learning foreign languages."
     },
     {
-      "name": "Nayeemur Rahman",
-      "role": "Director of Projects, Director of Alumni Relations, Project Leader",
-      "image": "nayeemur.jpg",
-      "bio": "Woah... You just met the website developer, which means I can do cool stuff like this :) Besides that, I'm a sophomore studying 6-3 and I love learning new tech stacks and building my web dev skills. Recently, I've immersed myself in the exciting field of machine learning, and I'm always on the lookout for new avenues to delve deeper into it. I'm definitely a morning person and love to enjoy the outside world anytime I can."
+      "name": "Lilian Zhu",
+      "role": "Vice President",
+      "image": "lilian.jpeg",
+      "bio": "Hi, I'm Lilian (*tips fedora*). I enjoy studying math and working on projects, especially in Javascript. My hobbies include burning bagels, eating burned bagels, and ranting to anyone who will listen about how burnt the bagels were."
     },
     {
       "name": "Charlie Goetz",
       "role": "Project Leader",
       "image": "charlie.jpg",
       "bio": "I am pursuing a degree in Computer Science and Artificial Intelligence with a minor in Finance and Economics in the class of 2026. I’m interested in the intersection of business and technology. Outside of school, my favorite hobby is basketball."
-    },
-    {
-      "name": "Lilian Zhu",
-      "role": "Project Leader",
-      "image": "lilian.jpeg",
-      "bio": "Hi, I'm Lilian (*tips fedora*). I enjoy studying math and working on projects, especially in Javascript. My hobbies include burning bagels, eating burned bagels, and ranting to anyone who will listen about how burnt the bagels were."
     },
     {
       "name": "Adonis Serrano",
@@ -73,40 +43,16 @@
       "bio": "Hello hello, I'm Karen, a 6-4 (CS & AI) from the Bay Area. In my free time, I enjoy drawing, listening to music, and watching Youtube. I am almost always wearing an article of Adidas clothing, and will eat almost anything passionfruit flavored. Perpetually waiting for Debussy's next hit album."
     },
     {
-      "name": "Maggie Yu",
-      "role": "Director of Recruitment",
-      "image": "maggie.jpg",
-      "bio": "Hi everyone! I'm so excited to be your Director of Recruitment this year. At MIT, I'm a junior studying 6-3 (computer science) and this summer I did an internship through PKG as well as teaching for MEET in Israel! Outside of MITech I'm also a part of Asian Dance Team and the Chinatown Citizenship Initiative where I teach english to members of the Boston Chinatown community."
-    },
-    {
-      "name": "Brios Olivares",
+      "name": "Lillian Wang",
       "role": "Director of Publicity",
-      "image": "brios.jpg",
-      "bio": "I am a Dominican-American student, athlete, and aspiring innovator. I was born and raised in New York City. I love to play sports, especially soccer and basketball. My other hobbies include reading, coding, working out, and watching YouTube. I also love listening to music; my favorite artist is The Weeknd."
+      "image": "lillian.jpeg",
+      "bio": "Hello, my name is Lillian Wang and I am excited to be working with MITech this year."
     },
     {
-      "name": "Ashley Williams",
+      "name": "Kevin Chafloque",
       "role": "Director of Corporate Relations",
-      "image": "ashley.jpg",
-      "bio": "I am a junior from Kingston, Jamaica. In addition to my role in MITech, I am the President of the Society of Women Engineers, President and Choreographer of the MIT Muses, and social chair of the Burton Third Bombers. I love cooking, making and listening to music and reading."
-    },
-    {
-      "name": "Selam Brook",
-      "role": "Director of Corporate Relations",
-      "image": "selam.jpg",
-      "bio": "I'm a Junior studying CS- AI and decision making. I am interested in the intersection of tech and life science/healthcare. I enjoy exploring coffee shops and green spaces."
-    },
-    {
-      "name": "Kush Khamesra",
-      "role": "Director of Events",
-      "image": "kush.jpg",
-      "bio": "I'm a rising sophomore who's always been interested in the various applications of technology, especially in sports, space, and business. I play on the MIT Water Polo team and in the Theta Tau Fraternity."
-    },
-    {
-      "name": "Steven Henry",
-      "role": "Director of Initiatives & Innovation",
-      "image": "steven.jpg",
-      "bio": "Hi, I'm Steven! Originally from Jamaica, I'm passionate about the thrilling intersection of finance and technology. I enjoy exploring software performance enhancement and uncovering cool algorithms. Outside of that world, you can find me playing and watching sports or hitting the gym for a good workout. I love to learn new things and I'm always open to lend a helping hand whenever I can. Most importantly, I'm excited to be a part of this club!"
+      "image": "kevin_c.jpeg",
+      "bio": "Hello, my name is Kevin Chafloque and I am excited to be working with MITech this year."
     }
   ]
 }
